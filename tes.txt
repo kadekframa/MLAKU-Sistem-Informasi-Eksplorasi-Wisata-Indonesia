@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-Uji coba branch
-=======
-Uji coba branch test
->>>>>>> accommodation
