@@ -10,7 +10,7 @@ const MainApp = () => {
         <div>
             <Router>
                 <Swicth>
-                    <Route path='/' element={<Home />} exact />
+                    <Route exact path='/' element={<Home />} />
                     <Route path='/object-tourism' element={<ObjectTourism />} />
                     <Route path='/culinary' element={<Home />} />
                     <Route path='/accommodation' element={<Home />} />
