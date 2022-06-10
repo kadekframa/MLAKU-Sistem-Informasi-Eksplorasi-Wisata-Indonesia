@@ -2,6 +2,7 @@ import React from 'react';
 import Input from '../../components/atoms/Input';
 import Gap from '../../components/atoms/Gap';
 import Button from '../../components/atoms/Button';
+import Logo from '../../assets/images/mlaku-logo.png';
 import './Login.css'
 
 const Login = () => {
@@ -10,6 +11,7 @@ const Login = () => {
         <div className='left'>
           <div className='overlay'></div>
           <div className='brand-name'>
+            <img className='logo' src={Logo} alt="Logo Mlaku" title='Mlaku Logo'/>
             <h1>Mlaku</h1>
             <p>Sistem Informasi Ekplorasi Wisata Indonesia</p>
           </div>

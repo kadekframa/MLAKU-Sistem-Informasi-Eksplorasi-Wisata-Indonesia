@@ -34,9 +34,12 @@
     align-items: center;
     position: fixed;
     color: white;
-    top: 42%;
-    right: 52%;
+    top: 24%;
+    right: 40%;
+}
 
+.login-wrapper .left .brand-name .logo {
+    width: 24%;
 }
 
 .login-wrapper .left .brand-name h1 {

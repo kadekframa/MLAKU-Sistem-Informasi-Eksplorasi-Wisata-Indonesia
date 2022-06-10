@@ -1,22 +1,21 @@
 import React from 'react';
-import {BrowserRouter as Router, Routes as Swicth, Route} from 'react-router-dom';
+import { Routes as Swicth, Route} from 'react-router-dom';
 import {Navigation, Footer} from '../../components';
 import {About, Home, ObjectTourism} from '..';
+import Culinary from '../Culinary';
 
 const MainApp = () => {
   return (
     <div>
       <Navigation />
         <div>
-            <Router>
-                <Swicth>
-                    <Route exact path='/' element={<Home />} />
-                    <Route path='/object-tourism' element={<ObjectTourism />} />
-                    <Route path='/culinary' element={<Home />} />
-                    <Route path='/accommodation' element={<Home />} />
-                    <Route path='/about' element={<About/>} />
-                </Swicth>
-            </Router>
+          <Swicth>
+            <Route exact path='/' element={<Home />} />
+            <Route path='/object-tourism' element={<ObjectTourism />} />
+            <Route path='/culinary' element={<Culinary />} />
+            <Route path='/accommodation' element={<Home />} />
+            <Route path='/about' element={<About/>} />
+          </Swicth>
         </div>
       <Footer />
     </div>
