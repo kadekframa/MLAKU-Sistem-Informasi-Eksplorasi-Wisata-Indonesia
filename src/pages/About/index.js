@@ -5,7 +5,6 @@ const About = () => {
   return (
       <div className='about-wrapper'>
         <div className='left'>
-          <div className='overlay'></div>
           <img src="https://placeimg.com/640/480/nature" alt="background about" />
         </div>
         <div className='right'>
