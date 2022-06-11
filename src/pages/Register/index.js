@@ -13,7 +13,7 @@ const Register = () => {
           <div className='brand-name'>
             <img className='logo' src={Logo} alt="Logo Mlaku" title='Mlaku Logo'/>
             <h1>Mlaku</h1>
-            <p>Sistem Informasi Ekplorasi Wisata Indonesia</p>
+            <p>Indonesia Tourism Exploration Information System</p>
           </div>
           <img src="https://placeimg.com/640/480/nature" alt="background log-in" />
         </div>

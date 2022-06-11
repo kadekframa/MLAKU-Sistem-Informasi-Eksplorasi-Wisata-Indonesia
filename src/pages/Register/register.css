@@ -21,7 +21,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(80, 80, 80, 0.356);
-    right: 29.7vw;
+    right: 30vw;
     bottom: 0.2vh;
     position: fixed;
 }
@@ -42,7 +42,7 @@
 
 .register-wrapper .left .brand-name h1 {
     font-size:36px;
-    margin: 0;
+    margin: 20px 0 0;
 }
 
 .register-wrapper .left .brand-name p {
