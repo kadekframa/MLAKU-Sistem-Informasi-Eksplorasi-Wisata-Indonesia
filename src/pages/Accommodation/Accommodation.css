@@ -103,7 +103,7 @@ color: grey;
 }
 
 /**/
-.containerCard {
+.containerCardAccommodation {
   margin-top: -400px;
   display: flex;
   justify-content: center;
@@ -112,7 +112,7 @@ color: grey;
   position: relative;
 }
 
-.containerCard .box {
+.containerCardAccommodation .boxAccommodation {
   width: 373.33px;
   height: 400px;
   line-height: 1.5;
@@ -125,8 +125,8 @@ color: grey;
 }
 
 
-.box {
-  background-image: url(https://images.unsplash.com/photo-1591003938754-945a23fc30b3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+.boxAccommodation {
+  background-image: url('../../assets/images/century\ park.jpg');
   width: 200px;
   height: 300px;
   background-size: cover;
@@ -135,15 +135,19 @@ color: grey;
   border-radius: 8px;
 }
 
-.box h1 {
+.boxAccommodation h1 {
   font-size: 20px;
 }
 
-.box p{
+.boxAccommodation p{
   font-size: 12px;
 }
 
-.text {
+.boxAccommodation:hover {
+  transform: translateY(20px);
+}
+
+.textAccommodation {
   background-color: rgba(0,0,0,.6);
   opacity: 0;
   height: 100%;
@@ -158,17 +162,13 @@ color: grey;
   transition: all .5s;
 }
 
-.text:hover {
+.textAccommodation:hover {
   opacity: 1;
 }
 
-.box:hover {
-  transform: translateY(20px);
-}
-
-.two {
-  background-image: url(https://images.unsplash.com/photo-1591084261819-7c967caf7d06?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+.two{
+  background-image: url('../../assets/images/hoteltentram.jpg');
 }
 .three {
-  background-image: url(https://images.unsplash.com/photo-1592196684243-9e328837adcd?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: url('../../assets/images/pacifichotel.jpg');
 }

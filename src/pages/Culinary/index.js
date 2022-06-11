@@ -22,21 +22,21 @@ const Culinary = () => {
         </div> */}
       </div>
 
-      <div class="containerCard">
+      <div class="containerCardCulinary">
         <div class="box">
-          <div class="text">
+          <div class="textCulinary">
             <h1>Bakso</h1>
-            <p>Pantai Kuta</p>
+            <p>Solo</p>
           </div>
         </div>
-        <div class="box two">
-          <div class="text">
+        <div class="box two-Culinary">
+          <div class="textCulinary">
             <h1>Kwetiau Goreng</h1>
             <p>Malang</p>
           </div>
         </div>
-        <div class="box three">
-          <div class="text">
+        <div class="box three-Culinary">
+          <div class="textCulinary">
             <h1>Nasi Goreng </h1>
             <p>Magelang</p>
           </div>

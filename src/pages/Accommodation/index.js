@@ -23,23 +23,23 @@ const Accommodation = () => {
         </div> */}
       </div>
 
-      <div class="containerCard">
-        <div class="box">
-          <div class="text">
-            <h1>Bali</h1>
-            <p>Pantai Kuta</p>
+      <div class="containerCardAccommodation">
+        <div class="boxAccommodation">
+          <div class="textAccommodation">
+            <h1>Hotel Century</h1>
+            <p>Jakarta</p>
           </div>
         </div>
-        <div class="box two">
-          <div class="text">
-            <h1>Gunung Semeru</h1>
-            <p>Malang</p>
+        <div class="boxAccommodation two">
+          <div class="textAccommodation">
+            <h1>Hotel Tentrem</h1>
+            <p>Semarang</p>
           </div>
         </div>
-        <div class="box three">
-          <div class="text">
-            <h1>Candi Borobudur </h1>
-            <p>Magelang</p>
+        <div class="boxAccommodation three">
+          <div class="textAccommodation">
+            <h1>Pacific Palace Hotel</h1>
+            <p>Batam</p>
           </div>
         </div>
       </div>

@@ -24,24 +24,25 @@ const ObjectTourism = () => {
         </div> */}
       </div>
 
-      <div class="containerCard">
-        <div class="box">
-          <div class="text">
-            <h1>Bali</h1>
-            <p>Pantai Kuta</p>
+      <div class="containerCardObjectTourism">
+        <div class="boxs">
+          <div class="text-objectTourism">
+            <h1>Pantai Kuta</h1>
+            <p>Bali</p>
           </div>
         </div>
-        <div class="box two">
-          <div class="text">
-            <h1>Gunung Semeru</h1>
-            <p>Malang</p>
+        <div class="boxs two-objectTourism">
+          <div class="text-objectTourism">
+            <h1>Candi Borobudur </h1>
+            <p>Magelang</p>
+
           </div>
         </div>
 
-        <div class="box three">
-          <div class="text">
-            <h1>Candi Borobudur </h1>
-            <p>Magelang</p>
+        <div class="boxs three-objectTourism">
+          <div class="text-objectTourism">
+            <h1>Gunung Semeru</h1>
+            <p>Malang</p>
           </div>
         </div>
       </div>
