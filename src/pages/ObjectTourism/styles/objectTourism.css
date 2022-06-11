@@ -116,7 +116,7 @@
 
 
 /**/
-.containerCard {
+.containerCardObjectTourism {
   margin-top: -400px;
   display: flex;
   justify-content: center;
@@ -125,7 +125,7 @@
   position: relative;
 }
 
-.containerCard .box {
+.containerCardObjectTourism .boxs {
   width: 373.33px;
   height: 400px;
   line-height: 1.5;
@@ -138,8 +138,8 @@
 }
 
 
-.box {
-  background-image: url(https://images.unsplash.com/photo-1591003938754-945a23fc30b3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+.boxs {
+  background-image: url('../../../assets/images/pantaikuta.jpg');
   width: 200px;
   height: 300px;
   background-size: cover;
@@ -148,15 +148,15 @@
   border-radius: 8px;
 }
 
-.box h1 {
+.boxs h1 {
   font-size: 20px;
 }
 
-.box p{
+.boxs p{
   font-size: 12px;
 }
 
-.text {
+.text-objectTourism {
   background-color: rgba(0,0,0,.6);
   opacity: 0;
   height: 100%;
@@ -171,17 +171,17 @@
   transition: all .5s;
 }
 
-.text:hover {
+.text-objectTourism:hover {
   opacity: 1;
 }
 
-.box:hover {
+.boxs:hover {
   transform: translateY(20px);
 }
 
-.two {
-  background-image: url(https://images.unsplash.com/photo-1591084261819-7c967caf7d06?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+.two-objectTourism {
+  background-image: url('../../../assets/images/borobudur.jpg');
 }
-.three {
-  background-image: url(https://images.unsplash.com/photo-1592196684243-9e328837adcd?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+.three-objectTourism {
+  background-image: url('../../../assets/images/mount-semeru-indonesia-wallpaper-preview.jpg');
 }
