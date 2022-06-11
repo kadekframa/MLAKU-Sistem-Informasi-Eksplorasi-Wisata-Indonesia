@@ -15,23 +15,21 @@
 
   .hero_tagline {
     position: absolute;
-width: 544px;
-height: 72px;
-left: 752px;
-top: 208px;
-font-family: 'Roboto Flex';
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-color: grey;
+    width: 544px;
+    height: 72px;
+    left: 752px;
+    top: 208px;
+    font-family: 'Roboto Flex';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: grey;
   }
 
 .main {
     width: 100%;
-  margin: 0 auto;
-  flex: 1;
-}
 
+}
 
 .barContainer {
   display: inline-flex;
@@ -47,6 +45,20 @@ color: grey;
   height: 60px;
   border-radius: 40px;
   padding: 10px;
+}
+
+.search-box:hover .input {
+  width: 200px;
+  padding: 0 10px;
+}
+
+.search-box:hover .icon {
+  background: #536179;
+}
+
+.icon:hover {
+  transform: rotate(360deg)
+  scale(0.8) ;
 }
 
 .input {
@@ -101,6 +113,7 @@ color: grey;
   cursor: pointer;
   text-decoration: none;
 }
+
 
 /**/
 .containerCard {

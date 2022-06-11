@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+
+  .hero_title {
+    font-family: 'Roboto Flex', sans-serif;
+    position: absolute;
+    width: 544px;
+    height: 128px;
+    left: 144px;
+    top: 180px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .hero_tagline {
+    position: absolute;
+width: 544px;
+height: 72px;
+left: 752px;
+top: 208px;
+font-family: 'Roboto Flex';
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: grey;
+  }
+
+main {
+    width: 100%;
+  margin: 0 auto;
+  flex: 1;
+}
+
+
+.barContainer {
+  display: inline-flex;
+  min-height: 100vh;
+}
+
+.search-box{
+  margin-top: 300px;
+  margin-left: 300px;
+  background: #2c3441;
+  height: 60px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.input {
+  width: 0;
+  border: none;
+  outline: none;
+  padding: 0;
+  background:none;
+  font-size: 1.1rem;
+  line-height: 40px;
+  color: #fff;
+}
+
+
+
+/**/
+.containerCard {
+    margin-top: -400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.containerCard .box {
+    width: 373.33px;
+    height: 400px;
+    line-height: 1.5;
+    color: #fff;
+    display: flex;
+    border-radius: 8px;
+    /* untuk 3 card */
+    margin-right: 40px;
+    transition: all .5s; 
+}
+
+
+.box {
+    background-image: url(https://images.unsplash.com/photo-1591003938754-945a23fc30b3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 20px rgba(0,0,0,.7);
+    border-radius: 8px;
+}
+
+.box h1 {
+    font-size: 20px;
+}
+
+.box p{
+    font-size: 12px;
+}
+
+.text {
+    background-color: rgba(0,0,0,.6);
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 8px;
+    transition: all .5s;
+}
+
+.text:hover {
+    opacity: 1;
+}
+
+.box:hover {
+    transform: translateY(20px);
+}
+
+.two {
+    background-image: url(https://images.unsplash.com/photo-1591084261819-7c967caf7d06?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+.three {
+    background-image: url(https://images.unsplash.com/photo-1592196684243-9e328837adcd?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
