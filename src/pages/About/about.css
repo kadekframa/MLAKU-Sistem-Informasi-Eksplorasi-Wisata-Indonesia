@@ -39,11 +39,11 @@
 .card-member {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 100%;
+    width: 80%;
     border-radius: 5px;
     margin-left: 50px;
     margin-top: 20px;
-    padding: 15px;
+    padding: 10px;
 }
 
 .card-desc {
@@ -63,25 +63,27 @@ img {
     text-align: center;
 }
 
-.btn-icons{
-    background-color: #8d9bcf !important;
-    border-color: #0e30d8 !important;
-    color: white !important;
-    font-weight: 500 !important;
+.social-media {
+    margin: 0 0 10px;
 }
   
-.btn-icons {
-    background-color: #ffff !important;
-    border-color: #1d13dc !important;
-    color: #5fa9e1 !important;
-    font-weight: 500 !important;
+.bg-light-gray{
+    background-color: #cdcdcd;
 }
   
-.btn-icons:hover {
-    background-color: #717ec1 !important;
-    color: white !important;
+.social-media li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 5px 10px 0;
 }
   
-.btn-icons:hover {
-    background-color: #5ab8ce !important;
+.social-media li a:hover{
+    background-color: #8c99df !important;
+    margin: 0 !important;
+    text-decoration: none;
+    fill: #fff;
+}
+  
+.social-media li a .svg:hover{
+    fill: #fff !important;
 }
