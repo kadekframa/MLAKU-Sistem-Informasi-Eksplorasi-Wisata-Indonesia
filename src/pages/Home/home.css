@@ -1,0 +1,28 @@
+.home-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px 0 84px;
+}
+
+.heading-home {
+    margin: 0 0 40px;
+}
+
+.highlight-wrapper {
+    display: flex;
+    width: 1010px;
+    overflow: hidden;
+    margin-bottom: 64px;
+}
+
+.image-destination-highlight {
+    flex-basis: 100%;
+    max-width: 300px;
+    height:  300px;
+    object-fit: cover;
+    background-size: cover;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 8px 4px rgba(186, 186, 186, 0.7);
+}
