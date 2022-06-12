@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles/objectTourism.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ObjectTourism = () => {
   return (
