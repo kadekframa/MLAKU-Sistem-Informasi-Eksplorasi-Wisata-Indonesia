@@ -60,72 +60,72 @@ main {
 
 
 /**/
-.containerCardCulinary{
-    margin-top: -400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    position: relative;
+.containerCardCulinary {
+  margin-top: -400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
 }
 
 .containerCardCulinary .box {
-    width: 373.33px;
-    height: 400px;
-    line-height: 1.5;
-    color: #fff;
-    display: flex;
-    border-radius: 8px;
-    /* untuk 3 card */
-    margin-right: 40px;
-    transition: all .5s; 
+  width: 373.33px;
+  height: 400px;
+  line-height: 1.5;
+  color: #fff;
+  display: flex;
+  border-radius: 8px;
+  /* untuk 3 card */
+  margin-right: 40px;
+  transition: all .5s; 
 }
 
 
-.box{
-    background-image: url('../../../assets/images/bakso.jpeg');
-    width: 200px;
-    height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 0 10px 20px rgba(0,0,0,.7);
-    border-radius: 8px;
+.box {
+  background-image: url('../../../assets/images/bakso.jpeg');
+  width: 200px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 10px 20px rgba(0,0,0,.7);
+  border-radius: 8px;
 }
 
 .box h1 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .box p{
-    font-size: 12px;
+  font-size: 12px;
+}
+
+.box:hover {
+  transform: translateY(20px);
 }
 
 .textCulinary {
-    background-color: rgba(0,0,0,.6);
-    opacity: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 10px;
-    text-align: center;
-    border-radius: 8px;
-    transition: all .5s;
+  background-color: rgba(0,0,0,.6);
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+  text-align: center;
+  border-radius: 8px;
+  transition: all .5s;
 }
 
 .textCulinary:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
-.boxCulinary:hover {
-    transform: translateY(20px);
-}
-
-.two-Culinary {
-    background-image: url('../../../assets/images/kwetiaw.jpg');
+.two-Culinary{
+  background-image: url('../../../assets/images/kwetiaw.jpg');
 }
 .three-Culinary {
-    background-image: url('../../../assets/images/nasi\ goreng.jpg');
+  background-image: url('../../../assets/images/nasi\ goreng.jpg');
 }
