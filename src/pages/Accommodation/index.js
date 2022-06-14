@@ -1,6 +1,7 @@
 import React from 'react';
 import './Accommodation.css';
 import Input from '../../components/atoms/search-bar';
+import Button from '../../components/atoms/Add-Button';
 
 const Accommodation = () => {
   return (
@@ -15,6 +16,7 @@ const Accommodation = () => {
       <div className='barContainerAccomodation'>
 
         <Input placeholder="Search.." type="text" />
+        <Button children="Tambah" />
 
       </div>
 

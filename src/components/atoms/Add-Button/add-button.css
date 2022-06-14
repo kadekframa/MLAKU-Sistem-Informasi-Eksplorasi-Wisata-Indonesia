@@ -1,0 +1,13 @@
+.addbutton-component {
+    color: white;
+    background: #2c3441;
+    border: 0;
+    font-size: 1.1rem;
+    line-height: 40px;
+    height: 60px;
+    border-radius: 40px;
+    padding: 10px;
+    width: 130px;
+    margin-top: 300px;
+    margin-left: 800px;
+}
