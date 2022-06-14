@@ -1,7 +1,7 @@
 .addbutton-component {
     color: white;
     background: #2c3441;
-    border: 0;
+    border: none;
     font-size: 1.1rem;
     line-height: 40px;
     height: 60px;
