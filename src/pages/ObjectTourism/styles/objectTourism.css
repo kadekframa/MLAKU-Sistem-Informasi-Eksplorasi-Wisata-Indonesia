@@ -35,31 +35,10 @@
   min-height: 100vh;
 }
 
-.search-box-objectTourism{
-  position: absolute;
-  margin-top: 300px;
-  margin-left: 200px;
-  background: #2c3441;
-  height: 60px;
-  border-radius: 40px;
-  padding: 10px;
-}
-
-.inputobjectTourism {
-width: 200px;
-padding: 0 10px;
-border: none;
-outline: none;
-background:none;
-font-size: 1.1rem;
-line-height: 40px;
-color: #fff;
-}
-
 
 /**/
 .containerCardObjectTourism {
-  margin-top: -400px;
+  margin-top: -370px;
   margin-left: 50px;
   display: flex;
   justify-content: center;

@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles/objectTourism.css'
+import Input from '../../components/atoms/search-bar';
 
 
 const ObjectTourism = () => {
@@ -12,8 +13,12 @@ const ObjectTourism = () => {
       </div>
 
       <div className='barContaineroBbjectTourism'>
-        <div className='search-box-objectTourism'>
-          <input className='inputobjectTourism' typeof='text' placeholder='Search' />
+
+        <Input placeholder="Search.." type="text" />
+
+
+        <div className='add-box-objectTourism'>
+          <Input placeholder="Search.." type="text" />
         </div>
       </div>
 
