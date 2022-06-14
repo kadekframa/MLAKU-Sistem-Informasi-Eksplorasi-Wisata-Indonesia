@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/objectTourism.css'
 import Input from '../../components/atoms/search-bar';
+import Button from '../../components/atoms/Add-Button';
 
 
 const ObjectTourism = () => {
@@ -16,10 +17,7 @@ const ObjectTourism = () => {
 
         <Input placeholder="Search.." type="text" />
 
-
-        <div className='add-box-objectTourism'>
-          <Input placeholder="Search.." type="text" />
-        </div>
+        <Button children="Tambah" />
       </div>
 
       <div className='containerCardObjectTourism'>

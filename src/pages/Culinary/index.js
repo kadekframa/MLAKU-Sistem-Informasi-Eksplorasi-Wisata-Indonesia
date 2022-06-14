@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/Culinary.css';
 import Input from '../../components/atoms/search-bar';
+import Button from '../../components/atoms/Add-Button';
 
 const Culinary = () => {
   return (
@@ -12,6 +13,8 @@ const Culinary = () => {
       </div>
       <div className='barContainerCulinary'>
         <Input placeholder="Search.." type="text" />
+
+        <Button children="Tambah" />
       </div>
 
       <div className='containerCardCulinary'>
