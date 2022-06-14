@@ -1,11 +1,10 @@
 import React from "react";
-import './addCulinary.css'
+import './addObjectTourism.css'
 import Button from "../../components/atoms/Button";
 
-const AddCulinary = () => {
+const AddObjectTourism = () => {
     return (
         <div className="main">
-
             <div class="addGambarContainer">
                 <i class="fa-solid fa-image fa-3x" id="icon"></i>
                 <h5>Tambahkan Gambar</h5>
@@ -13,7 +12,7 @@ const AddCulinary = () => {
 
             <div class="container">
                 <div class="containerKiri">
-                    <h2 id="judul">Nama Kuliner</h2>
+                    <h2 id="judul">Nama Destinasi</h2>
 
                     <div class="dropdownContainer">
                         <div class="dropdown1">
@@ -89,6 +88,9 @@ const AddCulinary = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="containerKanan">
                     <div class="jadwalBuka">
                         <h4 id="hariBuka">Hari Buka</h4>
                         <span>
@@ -99,23 +101,6 @@ const AddCulinary = () => {
                             <h4 id="haritiga">Senin-Minggu</h4>
                             <h4 id="hariempat"> Setiap Hari</h4>
                         </span>
-                    </div>
-                </div>
-
-                <div class="containerKanan">
-                    <div class="containerHarga">
-                        <h4>Kisaran Harga</h4>
-
-                        <div class="inputContainerHarga">
-                            <div class="input-group">
-                                <input type="text" id="name" required class="inputharga1"></input>
-                                <label for="name" class="input-label-harga1"> Rp.... </label>
-                            </div>
-                            <div class="input-group" id="inputharga2">
-                                <input type="text" id="name" required class="inputharga2"></input>
-                                <label for="name" class="input-label-harga2"> Rp...</label>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="contactPerson">
@@ -166,6 +151,6 @@ const AddCulinary = () => {
             </div>
         </div>
     )
-};
+}
 
-export default AddCulinary;
+export default AddObjectTourism; 
