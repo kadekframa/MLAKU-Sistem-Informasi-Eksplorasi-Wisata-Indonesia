@@ -28,96 +28,39 @@
 
 .main {
     width: 100%;
-
 }
 
-.barContainer {
+.barContaineroBbjectTourism {
   display: inline-flex;
   min-height: 100vh;
 }
 
-.search-box{
+.search-box-objectTourism{
   position: absolute;
   margin-top: 300px;
-  margin-left: 300px;
-  transform: translate(-50%, -50%);
+  margin-left: 200px;
   background: #2c3441;
   height: 60px;
   border-radius: 40px;
   padding: 10px;
 }
 
-.search-box:hover .input {
-  width: 200px;
-  padding: 0 10px;
-}
-
-.search-box:hover .icon {
-  background: #536179;
-}
-
-.icon:hover {
-  transform: rotate(360deg)
-  scale(0.8) ;
-}
-
-.input {
-  width: 0;
-  border: none;
-  outline: none;
-  padding: 0;
-  background:none;
-  font-size: 1.1rem;
-  transition: 0.5s ease;
-  line-height: 40px;
-  color: #fff;
-}
-
-.icon{
-  color: #21dfcd;
-  float: right;
-  width: 40px;
-  font-size: 1.3rem;
-  height: 40px;
-  border-radius: 50%;
-  background: #2f3640;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.4s;
-  cursor: pointer;
-  text-decoration: none;
-  padding: 10px;
-}
-
-/* Add Bar*/
-#icon:hover {
-  transform: rotate(360deg)
-  scale(0.8) ;
-}
-
-#icon{
-  position: absolute;
-  color: #21dfcd;
-  width: 60px;
-  height: 60px;
-  margin-top: 270px;
-  margin-left: 900px;
-  font-size: 1.3rem;
-  border-radius: 50%;
-  background: #2f3640;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.4s;
-  cursor: pointer;
-  text-decoration: none;
+.inputobjectTourism {
+width: 200px;
+padding: 0 10px;
+border: none;
+outline: none;
+background:none;
+font-size: 1.1rem;
+line-height: 40px;
+color: #fff;
 }
 
 
 /**/
 .containerCardObjectTourism {
   margin-top: -400px;
+  margin-left: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
