@@ -35,32 +35,10 @@ main {
 .barContainerCulinary {
   display: inline-flex;
   min-height: 100vh;
-}
-
-.search-box-culinary{
-  position: absolute;
-  margin-top: 300px;
-  margin-left: 200px;
-  background: #2c3441;
-  height: 60px;
-  border-radius: 40px;
-  padding: 10px;
-}
-
-.inputCulinary {
-width: 200px;
-padding: 0 10px;
-border: none;
-outline: none;
-background:none;
-font-size: 1.1rem;
-line-height: 40px;
-color: #fff;
-}
-
+} 
 /**/
 .containerCardCulinary {
-  margin-top: -400px;
+ margin-top: -370px;
   margin-left: 50px;
   display: flex;
   justify-content: center;

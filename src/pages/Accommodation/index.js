@@ -1,5 +1,6 @@
 import React from 'react';
 import './Accommodation.css';
+import Input from '../../components/atoms/search-bar';
 
 const Accommodation = () => {
   return (
@@ -12,9 +13,9 @@ const Accommodation = () => {
       </div>
 
       <div className='barContainerAccomodation'>
-        <div className='search-box-accomodation'>
-          <input className='inputAccomodation' typeof='text' placeholder='Search' />
-        </div>
+
+        <Input placeholder="Search.." type="text" />
+
       </div>
 
       <div className='containerCardAccommodation'>
