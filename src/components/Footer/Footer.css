@@ -4,6 +4,8 @@
   }
 
   footer .container {
+    display: flex;
+    flex-direction: column;
     background-color: #2e5070;
     padding-left: 94px;
   }

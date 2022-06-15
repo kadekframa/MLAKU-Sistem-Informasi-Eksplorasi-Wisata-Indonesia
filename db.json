@@ -1,0 +1,63 @@
+{
+    "objects":[
+    {
+        "id": "1",
+        "name": "Desa Penglipuran",
+        "image": "https://www.goodnewsfromindonesia.id/uploads/post/large-screen-shot-2020-10-01-at-19-09-34-0a6fef76ae1925e9a85791cdba6f63a9.jpg",
+        "description": "Desa Penglipuran merupakan desa yang terletak di Kabupaten Bangli, Bali",
+        "address": "Kabupaten Bangli, Bali",
+        "open-time": "08.00 - 18.00",
+        "guide": "Made Suteja",
+        "website": "https://www.google.com"
+    },
+    {
+        "id": "2",
+        "name": "Garuda Wisnu Kencana",
+        "image": "https://img.okezone.com/content/2021/08/26/408/2461765/fakta-fakta-unik-garuda-wisnu-kencana-bali-sejarah-hingga-daya-tariknya-La8CtGp8qU.jpg",
+        "description": "GWK merupkan Object wisata yang terletak di Kabupaten Badun, Bali",
+        "address": "Kabupaten Badung, Bali",
+        "open-time": "08.00 - 18.00",
+        "guide": "Nyoman Kamajaya",
+        "website": "https://www.google.com"
+    },
+    {
+        "id": "3",
+        "name": "Kaldera Gunung Batur",
+        "image": "https://www.guidegunungbatur.com/wp-content/uploads/2021/06/harga-mendaki-gunung-batur-600x450.jpg",
+        "description": "Object wisata pendakian gunung batur terletak di Kintamani, Kabupaten Bangli, Bali",
+        "address": "Kabupaten Bangli, Bali",
+        "open-time": "24 Jam",
+        "guide": "Putu Sukarna",
+        "website": "https://www.google.com"
+    },
+    {
+        "id": "4",
+        "name": "Desa Penglipuran",
+        "image": "https://www.goodnewsfromindonesia.id/uploads/post/large-screen-shot-2020-10-01-at-19-09-34-0a6fef76ae1925e9a85791cdba6f63a9.jpg",
+        "description": "Desa Penglipuran merupakan desa yang terletak di Kabupaten Bangli, Bali",
+        "address": "Kabupaten Bangli, Bali",
+        "open-time": "08.00 - 18.00",
+        "guide": "Made Suteja",
+        "website": "https://www.google.com"
+    },
+    {
+        "id": "5",
+        "name": "Garuda Wisnu Kencana",
+        "image": "https://img.okezone.com/content/2021/08/26/408/2461765/fakta-fakta-unik-garuda-wisnu-kencana-bali-sejarah-hingga-daya-tariknya-La8CtGp8qU.jpg",
+        "description": "GWK merupkan Object wisata yang terletak di Kabupaten Badun, Bali",
+        "address": "Kabupaten Badung, Bali",
+        "open-time": "08.00 - 18.00",
+        "guide": "Nyoman Kamajaya",
+        "website": "https://www.google.com"
+    },
+    {
+        "id": "6",
+        "name": "Kaldera Gunung Batur",
+        "image": "https://www.guidegunungbatur.com/wp-content/uploads/2021/06/harga-mendaki-gunung-batur-600x450.jpg",
+        "description": "Object wisata pendakian gunung batur terletak di Kintamani, Kabupaten Bangli, Bali",
+        "address": "Kabupaten Bangli, Bali",
+        "open-time": "24 Jam",
+        "guide": "Putu Sukarna",
+        "website": "https://www.google.com"
+    }]
+}

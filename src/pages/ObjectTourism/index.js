@@ -1,49 +1,52 @@
 import React from 'react'
-import './styles/objectTourism.css'
-import Input from '../../components/atoms/search-bar';
-import Button from '../../components/atoms/Add-Button';
+import './object-tourism.css'
+// import Input from '../../components/atoms/search-bar';
+// import Button from '../../components/atoms/Add-Button';
+import ObjectTourismCard from '../../components/ObjectTourismCard';
 
+class ObjectTourism extends React.Component {
+  constructor(props){
+    super(props);
 
-const ObjectTourism = () => {
-  return (
-    <div className='main'>
-      <div className='hero_text'>
-        <h1 className='hero_title'>Objek Wisata Terbaik di Indonesia</h1>
-        <p className='hero_tagline'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-          officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-      </div>
+    this.state = {
+      objects: []
+    }
+  }
 
-      <div className='barContaineroBbjectTourism'>
+  getDataObject() {
+    this.setState({
+      loading: true
+    }, () => {
+      fetch("http://localhost:3001/objects")
+        .then(response => response.json())
+        .then(result => this.setState({
+          objects: result
+        }))
+        .catch(console.info);
+    });
+  }
 
-        <Input placeholder="Search.." type="text" />
+  componentDidMount() {
+    this.getDataObject();
+  }
 
-        <Button children="Tambah" />
-      </div>
-
-      <div className='containerCardObjectTourism'>
-        <div className='boxs'>
-          <div className='text-objectTourism'>
-            <h1>Pantai Kuta</h1>
-            <p>Bali</p>
-          </div>
+  render(){
+    return (
+      <div className='object-tourism-wrapper'>
+        <div>
+          <h2>Object Component Testing</h2>
+          <hr/>
+          {
+            this.state.objects.map(object => {
+              return (
+                  <ObjectTourismCard key={object.id} {...object} />
+              )
+            })
+          }
         </div>
-
-        <div className='boxs two-objectTourism'>
-          <div className='text-objectTourism'>
-            <h1>Candi Borobudur </h1>
-            <p>Magelang</p>
-          </div>
-        </div>
-
-        <div className='boxs three-objectTourism'>
-          <div className='text-objectTourism'>
-            <h1>Gunung Semeru</h1>
-            <p>Malang</p>
-          </div>
-        </div>
-      </div>
-    </div >
-  )
+      </div >
+    )
+  }
 }
 
 export default ObjectTourism;
