@@ -3,7 +3,7 @@ import { Button, Form, FormGroup, FormText, Input, Label } from 'reactstrap';
 // import { Input, Button, Upload, TextArea, Gap } from '../../components';
 import Axios from 'axios';
 import "./addObjectTourism.css";
-import { createObjectTourism } from '../../utils/templates/ObjectTourismListHelper';
+import { createObjectTourism } from '../../utils/ObjectTourismHandler';
 
 const AddObjectTourism = () => {
     const [destinationName, setDestinationName] = useState('');
@@ -25,26 +25,18 @@ const AddObjectTourism = () => {
       console.info('destinationName:', destinationName);
       console.info('image:', image);
 
-      const data = new FormData();
-      data.append('dest_name', destinationName);
-      data.append('address', address);
-      data.append('image', image);
-      data.append('desc', description);
-      data.append('open_time', openTime);
-      data.append('open_day', openDay);
-      data.append('contact_number', contactNumber);
+      const objectTourism = {
+        destinationName,
+        address,
+        image,
+        imagePreview,
+        description,
+        openTime,
+        openDay,
+        contactNumber,
+      };
 
-      Axios.post('http://localhost:4000/v1/object-tourism/', data, {
-        headers: {
-          'content-type': 'multipart/form-data'
-        }
-      })
-        .then(res => {
-          console.info('post success: ', res)
-        })
-        .catch(err => {
-          console.info('err: ', err)
-        })
+      createObjectTourism(objectTourism);
     }
   return (
     <main className='container add-object-wrapper'>
@@ -64,7 +56,7 @@ const AddObjectTourism = () => {
               <FormGroup>
                 <Label for="image">Image Destination</Label>
                 {image && <img className="preview d-block mb-3" src={imagePreview} alt="preview" />}
-                <Input id="image" name="poster" type="file" onChange={e => onImageUpload(e)} required />
+                <Input id="image" name="image" type="file" onChange={e => onImageUpload(e)} required />
                 <FormText>&#8505; Tampilkan foto terbaik dari Destination Wisata yang ingin datambahkan.</FormText>
               </FormGroup>
 

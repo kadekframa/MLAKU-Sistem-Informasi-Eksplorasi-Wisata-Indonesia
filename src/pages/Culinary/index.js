@@ -1,47 +1,36 @@
-import React from 'react';
-import './styles/Culinary.css';
-import Input from '../../components/atoms/search-bar';
-import Button from '../../components/atoms/Add-Button';
+import React, { useState, useEffect } from 'react';
+import './culinary.css';
+import { getAllCulinary } from '../../utils/CulinaryHandler';
+import { createCulinaryList, addCulinaryButtonCreator } from '../../utils/templates/CulinaryListHelper';
 
 const Culinary = () => {
+  const [dataCulinary, setDataCulinary] = useState([]);
+
+  useEffect(() => {
+    getAllCulinary()
+      .then(response => {
+        setDataCulinary(response.data);
+      })
+  })
+
+  const culinaryList = createCulinaryList(dataCulinary);
+  const addCulinaryButton = addCulinaryButtonCreator();
+
+  
   return (
-    <div className='main'>
-      <div className='hero_text'>
-        <h1 className='hero_title'>Rasakan Wisata Kuliner Indonesia</h1>
-        <p className='hero_tagline'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-          officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-      </div>
-      <div className='barContainerCulinary'>
-        <Input placeholder="Search.." type="text" />
-
-        <Button children="Tambah" />
+    <main className='container culinary-wrapper'>
+      <div className='tex-center mb-4'>
+        <h1 className='fw-normal'>Object Tourism</h1>
       </div>
 
-      <div className='containerCardCulinary'>
-
-        <div className='box'>
-          <div className='textCulinary'>
-            <h1>Bakso</h1>
-            <p>Solo</p>
-          </div>
-        </div>
-
-        <div className='box two-Culinary'>
-          <div className='textCulinary'>
-            <h1>Kwetiau Goreng</h1>
-            <p>Malang</p>
-          </div>
-        </div>
-
-        <div className='box three-Culinary'>
-          <div className=' textCulinary'>
-            <h1>Nasi Goreng </h1>
-            <p>Magelang</p>
-          </div>
-        </div>
-
+      <div className='d-flex justify-content-end mb-4'>
+        { addCulinaryButton }
       </div>
-    </div >
+
+      <div className='row'>
+        { culinaryList }
+      </div>
+    </main>
   )
 }
 

@@ -1,0 +1,8 @@
+.culinary-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1134px !important;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}

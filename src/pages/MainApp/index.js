@@ -11,11 +11,11 @@ const MainApp = () => {
         <Swicth>
           <Route exact path='/' element={<Home />} />
           <Route path='/object-tourism' element={<ObjectTourism />} />
-          <Route path='/add-object-tourism' element={<AddObjectTourism />} />
+          <Route path='/object-tourism/add' element={<AddObjectTourism />} />
           <Route path='/culinary' element={<Culinary />} />
-          <Route path='/add-culinary' element={<AddCulinary />} />
+          <Route path='/culinary/add' element={<AddCulinary />} />
           <Route path='/accommodation' element={<Accommodation />} />
-          <Route path='/add-accomodation' element={<AddAccomodation />} />
+          <Route path='/accomodation/add' element={<AddAccomodation />} />
           <Route path='/about' element={<About />} />
         </Swicth>
       </div>

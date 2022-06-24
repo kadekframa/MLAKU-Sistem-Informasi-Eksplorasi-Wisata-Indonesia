@@ -19,7 +19,7 @@ const createObjectTourismList = (dataObjectTourism) => {
 
 const addObjectTourismButtonCreator = () => {
     return(
-        <Link to="/add-object-tourism" className='btn btn-success'>Add Object Tourism</Link>
+        <Link to="/object-tourism/add" className='btn btn-success'>Add Object Tourism</Link>
     )
 }
 

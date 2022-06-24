@@ -1,23 +1,35 @@
-import axios from 'axios';
+import Axios from 'axios';
 
 const createObjectTourism = (dataObjectTourism) => {
-    const {dest_name, address, image, desc, open_time, open_day, contact_number} = dataObjectTourism;
-    const formData = new FormData();
-    formData.append('dest_name', dest_name);
-    formData.append('address', address);
-    formData.append('image', image);
-    formData.append('desc', desc);
-    formData.append('open_time', open_time);
-    formData.append('open_day', open_day);
-    formData.append('contact_number', contact_number);
+    const {destinationName, address, image, description, openTime, openDay, contactNumber} = dataObjectTourism;
+    const data = new FormData();
+    data.append('dest_name', destinationName);
+    data.append('address', address);
+    data.append('image', image);
+    data.append('desc', description);
+    data.append('open_time', openTime);
+    data.append('open_day', openDay);
+    data.append('contact_number', contactNumber);
+
+    Axios.post('http://localhost:4000/v1/object-tourism/', data, {
+      headers: {
+        'content-type': 'multipart/form-data'
+      }
+    })
+      .then(res => {
+        console.info('post success: ', res)
+      })
+      .catch(err => {
+        console.info('err: ', err)
+      })
 }
 
 const getAllObjectTourism = async () => {
-    const response = await axios.get('http://localhost:4000/v1/object-tourism/');
+    const response = await Axios.get('http://localhost:4000/v1/object-tourism/');
     return response.data;
 }
 const getDetailObjectTourism = async (id) => {
-    const response = await axios.get(`http://localhost:4000/v1/object-tourism/${id}`);
+    const response = await Axios.get(`http://localhost:4000/v1/object-tourism/${id}`);
     return response.data;
 }
 

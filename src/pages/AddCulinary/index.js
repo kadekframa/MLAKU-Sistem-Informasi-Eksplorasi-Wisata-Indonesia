@@ -1,171 +1,93 @@
-import React from "react";
-import './addCulinary.css'
-import Button from "../../components/atoms/Button";
+import React, { useState,useEffect } from 'react';
+import { Button, Form, FormGroup, FormText, Input, Label } from 'reactstrap';
+// import { Input, Button, Upload, TextArea, Gap } from '../../components';
+import Axios from 'axios';
+import "./addCulinary.css";
+import { createCulinary } from '../../utils/CulinaryHandler';
 
 const AddCulinary = () => {
-    return (
-        <div className="main">
+    const [culinaryName, setCulinarynName] = useState('');
+    const [address, setAddress] = useState('');
+    const [image, setImage] = useState('');
+    const [imagePreview, setImagePreview] = useState(null);
+    const [description, setDescription] = useState('');
+    const [openTime, setOpenTime] = useState('');
+    const [openDay, setOpenDay] = useState('');
+    const [contactNumber, setContactNumber] = useState('');
 
-            <div class="addGambarContainer">
-                <i class="fa-solid fa-image fa-3x" id="icon"></i>
-                <h5>Tambahkan Gambar</h5>
-            </div>
+    const onImageUpload = (e) => {
+      const file = e.target.files[0];
+      setImage(file);
+      setImagePreview(URL.createObjectURL(file));
+    }
 
-            <div class="container">
-                <div class="containerKiri">
-                    <h2 id="judul">Nama Kuliner</h2>
+    const onSubmit = () => {
+      console.info('culinaryName:', culinaryName);
+      console.info('image:', image);
 
-                    <div class="dropdownContainer">
-                        <div class="dropdown1">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Kategori
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="##">Action</a></li>
-                                    <li><a class="dropdown-item" href="##">Another action</a></li>
-                                    <li><a class="dropdown-item" href="##">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </div>
+      const culinaryTourism = {
+        culinaryName,
+        address,
+        image,
+        imagePreview,
+        description,
+        openTime,
+        openDay,
+        contactNumber,
+      };
 
-                        <div class="dropdown2">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Kota
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="##">Action</a></li>
-                                    <li><a class="dropdown-item" href="##">Another action</a></li>
-                                    <li><a class="dropdown-item" href="##">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+      createCulinary(culinaryTourism);
+    }
+  return (
+    <main className='container culinary-wrapper'>
+        <h1>Create Culinary</h1>
+        <div className='container mb-5 mt-5 form-wrapper'>
+            <Form>
+              <FormGroup>
+                <Label>Culinary Name</Label>
+                <Input value={culinaryName} onChange={e => setCulinarynName(e.target.value)} required />
+              </FormGroup>
 
+              <FormGroup>
+                <Label>Address</Label>
+                <Input value={address} onChange={e => setAddress(e.target.value)} required />
+              </FormGroup>
 
-                    <div class="inputContainer">
-                        <div class="input-group">
-                            <input type="text" id="name" required class="inputOne"></input>
-                            <label for="name" class="input-label-one"> Alamat</label>
-                        </div>
+              <FormGroup>
+                <Label for="image">Image Culinary</Label>
+                {image && <img className="preview d-block mb-3" src={imagePreview} alt="preview" />}
+                <Input id="image" name="image" type="file" onChange={e => onImageUpload(e)} required />
+                <FormText>&#8505; Tampilkan foto terbaik dari Culinary yang ingin datambahkan.</FormText>
+              </FormGroup>
 
-                        <div class="input-group">
-                            <input type="text" id="name" required class="inputTwo"></input>
-                            <label for="name" class="input-label-two"> Deskripsi tempat wisata...</label>
-                        </div>
-                    </div>
+              <FormGroup>
+                <Label for="description">Deskripsi</Label>
+                <textarea className="form-control" name="description" id="description" rows="10" value={description} onChange={e => setDescription(e.target.value)} required></textarea>
+                <FormText>&#8505; Berikan deskripsi informasi dari culinary yang ditambahkan agar orang lain tertarik untuk mengunjunginya.</FormText>
+              </FormGroup>
 
-                    <div class="jamOperasi">
-                        <div class="dropdown3">
-                            <div class="dropdown">
-                                <h4 id="jamBuka">Jam Buka</h4>
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    10:00
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="##">Action</a></li>
-                                    <li><a class="dropdown-item" href="##">Another action</a></li>
-                                    <li><a class="dropdown-item" href="##">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </div>
+              <FormGroup>
+                <Label>Open Time</Label>
+                <Input value={openTime} onChange={e => setOpenTime(e.target.value)} required />
+              </FormGroup>
 
-                        <div class="dropdown4">
-                            <div class="dropdown">
-                                <h4 id="jamTutup">Jam Tutup</h4>
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    17:00
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="##">Action</a></li>
-                                    <li><a class="dropdown-item" href="##">Another action</a></li>
-                                    <li><a class="dropdown-item" href="##">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="jadwalBuka">
-                        <h4 id="hariBuka">Hari Buka</h4>
-                        <span>
-                            <h4 id="harisatu">Senin-Jumat</h4>
-                            <h4 id="haridua">Senin-Sabtu</h4>
-                        </span>
-                        <span>
-                            <h4 id="haritiga">Senin-Minggu</h4>
-                            <h4 id="hariempat"> Setiap Hari</h4>
-                        </span>
-                    </div>
-                </div>
+              <FormGroup>
+                <Label>Open Day</Label>
+                <Input value={openDay} onChange={e => setOpenDay(e.target.value)} required />
+              </FormGroup>
 
-                <div class="containerKanan">
-                    <div class="containerHarga">
-                        <h4>Kisaran Harga</h4>
+              <FormGroup>
+                <Label>Contact Number</Label>
+                <Input value={contactNumber} onChange={e => setContactNumber(e.target.value)} required />
+              </FormGroup>
 
-                        <div class="inputContainerHarga">
-                            <div class="input-group">
-                                <input type="text" id="name" required class="inputharga1"></input>
-                                <label for="name" class="input-label-harga1"> Rp.... </label>
-                            </div>
-                            <div class="input-group" id="inputharga2">
-                                <input type="text" id="name" required class="inputharga2"></input>
-                                <label for="name" class="input-label-harga2"> Rp...</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="contactPerson">
-                        <h4>Kontak yang bisa dihubungi</h4>
-                        <div class="addIcon1">
-                            <a href="##" id="addIcon1">
-                                <i class="fa-solid fa-user-plus"></i>
-                            </a>
-                        </div>
-
-                        <div class="inputContainer1">
-                            <div class="input-group">
-                                <input type="text" id="name" required class="inputnama1"></input>
-                                <label for="name" class="input-label-name1"> Nama </label>
-                            </div>
-                            <div class="input-group" id="inputhp1">
-                                <input type="text" id="name" required class="inputhp1"></input>
-                                <label for="name" class="input-label-hp1"> Nomor HP </label>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="sewaTourGuide">
-                        <h4>Sewa Tour Guide</h4>
-                        <div class="addIcon2">
-                            <a href="##" id="addIcon2">
-                                <i class="fa-solid fa-user-plus"></i>
-                            </a>
-                        </div>
-                        <div class="inputContainer2">
-                            <div class="input-group">
-                                <input type="text" id="name" required class="inputnama2"></input>
-                                <label for="name" class="input-label-name2"> Nama </label>
-                            </div>
-                            <div class="input-group">
-                                <input type="text" id="name" required class="inputhp2"></input>
-                                <label for="name" class="input-label-hp2"> Nomor HP </label>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="save">
-                        <Button children="Simpan" />
-                    </div>
-                </div>
-            </div>
+              <div className="d-flex justify-content-end">          
+                <Button color="success" className="mt-4 px-4 py-2"onClick={onSubmit}>Add</Button>
+              </div>
+            </Form>
         </div>
-    )
-};
+    </main>
+  )
+}
 
 export default AddCulinary;
