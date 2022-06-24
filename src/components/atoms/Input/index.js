@@ -1,10 +1,10 @@
 import React from 'react';
 import './Input.css'
 
-const Input = (props) => {
+const Input = (props, {...rest}) => {
   return (
     <div>
-      <input className='input-component' placeholder={props.placeholder} type={props.type} />
+      <input className='input-component' {...rest} placeholder={props.placeholder} type={props.type} />
     </div>
   )
 }

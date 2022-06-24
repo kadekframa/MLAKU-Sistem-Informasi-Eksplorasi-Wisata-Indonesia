@@ -1,5 +1,6 @@
 .component-wrapper {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 346px;
     box-sizing: border-box;
     margin: 16px 16px 24px;
@@ -38,4 +39,12 @@
     font-size: 16px;
     text-transform: capitalize;
     margin: 0;
+}
+
+.component-wrapper .btn-remove {
+    padding: 6px 10px;
+    background-color: rgb(184, 0, 0);
+    border-radius: 10px;
+    border: 0;
+    color: white;
 }

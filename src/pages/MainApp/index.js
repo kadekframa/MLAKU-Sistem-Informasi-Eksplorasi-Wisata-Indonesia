@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes as Swicth, Route } from 'react-router-dom';
 import { Navigation, Footer } from '../../components';
-import { About, Home, ObjectTourism, Culinary, Accommodation, AddObjectTourism, AddCulinary, AddAccomodation } from '..';
+import { About, Home, ObjectTourism, Culinary, Accommodation, AddObjectTourism, AddCulinary, AddAccomodation } from '../';
 
 const MainApp = () => {
   return (

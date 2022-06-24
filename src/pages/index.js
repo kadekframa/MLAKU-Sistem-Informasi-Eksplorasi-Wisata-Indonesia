@@ -6,7 +6,7 @@ import About from "./About";
 import ObjectTourism from "./ObjectTourism";
 import Culinary from "./Culinary";
 import Accommodation from './Accommodation';
-import AddObjectTourism from './addObjectTourism';
+import AddObjectTourism from './AddObjectTourism';
 import AddCulinary from './AddCulinary'
 import AddAccomodation from './AddAccomodation'
 

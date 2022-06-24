@@ -1,52 +1,37 @@
-import React from 'react'
-import './object-tourism.css'
-// import Input from '../../components/atoms/search-bar';
-// import Button from '../../components/atoms/Add-Button';
-import ObjectTourismCard from '../../components/ObjectTourismCard';
+import React, { useState, useEffect } from 'react';
+import './object-tourism.css';
+import { getAllObjectTourism } from '../../utils/ObjectTourismHandler';
+import { createObjectTourismList, addObjectTourismButtonCreator } from '../../utils/templates/ObjectTourismListHelper';
 
-class ObjectTourism extends React.Component {
-  constructor(props){
-    super(props);
+const ObjectTourism = () => {
+  const [dataObjectTourism, setDataObjectTourism] = useState([]);
 
-    this.state = {
-      objects: []
-    }
-  }
+  useEffect(() => {
+    getAllObjectTourism()
+      .then(response => {
+        setDataObjectTourism(response.data);
+      })
+  })
 
-  getDataObject() {
-    this.setState({
-      loading: true
-    }, () => {
-      fetch("http://localhost:3001/objects")
-        .then(response => response.json())
-        .then(result => this.setState({
-          objects: result
-        }))
-        .catch(console.info);
-    });
-  }
+  const objectTourismList = createObjectTourismList(dataObjectTourism);
+  const addObjectTourismButton = addObjectTourismButtonCreator();
 
-  componentDidMount() {
-    this.getDataObject();
-  }
+  
+  return (
+    <main className='container object-tourism-wrapper'>
+      <div className='tex-center mb-4'>
+        <h1 className='fw-normal'>Object Tourism</h1>
+      </div>
 
-  render(){
-    return (
-      <div className='object-tourism-wrapper'>
-        <div>
-          <h2>Object Component Testing</h2>
-          <hr/>
-          {
-            this.state.objects.map(object => {
-              return (
-                  <ObjectTourismCard key={object.id} {...object} />
-              )
-            })
-          }
-        </div>
-      </div >
-    )
-  }
+      <div className='d-flex justify-content-end mb-4'>
+        { addObjectTourismButton }
+      </div>
+
+      <div className='row'>
+        { objectTourismList }
+      </div>
+    </main>
+  )
 }
 
 export default ObjectTourism;
