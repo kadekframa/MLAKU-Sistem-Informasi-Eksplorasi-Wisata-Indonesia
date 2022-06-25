@@ -7,7 +7,7 @@ const createObjectTourismList = (dataObjectTourism) => {
             <div className='col-md-4'>
                 <ObjectTourismCard
                     key={object._id}
-                    id={object._id}
+                    _id={object._id}
                     dest_name={object.dest_name}
                     address={object.address}
                     image={`http://localhost:4000/${object.image}`}

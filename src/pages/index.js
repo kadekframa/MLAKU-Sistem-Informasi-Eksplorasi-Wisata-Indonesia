@@ -1,25 +1,27 @@
 import MainApp from "./MainApp";
-import Login from "./Login";
 import Register from "./Register";
+import Login from "./Login";
 import Home from "./Home";
-import About from "./About";
 import ObjectTourism from "./ObjectTourism";
-import Culinary from "./Culinary";
-import Accommodation from './Accommodation';
 import AddObjectTourism from './AddObjectTourism';
-import AddCulinary from './AddCulinary'
-import AddAccomodation from './AddAccomodation'
+import DetailObjectTourism from './DetailObjectTourism.js';
+import Culinary from "./Culinary";
+import AddCulinary from './AddCulinary';
+import Accommodation from './Accommodation';
+import AddAccomodation from './AddAccomodation';
+import About from "./About";
 
 export {
     MainApp,
-    Login,
     Register,
+    Login,
     Home,
-    About,
     ObjectTourism,
-    Culinary,
-    Accommodation,
     AddObjectTourism,
+    DetailObjectTourism,
+    Culinary,
     AddCulinary,
-    AddAccomodation
+    Accommodation,
+    AddAccomodation,
+    About,
 };

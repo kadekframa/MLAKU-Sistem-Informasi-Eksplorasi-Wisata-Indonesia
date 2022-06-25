@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import CulinaryCard from '../../components/ObjectTourismCard';
+import CulinaryCard from '../../components/CulinaryCard';
 
 const createCulinaryList = (dataCulinary) => {
     return dataCulinary.map(culinary => {
@@ -8,7 +8,7 @@ const createCulinaryList = (dataCulinary) => {
                 <CulinaryCard
                     key={culinary._id}
                     id={culinary._id}
-                    dest_name={culinary.dest_name}
+                    culinary_name={culinary.culinary_name}
                     address={culinary.address}
                     image={`http://localhost:4000/${culinary.image}`}
                 />

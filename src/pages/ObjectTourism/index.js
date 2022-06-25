@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {Row, Col} from 'reactstrap';
 import './object-tourism.css';
 import { getAllObjectTourism } from '../../utils/ObjectTourismHandler';
 import { createObjectTourismList, addObjectTourismButtonCreator } from '../../utils/templates/ObjectTourismListHelper';

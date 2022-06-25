@@ -20,7 +20,7 @@ const Culinary = () => {
   return (
     <main className='container culinary-wrapper'>
       <div className='tex-center mb-4'>
-        <h1 className='fw-normal'>Object Tourism</h1>
+        <h1 className='fw-normal'>Culinary</h1>
       </div>
 
       <div className='d-flex justify-content-end mb-4'>
