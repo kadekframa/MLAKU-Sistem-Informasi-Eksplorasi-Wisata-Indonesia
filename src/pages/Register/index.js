@@ -1,11 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react'
+import { Button, Form, Input } from 'reactstrap'
 import Gap from '../../components/atoms/Gap';
-import Input from '../../components/atoms/Input';
-import Button from '../../components/atoms/Button';
 import Logo from '../../assets/images/mlaku-logo.png';
-import './Register.css'
 
-const Register = () => {
+import { registerUser } from '../../utils/AuthHandler'
+import "./Register.css"
+
+
+const Register = (props) => {
+  const [fullname, setFullname] = useState('');
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const onSubmit = () => {
+    const user = {
+      fullname,
+      username,
+      email,
+      password,
+    };
+
+    registerUser(user);
+  }
+
+  if (props.user) {
+    return window.location.href = '/';
+  }
+
   return (
     <div className='register-wrapper'>
       <div className='left'>
@@ -21,23 +43,26 @@ const Register = () => {
         <div className='form-register-wrapper'>
           <h1>Register</h1>
           <p className='register-desc'>Silahkan register terlebih dahulu!</p>
-          <Gap height={20} />
-          <Input placeholder="Full Name" type="text" />
-          <Gap height={15} />
-          <Input placeholder="Email" type="email" />
-          <Gap height={15} />
-          <Input placeholder="Username" type="text" />
-          <Gap height={15} />
-          <Input placeholder="Password" type="password" />
-          <Gap height={36} />
-          <Button children="Sign Up" />
-          <Gap height={10} />
-          <p className='login'>Sudah punya akun? <a href="/login">Login</a></p>
-          <Gap height={100} />
+          <Form>
+            <Gap height={20} />
+            <Input id="name" placeholder='Fullname' name="name" type="text" onChange={(e) => setFullname(e.target.value)} />
+            <Gap height={20} />
+            <Input id="username" placeholder='Username' name="username" type="text" onChange={(e) => setUsername(e.target.value)} />
+            <Gap height={20} />
+            <Input id="email" placeholder='Email' name="email" type="text" onChange={(e) => setEmail(e.target.value)} />
+            <Gap height={20} />
+            <Input id="password" placeholder='Password' name="password" type="password" onChange={(e) => setPassword(e.target.value)} />
+            <Gap height={20} />
+            <div className="d-grid mt-2 mb-4">
+              <Button color="primary" onClick={onSubmit}>Daftar</Button>
+            </div>
+            <p className='m-0'>Sudah punya akun? <a href="/login">Login</a></p>
+
+          </Form>
         </div>
       </div>
     </div>
   )
 }
 
-export default Register;
+export default Register
