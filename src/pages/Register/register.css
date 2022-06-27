@@ -81,3 +81,26 @@
     text-decoration: none;
 }
 
+.form-register-wrapper input {
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgb(180, 180, 180);
+    width: 94%;
+    font-size: 14px;
+}
+
+.form-register-wrapper button {
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(69, 107, 163) ;
+    padding: 12px;
+    border-radius: 24px;
+    border: 0;
+    font-weight: bold;
+}
+
+.form-register-wrapper:active button {
+    background-color: rgb(96, 146, 223) ;
+}
+

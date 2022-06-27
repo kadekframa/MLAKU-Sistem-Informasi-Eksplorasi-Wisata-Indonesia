@@ -1,11 +1,29 @@
-import React from 'react';
-import Input from '../../components/atoms/Input';
+import React, { useState } from 'react'
 import Gap from '../../components/atoms/Gap';
-import Button from '../../components/atoms/Button';
 import Logo from '../../assets/images/mlaku-logo.png';
-import './Login.css'
+import { loginUser } from '../../utils/AuthHandler';
+import { Button, Form, Input } from 'reactstrap'
+import './Login.css';
 
-const Login = () => {
+
+const Login = (props) => {
+
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  const onSubmit = () => {
+    const user = {
+      username,
+      password,
+    };
+
+    loginUser(user);
+  }
+
+  if (props.user) {
+    return window.location.href = '/';
+  }
+
   return (
     <div className='login-wrapper'>
       <div className='left'>
@@ -21,15 +39,18 @@ const Login = () => {
         <div className='form-login-wrapper'>
           <h1>Login</h1>
           <p className='login-desc'>Silahkan login terlebih dahulu!</p>
-          <Gap height={20} />
-          <Input placeholder="Username" type="text" />
-          <Gap height={15} />
-          <Input placeholder="Password" type="password" />
-          <Gap height={36} />
-          <Button children="Login" />
-          <Gap height={10} />
-          <p className='sign-up'>Belum punya akun? <a href="/register">Sign Up</a></p>
-          <Gap height={100} />
+          <Form>
+            <Gap height={20} />
+            <Input id="username" placeholder='Username' name="username" type="text" onChange={(e) => setUsername(e.target.value)} />
+            <Gap height={20} />
+            <Input id="password" placeholder='Password' name="password" type="password" onChange={(e) => setPassword(e.target.value)} />
+            <Gap height={20} />
+            <div className="d-grid mt-2 mb-4">
+              <Button color="primary" onClick={onSubmit}>Masuk</Button>
+            </div>
+            <p className='m-0'>Belum punya akun? <a href="/register">Daftar</a></p>
+
+          </Form>
         </div>
       </div>
     </div>
