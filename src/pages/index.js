@@ -3,7 +3,7 @@ import Register from "./Register";
 import Login from "./Login";
 import Home from "./Home";
 import ObjectTourism from "./ObjectTourism";
-import AddObjectTourism from './addObjectTourism';
+import AddObjectTourism from './AddObjectTourism';
 import DetailObjectTourism from './DetailObjectTourism.js';
 import Culinary from "./Culinary";
 import AddCulinary from './AddCulinary';

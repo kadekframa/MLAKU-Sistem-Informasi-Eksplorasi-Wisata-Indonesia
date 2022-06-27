@@ -3,7 +3,7 @@ import Gap from '../../components/atoms/Gap';
 import Logo from '../../assets/images/mlaku-logo.png';
 import { loginUser } from '../../utils/AuthHandler';
 import { Button, Form, Input } from 'reactstrap'
-import './Login.css';
+import './login.css';
 
 
 const Login = (props) => {

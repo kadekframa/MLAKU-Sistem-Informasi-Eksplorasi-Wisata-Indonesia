@@ -4,7 +4,7 @@ import Gap from '../../components/atoms/Gap';
 import Logo from '../../assets/images/mlaku-logo.png';
 
 import { registerUser } from '../../utils/AuthHandler'
-import "./Register.css"
+import "./register.css"
 
 
 const Register = (props) => {

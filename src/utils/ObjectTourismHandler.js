@@ -1,4 +1,5 @@
 import Axios from 'axios';
+import swal from 'sweetalert';
 
 const createObjectTourism = (dataObjectTourism) => {
     const {destinationName, address, image, description, openTime, openDay, contactNumber} = dataObjectTourism;
@@ -17,9 +18,25 @@ const createObjectTourism = (dataObjectTourism) => {
       }
     })
       .then(res => {
-        console.info('post success: ', res)
+        if(res.status === 201) {
+          swal({
+            title: "Data Berhasil Diinput!",
+            text: `${res.data.message}`,
+            icon: "success",
+            button: "Ok",
+          })
+          .then(result => {
+            window.location.href = '/';
+          })
+        }
       })
       .catch(err => {
+        swal({
+            title: "Gagal Input Data!",
+            text: `${err.response.data.message}`,
+            icon: "error",
+            button: "Ok",
+        });
         console.info('err: ', err)
       })
 }
