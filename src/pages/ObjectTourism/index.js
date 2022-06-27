@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import {Row, Col} from 'reactstrap';
 import './object-tourism.css';
 import { getAllObjectTourism } from '../../utils/ObjectTourismHandler';
 import { createObjectTourismList, addObjectTourismButtonCreator } from '../../utils/templates/ObjectTourismListHelper';
@@ -20,7 +19,7 @@ const ObjectTourism = () => {
   
   return (
     <main className='container object-tourism-wrapper'>
-      <div className='tex-center mb-4'>
+      <div className='text-center mb-4'>
         <h1 className='fw-normal'>Object Tourism</h1>
       </div>
 

@@ -4,7 +4,7 @@ import ObjectTourismCard from '../../components/ObjectTourismCard';
 const createObjectTourismList = (dataObjectTourism) => {
     return dataObjectTourism.map(object => {
         return (
-            <div className='col-md-4'>
+            <div className='col-md-4 d-flex align-items-start justify-content-center'>
                 <ObjectTourismCard
                     key={object._id}
                     _id={object._id}
@@ -15,7 +15,7 @@ const createObjectTourismList = (dataObjectTourism) => {
             </div>
         )
     })
-} 
+}
 
 const addObjectTourismButtonCreator = () => {
     return(
