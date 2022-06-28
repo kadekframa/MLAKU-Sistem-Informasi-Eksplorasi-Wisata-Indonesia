@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom';
+import { Button } from 'reactstrap';
 import ObjectTourismCard from '../../components/ObjectTourismCard';
 
 const createObjectTourismList = (dataObjectTourism) => {
@@ -19,7 +20,9 @@ const createObjectTourismList = (dataObjectTourism) => {
 
 const addObjectTourismButtonCreator = () => {
     return(
-        <Link to="/object-tourism/add" className='btn btn-success'>Add Object Tourism</Link>
+        <a href="/add-object-tourism" className="btn btn-primary">
+            Add Object Tourism
+        </a>
     )
 }
 

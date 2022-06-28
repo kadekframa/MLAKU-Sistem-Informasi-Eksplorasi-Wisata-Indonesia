@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import { getDetailObjectTourism } from '../../utils/ObjectTourismHandler';
+import { getDetailObjectTourism, deleteObjectTourism } from '../../utils/ObjectTourismHandler';
 import { Breadcrumb, BreadcrumbItem, Button } from 'reactstrap';
-// import { Gap } from '../../components';
-import {useParams} from 'react-router-dom';
+import {Link, useParams} from 'react-router-dom';
 import './detailObjectTourism.css'
 
 
@@ -10,7 +9,7 @@ const DetailObjectTourism = () => {
   const [data, setData] = useState({});
   const getParams = useParams();
   useEffect(() => {
-    console.info('params: ', getParams.id);
+    // console.info('params: ', getParams.id);
     getDetailObjectTourism(getParams.id)
       .then(response => {
         console.info(response.data);
@@ -19,7 +18,7 @@ const DetailObjectTourism = () => {
       .catch(err => {
         console.info('error: ', err);
       })
-  }, [])
+  })
   return (
       <main className="container detail-wrapper">
   
@@ -55,6 +54,13 @@ const DetailObjectTourism = () => {
           <p className="information-desc">
               {data.desc}, {data.desc}, {data.desc}, {data.desc}, {data.desc}, {data.desc}, {data.desc}, {data.desc}, {data.desc}, {data.desc}, {data.desc}, {data.desc}
           </p>
+        </div>
+
+        <div>
+          <a href={`/add-object-tourism/${data._id}`}>
+            <Button>Edit</Button>
+          </a>
+          <Button onClick={() => deleteObjectTourism(data._id)}>Delete</Button>
         </div>
   
       </main>

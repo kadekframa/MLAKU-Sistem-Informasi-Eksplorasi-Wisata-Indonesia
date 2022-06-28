@@ -13,17 +13,17 @@ import {
   About
 } from '../';
 
-const MainApp = () => {
+const MainApp = (props) => {
   return (
     <div>
-      <Navigation />
+      <Navigation user={props.user} />
       <div>
         <Swicth>
           <Route exact path='/' element={<Home />} />
 
           <Route path='/object-tourism' element={<ObjectTourism />} />
-          <Route path='/object-tourism/add' element={<AddObjectTourism />} />
-          <Route path='/object-tourism/:id' element={<DetailObjectTourism />} />
+          <Route path='/add-object-tourism/:id?' element={<AddObjectTourism />} />
+          <Route path='/detail-object-tourism/:id' element={<DetailObjectTourism />} />
 
           <Route path='/culinary' element={<Culinary />} />
           <Route path='/culinary/add' element={<AddCulinary />} />

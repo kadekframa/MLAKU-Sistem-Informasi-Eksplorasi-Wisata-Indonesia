@@ -1,9 +1,47 @@
 import React from 'react';
-import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
+import {logoutUser} from '../../utils/AuthHandler';
+import {
+  Collapse,
+  Nav,
+  Navbar,
+  NavbarBrand,
+  NavbarToggler,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+} from 'reactstrap';
 import Logo from '../../assets/images/mlaku-logo.png';
 import './Navigation.css'
 
-const Navigation = () => {
+const Navigation = (props) => {
+
+  let userProfile;
+  if(!props.user){
+    userProfile = (
+      <NavItem className='login-item'>
+        <NavLink href="/login">
+          Login
+        </NavLink>
+      </NavItem>
+    )
+  } else {
+    userProfile = (
+      <UncontrolledDropdown inNavbar nav>
+        <DropdownToggle caret nav>{props.user.fullname}</DropdownToggle>
+
+        <DropdownMenu light end>
+          <DropdownItem>
+            <NavLink onClick={logoutUser}>Logout</NavLink>
+          </DropdownItem>
+          {/* <DropdownItem divider /> */}
+        </DropdownMenu>
+      </UncontrolledDropdown>
+    )
+  }
+
   return (
     <Navbar className='navbar' expand="md"  light>
       <div className='navbar-wrapper'>
@@ -44,12 +82,9 @@ const Navigation = () => {
                 </NavLink>
               </NavItem>
             </div>
-            
-            <NavItem className='login-item'>
-              <NavLink href="/login">
-                Login
-              </NavLink>
-            </NavItem>
+
+            {userProfile}
+
           </Nav>
         </Collapse>
       </div>

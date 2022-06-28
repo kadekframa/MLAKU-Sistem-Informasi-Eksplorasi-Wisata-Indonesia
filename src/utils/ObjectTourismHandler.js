@@ -50,4 +50,33 @@ const getDetailObjectTourism = async (id) => {
     return response.data;
 }
 
-export {getAllObjectTourism, getDetailObjectTourism, createObjectTourism};
+const deleteObjectTourism = (id) => {
+  swal({
+    title: "Delete Object Tourism?",
+    text: "Object Tourism Information will permanent delete?",
+    icon: "warning",
+    buttons: ["Cancel", "Ok"],
+    dangerMode: true,
+  })
+  .then(willDelete => {
+    if(willDelete) {
+      Axios.delete(`http://localhost:4000/v1/object-tourism/${id}`, {
+        withCredentials: true,
+      })
+      .then(response => {
+        if(response.status === 200) {
+          swal("Delete Success", {
+            icon: "success",
+          }).then(res => {
+            window.location.href = `/object-tourism`;
+          })
+        }
+      })
+      .catch(err => {
+        console.log('Error: ', err);
+      })
+    }
+  });
+}
+
+export {getAllObjectTourism, getDetailObjectTourism, createObjectTourism, deleteObjectTourism};
