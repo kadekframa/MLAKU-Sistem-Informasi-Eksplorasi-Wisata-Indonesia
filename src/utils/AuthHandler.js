@@ -50,9 +50,14 @@ const loginUser = (user) => {
     axios.post('http://localhost:4000/v1/auth/login', formData, {
             withCredentials: true,
         })
-        .then((response) => {
-            return window.location.href = '/';
-        })
+        .then(login => {
+            if (login) {
+                swal("Berhasil Login", {
+                icon: "success",
+                button: "Ok",})
+                .then(() => window.location.href = '/');
+            }
+          })
         .catch((error) => {
             swal({
                 title: "Gagal Login!",
