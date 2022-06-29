@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {logoutUser} from '../../utils/AuthHandler';
 import {
   Collapse,
@@ -13,19 +13,27 @@ import {
   DropdownMenu,
   DropdownItem,
 } from 'reactstrap';
-import Logo from '../../assets/images/mlaku-logo.png';
+import Logo from '../../assets/images/mlaku-logo-sm.png';
 import './Navigation.css'
 
 const Navigation = (props) => {
+  const [isNavbarOpen, setNavbarOpen] = useState(false);
 
   let userProfile;
   if(!props.user){
     userProfile = (
-      <NavItem className='login-item'>
-        <NavLink href="/login">
-          Login
+      <>
+      <NavItem>
+        <NavLink href="/register" className='auth-item'>
+          Register
         </NavLink>
       </NavItem>
+        <NavItem>
+          <NavLink href="/login" className='auth-item login-item'>
+            Login
+          </NavLink>
+        </NavItem>
+      </>
     )
   } else {
     userProfile = (
@@ -33,7 +41,7 @@ const Navigation = (props) => {
         <DropdownToggle caret nav>{props.user.fullname}</DropdownToggle>
 
         <DropdownMenu light end>
-          <DropdownItem>
+          <DropdownItem className='dropdon-click'>
             <NavLink onClick={logoutUser}>Logout</NavLink>
           </DropdownItem>
           {/* <DropdownItem divider /> */}
@@ -43,51 +51,59 @@ const Navigation = (props) => {
   }
 
   return (
-    <Navbar className='navbar' expand="md"  light>
-      <div className='navbar-wrapper'>
-        <NavbarBrand href="/">
-          <img src={Logo} alt="mlaku-logo" className='brand-logo' />
-        </NavbarBrand>
-        <NavbarToggler onClick={function noRefCheck(){}} />
-        <Collapse className='collapse-nav' navbar>
-          <Nav className="me-auto nav" navbar >
-            <div className='menu-wrapper'>
-              <NavItem className='item'>
-                <NavLink href="/">
-                  Home
-                </NavLink>
-              </NavItem>
+    <Navbar color="light" expand="md" light className='shadow-sm px-0 px-lg-4'>
+      <NavbarBrand href="/"  className='d-flex align-items-center navigation-mlaku'>
+        <img className="img-fluid" src={Logo} alt="Logo Mlaku"/>
+        <span className="navbar logo-text ms-lg-3">Mlaku</span>
+      </NavbarBrand>
 
-              <NavItem className='item'>
+      <NavbarToggler onClick={() => {setNavbarOpen(!isNavbarOpen)}} />
+
+      <Collapse isOpen={isNavbarOpen} className='item-navigation-wrapper' navbar>
+        <Nav className="mas-auto" navbar>
+          <NavItem className='ms-lg-4'>
+            <NavLink href="/">
+              Home
+            </NavLink>
+          </NavItem>
+
+          <UncontrolledDropdown inNavbar nav className='ms-lg-4'>
+            <DropdownToggle caret nav>Options</DropdownToggle>
+
+            <DropdownMenu light end>
+              <DropdownItem className='dropdon-click'>
                 <NavLink href="object-tourism">
-                  ObjectTourism
+                  Object Tourism
                 </NavLink>
-              </NavItem>
-              <NavItem className='item'>
+              </DropdownItem>
 
+              <DropdownItem className='dropdon-click'>
                 <NavLink href="/culinary">
                   Culinary
                 </NavLink>
-              </NavItem>
-
-              <NavItem className='item'>
+              </DropdownItem>
+              
+              <DropdownItem className='dropdon-click'>
                 <NavLink href="/accommodation">
                   Accommodation
                 </NavLink>
-              </NavItem>
+              </DropdownItem>
+            </DropdownMenu>
 
-              <NavItem className='item'>
-                <NavLink href="/about">
-                  About Us
-                </NavLink>
-              </NavItem>
-            </div>
+          </UncontrolledDropdown>
 
-            {userProfile}
+          <NavItem className='ms-lg-4'>
+            <NavLink href="/about">
+              About Us
+            </NavLink>
+          </NavItem>
 
-          </Nav>
-        </Collapse>
-      </div>
+        </Nav>
+        <Nav className="ms-auto user-profile-setting" navbar>
+          { userProfile }
+        </Nav>
+      </Collapse>
+
     </Navbar>
   )
 }
