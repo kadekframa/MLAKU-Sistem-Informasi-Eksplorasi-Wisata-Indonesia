@@ -12,18 +12,20 @@ import {
   AddAccomodation,
   About
 } from '../';
+import './mainApp.css';
 
 const MainApp = (props) => {
   return (
-    <div>
+    <div className='main-app-wrapper'>
       <Navigation user={props.user} />
-      <div>
+      <div className='content-route-wrapper'>
         <Swicth>
           <Route exact path='/' element={<Home />} />
 
           <Route path='/object-tourism' element={<ObjectTourism />} />
-          <Route path='/add-object-tourism/:id?' element={<AddObjectTourism />} />
-          <Route path='/detail-object-tourism/:id' element={<DetailObjectTourism />} />
+          <Route path='/add-object-tourism/:id' element={<AddObjectTourism user={props.user} />} />
+          <Route path='/add-object-tourism/' element={<AddObjectTourism user={props.user} />} />
+          <Route path='/detail-object-tourism/:id' element={<DetailObjectTourism user={props.user} />} />
 
           <Route path='/culinary' element={<Culinary />} />
           <Route path='/culinary/add' element={<AddCulinary />} />

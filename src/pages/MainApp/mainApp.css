@@ -1,0 +1,9 @@
+.main-app-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main-app-wrapper .content-route-wrapper {
+    flex: 1;
+}

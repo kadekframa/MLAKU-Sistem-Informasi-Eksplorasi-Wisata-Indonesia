@@ -1,5 +1,3 @@
-import {Link} from 'react-router-dom';
-import { Button } from 'reactstrap';
 import ObjectTourismCard from '../../components/ObjectTourismCard';
 
 const createObjectTourismList = (dataObjectTourism) => {
