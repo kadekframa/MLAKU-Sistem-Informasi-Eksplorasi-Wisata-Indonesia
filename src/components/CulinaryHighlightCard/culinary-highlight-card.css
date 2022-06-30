@@ -1,0 +1,82 @@
+.culinary-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 432px;
+    margin: 0;
+    align-items: center;
+    overflow: hidden;
+}
+
+.culinary-card-wrapper .link-url {
+    text-decoration: none;
+}
+
+.culinary-card-wrapper .box-overlay {
+    width: 412px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 20px rgba(0,0,0,.7);
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Background Culinary Highlight */
+
+  .culinary-card-wrapper .bg-bali {
+    background-image: url('../../assets/images/bg-bali.jpg');
+  }
+  .culinary-card-wrapper .bg-jawabarat {
+    background-image: url('../../assets/images/bg-jawabarat.jpg');
+  }
+  .culinary-card-wrapper .bg-jawatimur {
+    background-image: url('../../assets/images/bg-jawatimur.jpg');
+  }
+  .culinary-card-wrapper .bg-bg-jawatengah {
+    background-image: url('../../assets/images/bg-jawatengah.jpg');
+  }
+  .culinary-card-wrapper .bg-lombok {
+    background-image: url('../../assets/images/bg-lombok.jpg');
+  }
+  .culinary-card-wrapper .bg-kaltim {
+    background-image: url('../../assets/images/bg-kaltim.jpg');
+  }
+  /* Background Culinary Highlight*/
+
+
+  .culinary-card-wrapper .box-overlay  .text-overlay {
+    background-color: rgba(45, 45, 45, 0.196);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 1s;
+  }
+  
+  .culinary-card-wrapper .box-overlay  .text-overlay:hover {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+
+  .culinary-card-wrapper .box-overlay  .text-overlay .text{
+    color: white;
+    font-size: 30px;
+  }
+
+  .culinary-card-wrapper .link-url {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+  .culinary-card-wrapper:hover .box-overlay, .card-wrapper:active .box-overlay {
+    transform: scale(1.5);
+    transition: all 3s;
+  }

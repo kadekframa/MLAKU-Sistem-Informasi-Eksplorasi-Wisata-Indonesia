@@ -1,5 +1,5 @@
 footer {
-  background-color: #e8edf7;
+  background-color: #f0f7fe;
   padding: 1px 0 0;
 }
 /* 
@@ -27,7 +27,7 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
-.responsive-mobile {
-  flex-direction: column;
-}
+  .responsive-mobile {
+    flex-direction: column;
+  }
 }

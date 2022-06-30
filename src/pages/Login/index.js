@@ -48,7 +48,10 @@ const Login = (props) => {
             <div className="d-grid mt-2 mb-4">
               <Button color="primary" onClick={onSubmit}>Masuk</Button>
             </div>
-            <p className='m-0'>Belum punya akun? <a href="/register">Daftar</a></p>
+            <p className='m-0'>Belum punya akun? &nbsp;
+              <a href="/register">Register</a> &nbsp;&nbsp;
+              <a href="/">Back to Home</a>
+            </p>
 
           </Form>
         </div>

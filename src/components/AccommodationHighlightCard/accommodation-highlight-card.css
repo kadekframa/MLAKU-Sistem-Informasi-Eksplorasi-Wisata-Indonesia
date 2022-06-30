@@ -1,0 +1,73 @@
+.acommodation-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 432px;
+    margin: 0;
+    align-items: center;
+    overflow: hidden;
+}
+
+.acommodation-card-wrapper .link-url {
+    text-decoration: none;
+}
+
+.acommodation-card-wrapper .box-overlay {
+    width: 412px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 20px rgba(0,0,0,.7);
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Background Acommodation Highlight */
+
+  .acommodation-card-wrapper .bg-ac1 {
+    background-image: url('../../assets/images/hoteltentram.jpg');
+  }
+  .acommodation-card-wrapper .bg-ac2 {
+    background-image: url('../../assets/images/century\ park.jpg');
+  }
+  .acommodation-card-wrapper .bg-ac3 {
+    background-image: url('../../assets/images/pacifichotel.jpg');
+  }
+  /* Background Acommodation Highlight*/
+
+
+  .acommodation-card-wrapper .box-overlay  .text-overlay {
+    background-color: rgba(45, 45, 45, 0.196);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 1s;
+  }
+  
+  .acommodation-card-wrapper .box-overlay  .text-overlay:hover {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+
+  .acommodation-card-wrapper .box-overlay  .text-overlay .text{
+    color: white;
+    font-size: 30px;
+  }
+
+  .acommodation-card-wrapper .link-url {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+  .acommodation-card-wrapper:hover .box-overlay, .card-wrapper:active .box-overlay {
+    transform: scale(1.5);
+    transition: all 3s;
+  }

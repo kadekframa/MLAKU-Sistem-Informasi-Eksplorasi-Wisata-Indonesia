@@ -1,7 +1,6 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState } from 'react';
 import { Button, Form, FormGroup, FormText, Input, Label } from 'reactstrap';
 // import { Input, Button, Upload, TextArea, Gap } from '../../components';
-import Axios from 'axios';
 import "./addCulinary.css";
 import { createCulinary } from '../../utils/CulinaryHandler';
 

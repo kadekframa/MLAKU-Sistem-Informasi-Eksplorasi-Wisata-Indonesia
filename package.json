@@ -19,6 +19,7 @@
     "react-scripts": "5.0.1",
     "reactstrap": "^9.0.3",
     "sweetalert": "^2.1.2",
+    "swiper": "^8.2.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -56,7 +56,10 @@ const Register = (props) => {
             <div className="d-grid mt-2 mb-4">
               <Button color="primary" onClick={onSubmit}>Daftar</Button>
             </div>
-            <p className='m-0'>Sudah punya akun? <a href="/login">Login</a></p>
+            <p className='m-0'>Sudah punya akun? &nbsp;
+              <a href="/register">Login</a> &nbsp;&nbsp;
+              <a href="/">Back to Home</a>
+            </p>
 
           </Form>
         </div>

@@ -1,28 +1,144 @@
-.home-page-wrapper {
+.home-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 24px 0 84px;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
 }
 
-.heading-home {
-    margin: 0 0 40px;
+.home-wrapper p {
+    font-size: 20px !important;
 }
 
-.highlight-wrapper {
-    display: flex;
-    width: 1010px;
-    overflow: hidden;
-    margin-bottom: 64px;
-}
-
-.image-destination-highlight {
-    flex-basis: 100%;
-    max-width: 300px;
-    height:  300px;
+/* Image Slider */
+.img {
+    width: 100%;
+    height: 82vh;
     object-fit: cover;
-    background-size: cover;
-    margin: 20px;
-    border-radius: 20px;
-    box-shadow: 2px 3px 8px 4px rgba(186, 186, 186, 0.7);
+    object-position: top;
 }
+
+.home-wrapper .swiper-wrapper {
+    display: flex;
+    width: 95% !important;
+    height: 100%;
+}
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* Hero Information */
+.home-wrapper .home-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0px;
+}
+
+.home-wrapper .home-content-wrapper .mlaku-hero {
+    border-top: 1.6px solid rgb(200, 200, 200);
+}
+
+.home-wrapper .home-content-wrapper .heading-description-mlaku {
+    margin: 134px 0 0;
+}
+
+.home-wrapper .home-content-wrapper .description-mlaku {
+    text-align: justify;
+}
+
+
+/* Heading highlight css */
+
+.home-wrapper .highlight-wrapper {
+    margin: 0 auto;
+}
+
+.home-wrapper .highlight-wrapper h2 {
+    font-weight: bold;
+    color: rgb(58, 105, 144);
+    margin-top: 80px;
+}
+
+.home-wrapper .desc-highlight {
+    font-size: 18px;
+    margin: 10px 100px 74px;
+}
+
+
+/* Section Province */
+.home-wrapper .section-province-wrapper {
+    margin: 0 0px;
+}
+
+
+
+/* Section Culinary */
+.home-wrapper .section-culinary-wrapper {
+    margin: 0 0px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .responsive-wrapper {
+      flex-direction: column;
+    }
+}
+
+/* 
+@media screen and (min-width: 1600px) {
+    .home-wrapper .section-province-wrapper {
+        margin: 0 40px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .home-wrapper .section-province-wrapper {
+        margin: 0 100px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .home-wrapper .section-province-wrapper {
+        margin: 0 140px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .home-wrapper .section-province-wrapper {
+        margin: 0 180px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .home-wrapper .section-province-wrapper {
+        margin: 0 220px;
+    }
+}
+
+@media screen and (min-width: 2100px) {
+    .home-wrapper .section-province-wrapper {
+        margin: 0 260px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .home-wrapper .section-province-wrapper {
+        margin: 0 300px;
+    }
+}
+
+@media screen and (min-width: 2300px) {
+    .home-wrapper .section-province-wrapper {
+        margin: 0 340px;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    .home-wrapper .section-province-wrapper {
+        max-width: 2400px;
+        margin: 0 380px;
+    }
+} */

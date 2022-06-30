@@ -66,6 +66,12 @@
     align-items: center;
 }
 
+.login-wrapper .right .back-button {
+    position: relative;
+    top: -200px;
+    left: 50px;
+}
+
 .login-wrapper .right .form-login-wrapper {
     width: 80%;
 }
