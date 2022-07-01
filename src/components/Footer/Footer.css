@@ -15,14 +15,14 @@ ul {
   padding-left: 0px !important;
 }
 .footer-wrapper a {
-  font-size: 17px;
+  font-size: 18px;
 }
 .footer-wrapper p {
-  font-size: 17px;
+  font-size: 18px;
 }
 .footer__bottom {
   min-height: 50px;
-  background-color: #424242;
+  background-color: #2a4865;
   color: rgb(226, 226, 226);
 }
 

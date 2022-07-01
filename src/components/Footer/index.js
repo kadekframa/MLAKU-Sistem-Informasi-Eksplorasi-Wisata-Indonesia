@@ -35,13 +35,13 @@ const Footer = () => {
               <h5 className="mx-1">Sosial Media</h5>
               <ul>
                 <li className="nav-item mb-2 mx-3">
-                  <a href="https://www.linkedin.com/company/dicoding/" className='nav-link p-0 text-muted'><i class="fa fa-instagram text-danger"></i> Instagram</a>
+                  <a href="https://www.instagram.com/mlakutravel_id/" className='nav-link p-0 text-muted' target='blank' rel='noreferrer'><i class="fa fa-instagram text-danger"></i> Instagram</a>
                 </li>
                 <li className="nav-item mb-2 mx-3">
-                  <a href="https://www.facebook.com/dicoding/" className='nav-link p-0 text-muted'><i class="fa fa-facebook-square text-primary"></i> Facebook</a>
+                  <a href="https://www.facebook.com/MlakuTravel.id" className='nav-link p-0 text-muted' target='blank' rel='noreferrer'><i class="fa fa-facebook-square text-primary"></i> Facebook</a>
                 </li>
                 <li className="nav-item mb-2 mx-3">
-                  <a href="https://www.instagram.com/dicoding" className='nav-link p-0 text-muted'><i class="fa fa-email text-danger"></i> Gmail</a>
+                  <a href="mailto:mlakutravel.id@gmail.com" className='nav-link p-0 text-muted' target='blank' rel='noreferrer'><i></i>📧 Gmail</a>
                 </li>
               </ul>
             </div>
@@ -53,16 +53,16 @@ const Footer = () => {
               <h5 className="mx-1">Help Center</h5>
               <ul>
                 <li className="nav-item mb-2 mx-3">
-                  <p className='m-0 text-muted'><i></i>08523677283 (Inaya)</p>
+                  <p className='m-0 text-muted'><i className='fa fa-phone'></i> +62 0859 6411 6702 (Inaya)</p>
                 </li>
                 <li className="nav-item mb-2 mx-3">
-                  <p className='m-0 text-muted'><i></i>087861234542 (Fachrul)</p>
+                  <p className='m-0 text-muted'><i className='fa fa-phone'></i> +62 0822 1794 2816 (Dharma)</p>
                 </li>
                 <li className="nav-item mb-2 mx-3">
-                  <p className='m-0 text-muted'><i></i>082463589736 (Dharma)</p>
+                  <p className='m-0 text-muted'><i className='fa fa-phone'></i> +62 0823 1121 3404 (Fachrul)</p>
                 </li>
                 <li className="nav-item mb-2 mx-3">
-                  <p className='m-0 text-muted'><i></i>088236099236 (Frama)</p>
+                  <p className='m-0 text-muted'><i className='fa fa-phone'></i> +62 0882 3609 9236 (Frama)</p>
                 </li>
               </ul>
             </div>
@@ -72,8 +72,8 @@ const Footer = () => {
               <ul>
                 <li className="nav-item mb-2 mx-3">
                   <p className='m-0 text-muted'>
-                  <i className="fa fa-map-marker text-danger"></i>
-                    Jln. Taman Giri, Perumahan Griya Nugraha, Blok B.54,
+                  <i className="fa fa-map-marker text-danger"></i>&nbsp;
+                     Jln. Taman Giri, Perumahan Griya Nugraha, Blok B.54,
                     Br. Mumbul, Kec. Kuta Selatan, Kabupaten Badung, Bali
                   </p>
                 </li>
@@ -85,7 +85,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__bottom d-flex text-center align-items-center justify-content-center">
-        &copy; 2022 <span className="mx-2">Mlaku - Indonesia Tourism Exploration Information System  </span>
+        &copy; 2022 <span className="mx-2"> Mlaku - Indonesia Tourism Exploration Information System</span>
       </div>
     </footer>
   )

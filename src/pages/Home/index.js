@@ -63,13 +63,13 @@ const Home = () => {
           </div>
           
           
-          <div className='rows highlight-wrapper'>
+          <div className='row highlight-wrapper'>
             <h2 className='col'>Destination Highlight</h2>
           </div>
           <p className='text-center desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam.</p>
 
           <div className='row section-province-wrapper responsive-wrapper row-cols-5 d-flex'>
-            <div className='col px-0'>
+            <div className='col px-0 mb-0'>
               <ProvinceCard
                 province='Bali'
                 url='/object-tourism'
