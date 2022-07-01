@@ -4,7 +4,7 @@ import CulinaryCard from '../../components/CulinaryCard';
 const createCulinaryList = (dataCulinary) => {
     return dataCulinary.map(culinary => {
         return (
-            <div className='col-md-4'>
+            <div className='col-md-4 d-flex align-items-start justify-content-center'>
                 <CulinaryCard
                     key={culinary._id}
                     id={culinary._id}
@@ -19,7 +19,7 @@ const createCulinaryList = (dataCulinary) => {
 
 const addCulinaryButtonCreator = () => {
     return(
-        <Link to="/culinary/add" className='btn btn-success'>Add Culinary</Link>
+        <Link to="/add-culinary" className='btn btn-success'>Add Culinary</Link>
     )
 }
 

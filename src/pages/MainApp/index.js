@@ -8,6 +8,7 @@ import {
   DetailObjectTourism,
   Culinary,
   AddCulinary,
+  DetailCulinary,
   Accommodation,
   AddAccomodation,
   About
@@ -28,8 +29,9 @@ const MainApp = (props) => {
           <Route path='/detail-object-tourism/:id' element={<DetailObjectTourism user={props.user} />} />
 
           <Route path='/culinary' element={<Culinary />} />
-          <Route path='/culinary/add' element={<AddCulinary />} />
-          <Route path='/culinary/:id' element={<AddObjectTourism />} />
+          <Route path='/add-culinary/:id' element={<AddCulinary user={props.user} />} />
+          <Route path='/add-culinary/' element={<AddCulinary  user={props.user}/>} />
+          <Route path='/detail-culinary/:id' element={<DetailCulinary user={props.user} />} />
 
           <Route path='/accommodation' element={<Accommodation />} />
           <Route path='/accomodation/add' element={<AddAccomodation />} />

@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { getDetailObjectTourism, deleteObjectTourism } from '../../utils/ObjectTourismHandler';
 import { Breadcrumb, BreadcrumbItem, Button } from 'reactstrap';
-import {useParams} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { actionButtonCreator } from '../../utils/templates/DetailsObjectTourismHelper';
 import './detailObjectTourism.css'
 
@@ -21,14 +21,14 @@ const DetailObjectTourism = (props) => {
         console.info('error: ', err);
       });
 
-    if(props.user && ObjectTourism) {
+    if (props.user && ObjectTourism) {
       setUser(props.user);
     }
   }, [props, ObjectTourism])
 
   let actionMenu;
-  if(ObjectTourism) {
-    if(user) {
+  if (ObjectTourism) {
+    if (user) {
       if (user._id === ObjectTourism.author.user_id) {
         actionMenu = actionButtonCreator(ObjectTourism);
       }
@@ -36,7 +36,7 @@ const DetailObjectTourism = (props) => {
 
     return (
       <main className="container detail-wrapper">
-  
+
         <div className="row justify-content-center">
 
           <div className="col-md-6 image-wrapper">
@@ -57,8 +57,8 @@ const DetailObjectTourism = (props) => {
             <p className=""><i>{ObjectTourism.open_day}</i></p>
             <p className=""><i>{ObjectTourism.open_time}</i></p>
             <p className=""><i>{ObjectTourism.contact_number}</i></p>
-            
-            
+
+
           </div>
 
         </div>
@@ -66,14 +66,14 @@ const DetailObjectTourism = (props) => {
         <div className='col m-1'>
           <h3 className='mb-4 my-2'>Information</h3>
           <p className="information-desc">
-              {ObjectTourism.desc}
+            {ObjectTourism.desc}
           </p>
         </div>
 
         <div col m-1>
-          { actionMenu }
+          {actionMenu}
         </div>
-  
+
       </main>
     )
   } else {

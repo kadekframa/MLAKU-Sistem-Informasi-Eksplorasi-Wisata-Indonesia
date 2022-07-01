@@ -1,20 +1,34 @@
-.component-wrapper {
+.component-wrapper-object-tourism {
     display: flex;
     flex-direction: column;
     width: 346px;
     box-sizing: border-box;
     margin: 16px 16px 24px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .5s;
 }
 
-.img-wrapper {
+.component-wrapper-object-tourism:hover .text-wrapper-object-tourism {
+    opacity: 1;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.component-wrapper-object-tourism:hover {
+    transition: all .5s;
+    transform: translateY(20px);
+}
+
+.img-wrapper-object-tourism {
     width: 100%;
-    overflow: hidden;
     position: relative;
     border-radius: 10px;
     box-shadow: 2px 4px 10px 2px rgb(174, 174, 174);
 }
 
-.img-wrapper img {
+.img-wrapper-object-tourism img {
     width: 100%;
     height: 230px;
     border-radius: 10px;
@@ -22,21 +36,39 @@
     object-position: center;
 }
 
-.component-wrapper a {
-    
+.component-wrapper-object-tourism a {
     text-decoration: none;
+    color: white;
 }
 
-.component-wrapper .object-name {
+.text-wrapper-object-tourism {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    opacity: 0;
+    transition: 0.5s ease;
+    color: white;
+    text-transform: capitalize;
+}
+
+.component-wrapper-object-tourism .object-name {
     font-size: 18px;
     font-weight: bold;
-    text-transform: capitalize;
     margin: 10px 0 0;
-    color: black;
+    color: white;
+
 }
 
-.component-wrapper .addres {
+.component-wrapper-object-tourism .object-addres {
     font-size: 16px;
-    text-transform: capitalize;
     margin: 0;
+    color: white;
 }
