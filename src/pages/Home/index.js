@@ -53,7 +53,7 @@ const Home = () => {
               <img src={TouristIllustration} alt="Tourist with her bag Illustration" className='d-block mx-lg-auto img-fluid' width='500px' />
             </div>
             <div className='col-lg-7'>
-              <h1 className='heading-description-mlaku'>Explore Trough Survival</h1>
+              <h1>Explore Trough Survival</h1>
               <p className='description-mlaku mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quae ad saepe omnis eos officiis, assumenda, iure quam odio aut incidunt pariatur, amet laboriosam delectus facilis.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quae ad saepe omnis eos officiis, assumenda, iure quam odio aut incidunt pariatur, amet laboriosam delectus facilis.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quae ad saepe omnis eos officiis, assumenda, iure quam odio aut incidunt pariatur, amet laboriosam delectus facilis.
@@ -69,70 +69,70 @@ const Home = () => {
           <p className='text-center desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam.</p>
 
           <div className='row section-province-wrapper responsive-wrapper row-cols-5 d-flex'>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0'>
               <ProvinceCard
                 province='Bali'
                 url='/object-tourism'
                 bg_image='box-overlay bg-bali'
               />
             </div>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0 mb-0'>
               <ProvinceCard
                 province='Kalimantan Timur'
                 url='/object-tourism'
                 bg_image='box-overlay bg-kaltim'
               />
             </div>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0 mb-0'>
               <ProvinceCard
                 province='Lombok'
                 url='/object-tourism'
                 bg_image='box-overlay bg-lombok'
               />
             </div>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0 mb-0'>
               <ProvinceCard
                 province='Sulawesi'
                 url='/object-tourism'
                 bg_image='box-overlay bg-sulawesi'
               />
             </div>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0 mb-0'>
               <ProvinceCard
                 province='Jawa Timur'
                 url='/object-tourism'
                 bg_image='box-overlay bg-jawatimur'
               />
             </div>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0 mb-0'>
               <ProvinceCard
                 province='Jawa Tengah'
                 url='/object-tourism'
                 bg_image='box-overlay bg-bg-jawatengah'
               />
             </div>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0 mb-0'>
               <ProvinceCard
                 province='Jawa Barat'
                 url='/object-tourism'
                 bg_image='box-overlay bg-jawabarat'
               />
             </div>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0 mb-0'>
               <ProvinceCard
                 province='Bali'
                 url='/object-tourism'
                 bg_image='box-overlay bg-bali'
               />
             </div>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0 mb-0'>
               <ProvinceCard
                 province='Bali'
                 url='/object-tourism'
                 bg_image='box-overlay bg-bali'
               />
             </div>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0'>
               <ProvinceCard
                 province='Bali'
                 url='/object-tourism'
@@ -146,42 +146,42 @@ const Home = () => {
           </div>
           <p className='text-center desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam.</p>
           <div className='row section-culinary-wrapper responsive-wrapper d-flex row-cols-3'>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0'>
               <CulinaryHighlightCard
                 culinaryName='Nasi Padang'
                 url='/object-tourism'
                 bg_image='box-overlay bg-bali'
               />
             </div>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0'>
               <CulinaryHighlightCard
                 culinaryName='Sate'
                 url='/object-tourism'
                 bg_image='box-overlay bg-bali'
               />
             </div>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0'>
               <CulinaryHighlightCard
                 culinaryName='Gudeg'
                 url='/object-tourism'
                 bg_image='box-overlay bg-bali'
               />
             </div>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0'>
               <CulinaryHighlightCard
                 culinaryName='Lawar'
                 url='/object-tourism'
                 bg_image='box-overlay bg-bali'
               />
             </div>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0'>
               <CulinaryHighlightCard
                 culinaryName='Dodol'
                 url='/object-tourism'
                 bg_image='box-overlay bg-bali'
               />
             </div>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0'>
               <CulinaryHighlightCard
                 culinaryName='Bubur'
                 url='/object-tourism'
@@ -195,21 +195,21 @@ const Home = () => {
           </div>
           <p className='text-center desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam.</p>
           <div className='row section-culinary-wrapper responsive-wrapper d-flex row-cols-3'>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0'>
               <AccommodationHighlightCard
                 accommodationName='Villa Karma Kandara'
                 url='/object-tourism'
                 bg_image='box-overlay bg-ac1'
               />
             </div>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0'>
               <AccommodationHighlightCard
                 accommodationName='Kuta Guest House'
                 url='/object-tourism'
                 bg_image='box-overlay bg-ac2'
               />
             </div>
-            <div className='col px-0 mb-4'>
+            <div className='col px-0'>
               <AccommodationHighlightCard
                 accommodationName='Green Kubu Villa'
                 url='/object-tourism'

@@ -3,13 +3,16 @@
     flex-direction: column;
     box-sizing: border-box;
     width: 432px;
+    height: 323px ;
     margin: 0;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
 .acommodation-card-wrapper .link-url {
     text-decoration: none;
+    box-shadow: 0.2px 0.4px 10px 2px rgb(168, 168, 168);
 }
 
 .acommodation-card-wrapper .box-overlay {

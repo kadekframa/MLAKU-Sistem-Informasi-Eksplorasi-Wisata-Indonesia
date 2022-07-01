@@ -40,6 +40,13 @@
     border-top: 1.6px solid rgb(200, 200, 200);
 }
 
+.home-wrapper .home-content-wrapper .mlaku-hero h1 {
+    font-weight: bold;
+    color: rgb(58, 105, 144);
+    margin-top: 80px;
+
+}
+
 .home-wrapper .home-content-wrapper .heading-description-mlaku {
     margin: 134px 0 0;
 }
