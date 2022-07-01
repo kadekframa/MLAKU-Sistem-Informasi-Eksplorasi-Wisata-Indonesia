@@ -1,7 +1,7 @@
 import React from 'react';
 import './culinary-card.css';
 
-const ObjectTourismCard = (props) => {
+const CulinaryCard = (props) => {
   const { culinary_name, address, image, _id } = props;
   return (
     <div className='component-wrapper-culinary'>
@@ -20,4 +20,4 @@ const ObjectTourismCard = (props) => {
   )
 }
 
-export default ObjectTourismCard;
+export default CulinaryCard;

@@ -15,7 +15,7 @@ const checkCulinaryForm = (dataCulinary) => {
 }
 
 const createCulinary = (dataCulinary) => {
-    const {culinaryName, address, image, description, openTime, openDay, contactNumber} = dataCulinary;
+    const {culinaryName, address, image, description, openTime, openDay, contactNumber,user_name, user_id} = dataCulinary;
     const data = new FormData();
     data.append('culinary_name', culinaryName);
     data.append('address', address);
@@ -24,18 +24,37 @@ const createCulinary = (dataCulinary) => {
     data.append('open_time', openTime);
     data.append('open_day', openDay);
     data.append('contact_number', contactNumber);
+    data.append('user_name', user_name);
+    data.append('user_id', user_id);
 
     Axios.post('http://localhost:4000/v1/culinary/', data, {
+      withCredentials: true, 
       headers: {
         'content-type': 'multipart/form-data'
       }
     })
-      .then(res => {
-        console.info('post success: ', res)
-      })
-      .catch(err => {
-        console.info('err: ', err)
-      })
+    .then(res => {
+      if(res.status === 201) {
+        swal({
+          title: "Data Berhasil Diinput!",
+          text: `${res.data.message}`,
+          icon: "success",
+          button: "Ok",
+        })
+        .then(result => {
+          window.location.href = '/culinary';
+        })
+      }
+    })
+    .catch(err => {
+      swal({
+          title: "Gagal Input Data!",
+          text: `${err.response.data.message}`,
+          icon: "error",
+          button: "Ok",
+      });
+      console.info('err: ', err)
+    })
 }
 
 const getAllCulinary = async () => {
@@ -43,9 +62,10 @@ const getAllCulinary = async () => {
     return response.data;
 }
 const getDetailCulinary = async (id) => {
-    const response = await Axios.get(`http://localhost:4000/v1/culinary/${id}`);
-    return response.data;
+  const response = await Axios.get(`http://localhost:4000/v1/culinary/${id}`);
+  return response.data;
 }
+
 const updateCulinary = (dataCulinary, id) => {
   const {culinaryName, address, image, description, openTime, openDay, contactNumber} = dataCulinary;
   const data = new FormData();

@@ -34,7 +34,8 @@ const MainApp = (props) => {
           <Route path='/detail-culinary/:id' element={<DetailCulinary user={props.user} />} />
 
           <Route path='/accommodation' element={<Accommodation />} />
-          <Route path='/accomodation/add' element={<AddAccomodation />} />
+          <Route path='/add-accomodation/:id' element={<AddAccomodation user={props.user} />} />
+          <Route path='/add-accomodation/:id' element={<AddAccomodation  user={props.user} />} />
 
           <Route path='/about' element={<About />} />
         </Swicth>

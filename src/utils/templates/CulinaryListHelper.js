@@ -1,4 +1,3 @@
-import {Link} from 'react-router-dom';
 import CulinaryCard from '../../components/CulinaryCard';
 
 const createCulinaryList = (dataCulinary) => {
@@ -19,7 +18,9 @@ const createCulinaryList = (dataCulinary) => {
 
 const addCulinaryButtonCreator = () => {
     return(
-        <Link to="/add-culinary" className='btn btn-success'>Add Culinary</Link>
+        <a href="/add-culinary" className="btn btn-primary">
+        Add Culinary
+        </a>
     )
 }
 
