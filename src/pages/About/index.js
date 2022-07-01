@@ -1,255 +1,96 @@
 import React from 'react';
-import './About.css';
+import LogoMlaku from '../../assets/images/mlaku-logo.png';
+import AboutIllustration from '../../assets/images/about-us.png';
+import HowToUseIllustration from '../../assets/images/how-to-use.png';
+import { DeveloperCard } from '../../components';
+import { Dev1, Dev2, Dev3, Dev4 } from '../../assets';
+import './about.css';
 
 const About = () => {
   return (
-    <div className='about-wrapper'>
-      <div className='left'>
-        <img src="https://placeimg.com/640/480/nature" alt="background about" />
-      </div>
-      <div className='right'>
-        <div className='member-wrapper'>
-          <h1>Tentang Kami</h1>
-          <p>Our Team Member</p>
-        </div>
-
-        <div className='card-member'>
-          <img src="" alt='' />
-          <div className='container-about'>
-            <h5>Kadek Frama</h5>
-            <p clasName='card-text'>Web Developer</p>
-            <ul className="social-media mb-3">
-              <li className="mr-2">
-                <a href="##" className="bg-light-gray rounded-circle p-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="16" height="16"
-                    viewBox="0 0 226 226"
-                    style={{ fill: "#000000" }}>
-                    <g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}>
-                      <path d="M0,226v-226h226v226z" fill="none"></path>
-                      <g className="svg" fill="#333333">
-                        <g id="surface1">
-                          <path d="M224.74369,48.45283c-8.18299,3.63312 -16.97716,6.07783 -26.21274,7.19832c9.40535,-5.67037 16.67158,-14.60036 20.06701,-25.26202c-8.82812,5.22896 -18.60697,9.03185 -28.997,11.06911c-8.31881,-8.86208 -20.16887,-14.39663 -33.30919,-14.39663c-25.19411,0 -45.63462,20.44051 -45.63462,45.63462c0,3.56521 0.40745,7.0625 1.1884,10.39003c-37.92699,-1.90144 -71.54177,-20.10096 -94.05349,-47.70583c-3.9387,6.7569 -6.17968,14.60036 -6.17968,22.98708c0,15.82271 8.04717,29.77794 20.30468,37.96093c-7.5039,-0.23767 -14.53245,-2.27493 -20.67818,-5.70433c0,0.20373 0,0.3735 0,0.57723c0,22.10426 15.72086,40.54146 36.60276,44.7518c-3.83684,1.05259 -7.84344,1.59586 -12.01983,1.59586c-2.95403,0 -5.80619,-0.27163 -8.59044,-0.8149c5.80618,18.09765 22.64753,31.33985 42.61267,31.67938c-15.58503,12.25751 -35.27854,19.52374 -56.66977,19.52374c-3.70102,0 -7.30018,-0.20373 -10.86538,-0.61118c20.16887,12.93661 44.17458,20.47446 69.94591,20.47446c83.9351,0 129.84135,-69.53846 129.84135,-129.80739c0,-2.0033 -0.03395,-3.97265 -0.13582,-5.942c8.92999,-6.38341 16.67158,-14.4306 22.78336,-23.59826"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-              </li>
-              <li className="mr-2">
-                <a href="##" className="bg-light-gray rounded-circle p-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="16" height="16"
-                    viewBox="0 0 172 172"
-                    style={{ fill: "#000000" }}>
-                    <g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}>
-                      <path d="M0,172v-172h172v172z" fill="none"></path>
-                      <g className="svg" fill="#333333">
-                        <path d="M125.59583,64.5h-25.2625v-14.33333c0,-7.396 0.602,-12.05433 11.2015,-12.05433h13.38733v-22.79c-6.5145,-0.67367 -13.06483,-1.00333 -19.62233,-0.989c-19.44317,0 -33.63317,11.87517 -33.63317,33.67617v16.4905h-21.5v28.66667l21.5,-0.00717v64.50717h28.66667v-64.5215l21.973,-0.00717z"></path>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-              </li>
-              <li className="mr-2">
-                <a href="##" className="bg-light-gray rounded-circle p-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="16" height="16"
-                    viewBox="0 0 172 172"
-                    style={{ fill: "#000000" }}>
-                    <g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}>
-                      <path d="M0,172v-172h172v172z" fill="none"></path>
-                      <g className="svg" fill="#333333">
-                        <g id="surface1">
-                          <path d="M49.92548,0c-27.49519,0 -49.92548,22.43029 -49.92548,49.92548v72.14904c0,27.49519 22.43029,49.92548 49.92548,49.92548h72.14904c27.49519,0 49.92548,-22.43029 49.92548,-49.92548v-72.14904c0,-27.49519 -22.43029,-49.92548 -49.92548,-49.92548zM49.92548,13.23077h72.14904c20.33714,0 36.69471,16.33173 36.69471,36.69471v72.14904c0,20.33714 -16.33173,36.69471 -36.69471,36.69471h-72.14904c-20.33714,0 -36.69471,-16.33173 -36.69471,-36.69471v-72.14904c0,-20.33714 16.33173,-36.69471 36.69471,-36.69471zM135.61538,26.46154c-5.47837,0 -9.92308,4.44471 -9.92308,9.92308c0,5.47837 4.44471,9.92308 9.92308,9.92308c5.47837,0 9.92308,-4.44471 9.92308,-9.92308c0,-5.47837 -4.44471,-9.92308 -9.92308,-9.92308zM86,39.69231c-25.50541,0 -46.30769,20.80228 -46.30769,46.30769c0,25.50541 20.80228,46.30769 46.30769,46.30769c25.50541,0 46.30769,-20.80228 46.30769,-46.30769c0,-25.50541 -20.80228,-46.30769 -46.30769,-46.30769zM86,52.92308c18.34736,0 33.07692,14.72957 33.07692,33.07692c0,18.34736 -14.72956,33.07692 -33.07692,33.07692c-18.34735,0 -33.07692,-14.72956 -33.07692,-33.07692c0,-18.34735 14.72957,-33.07692 33.07692,-33.07692z"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+    <main className='about-wrapper'>
+      <div className='container'>
+        <div className='about-content-wrapper'>
+          <div className='row responsive-about hero-about d-flex pt-3 pb-3 px-md-0'>
+            <div className='col-6 m-auto d-flex'>
+              <img src={LogoMlaku} alt="Logo Mlaku" className='d-block mx-lg-auto img-fluid' width='374px' />
+            </div>
+            <div className='col-6 about-us-head'>
+              <h1 >About Mlaku</h1>
+              <p className='desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit exercitationem veritatis eum vero quidem quos voluptates perspiciatis esse nisi, cupiditate odit beatae obcaecati. Impedit accusamus necessitatibus delectus culpa recusandae cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit exercitationem veritatis eum vero quidem quos voluptates perspiciatis esse nisi, cupiditate odit beatae obcaecati. Impedit accusamus necessitatibus delectus culpa recusandae cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque maiores dolorem earum et! Voluptates.</p>
+            </div>
           </div>
-        </div>
 
-        <div className='card-member'>
-          <img src="" alt='' />
-          <div className='container-about'>
-            <h5>Fachrul Dwi</h5>
-            <p clasName='card-desc'>Web Developer</p>
-            <ul className="social-media mb-3">
-              <li className="mr-2">
-                <a href="##" className="bg-light-gray rounded-circle p-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="16" height="16"
-                    viewBox="0 0 226 226"
-                    style={{ fill: "#000000" }}>
-                    <g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}>
-                      <path d="M0,226v-226h226v226z" fill="none"></path>
-                      <g className="svg" fill="#333333">
-                        <g id="surface1">
-                          <path d="M224.74369,48.45283c-8.18299,3.63312 -16.97716,6.07783 -26.21274,7.19832c9.40535,-5.67037 16.67158,-14.60036 20.06701,-25.26202c-8.82812,5.22896 -18.60697,9.03185 -28.997,11.06911c-8.31881,-8.86208 -20.16887,-14.39663 -33.30919,-14.39663c-25.19411,0 -45.63462,20.44051 -45.63462,45.63462c0,3.56521 0.40745,7.0625 1.1884,10.39003c-37.92699,-1.90144 -71.54177,-20.10096 -94.05349,-47.70583c-3.9387,6.7569 -6.17968,14.60036 -6.17968,22.98708c0,15.82271 8.04717,29.77794 20.30468,37.96093c-7.5039,-0.23767 -14.53245,-2.27493 -20.67818,-5.70433c0,0.20373 0,0.3735 0,0.57723c0,22.10426 15.72086,40.54146 36.60276,44.7518c-3.83684,1.05259 -7.84344,1.59586 -12.01983,1.59586c-2.95403,0 -5.80619,-0.27163 -8.59044,-0.8149c5.80618,18.09765 22.64753,31.33985 42.61267,31.67938c-15.58503,12.25751 -35.27854,19.52374 -56.66977,19.52374c-3.70102,0 -7.30018,-0.20373 -10.86538,-0.61118c20.16887,12.93661 44.17458,20.47446 69.94591,20.47446c83.9351,0 129.84135,-69.53846 129.84135,-129.80739c0,-2.0033 -0.03395,-3.97265 -0.13582,-5.942c8.92999,-6.38341 16.67158,-14.4306 22.78336,-23.59826"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-              </li>
-              <li className="mr-2">
-                <a href="##" className="bg-light-gray rounded-circle p-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="16" height="16"
-                    viewBox="0 0 172 172"
-                    style={{ fill: "#000000" }}>
-                    <g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}>
-                      <path d="M0,172v-172h172v172z" fill="none"></path>
-                      <g className="svg" fill="#333333">
-                        <path d="M125.59583,64.5h-25.2625v-14.33333c0,-7.396 0.602,-12.05433 11.2015,-12.05433h13.38733v-22.79c-6.5145,-0.67367 -13.06483,-1.00333 -19.62233,-0.989c-19.44317,0 -33.63317,11.87517 -33.63317,33.67617v16.4905h-21.5v28.66667l21.5,-0.00717v64.50717h28.66667v-64.5215l21.973,-0.00717z"></path>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-              </li>
-              <li className="mr-2">
-                <a href="##" className="bg-light-gray rounded-circle p-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="16" height="16"
-                    viewBox="0 0 172 172"
-                    style={{ fill: "#000000" }}>
-                    <g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}>
-                      <path d="M0,172v-172h172v172z" fill="none"></path>
-                      <g className="svg" fill="#333333">
-                        <g id="surface1">
-                          <path d="M49.92548,0c-27.49519,0 -49.92548,22.43029 -49.92548,49.92548v72.14904c0,27.49519 22.43029,49.92548 49.92548,49.92548h72.14904c27.49519,0 49.92548,-22.43029 49.92548,-49.92548v-72.14904c0,-27.49519 -22.43029,-49.92548 -49.92548,-49.92548zM49.92548,13.23077h72.14904c20.33714,0 36.69471,16.33173 36.69471,36.69471v72.14904c0,20.33714 -16.33173,36.69471 -36.69471,36.69471h-72.14904c-20.33714,0 -36.69471,-16.33173 -36.69471,-36.69471v-72.14904c0,-20.33714 16.33173,-36.69471 36.69471,-36.69471zM135.61538,26.46154c-5.47837,0 -9.92308,4.44471 -9.92308,9.92308c0,5.47837 4.44471,9.92308 9.92308,9.92308c5.47837,0 9.92308,-4.44471 9.92308,-9.92308c0,-5.47837 -4.44471,-9.92308 -9.92308,-9.92308zM86,39.69231c-25.50541,0 -46.30769,20.80228 -46.30769,46.30769c0,25.50541 20.80228,46.30769 46.30769,46.30769c25.50541,0 46.30769,-20.80228 46.30769,-46.30769c0,-25.50541 -20.80228,-46.30769 -46.30769,-46.30769zM86,52.92308c18.34736,0 33.07692,14.72957 33.07692,33.07692c0,18.34736 -14.72956,33.07692 -33.07692,33.07692c-18.34735,0 -33.07692,-14.72956 -33.07692,-33.07692c0,-18.34735 14.72957,-33.07692 33.07692,-33.07692z"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <div className='row responsive-about hero-about d-flex pt-3 pb-3 px-md-0'>
+            <div className='col-6'>
+              <img src={AboutIllustration} alt="About Us Illustrator" className='d-block mx-lg-auto img-fluid' width='736px' />
+            </div>
+            <div className='col-6 why-use-head'>
+              <h1>Why Use Mlaku?</h1>
+              <p className='desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit exercitationem veritatis eum vero quidem quos voluptates perspiciatis esse nisi, cupiditate odit beatae obcaecati. Impedit accusamus necessitatibus delectus culpa recusandae cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit exercitationem veritatis eum vero quidem quos voluptates perspiciatis esse nisi, cupiditate odit beatae obcaecati. Impedit accusamus necessitatibus delectus culpa recusandae cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque maiores dolorem earum et! Voluptates.</p>
+            </div>
           </div>
-        </div>
 
-        <div className='card-member'>
-          <img src="" alt='' />
-          <div className='container-about'>
-            <h5>Lale Inaya</h5>
-            <p clasName='card-desc'>Web Developer</p>
-            <ul className="social-media mb-3">
-              <li className="mr-2">
-                <a href="##" className="bg-light-gray rounded-circle p-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="16" height="16"
-                    viewBox="0 0 226 226"
-                    style={{ fill: "#000000" }}>
-                    <g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}>
-                      <path d="M0,226v-226h226v226z" fill="none"></path>
-                      <g className="svg" fill="#333333">
-                        <g id="surface1">
-                          <path d="M224.74369,48.45283c-8.18299,3.63312 -16.97716,6.07783 -26.21274,7.19832c9.40535,-5.67037 16.67158,-14.60036 20.06701,-25.26202c-8.82812,5.22896 -18.60697,9.03185 -28.997,11.06911c-8.31881,-8.86208 -20.16887,-14.39663 -33.30919,-14.39663c-25.19411,0 -45.63462,20.44051 -45.63462,45.63462c0,3.56521 0.40745,7.0625 1.1884,10.39003c-37.92699,-1.90144 -71.54177,-20.10096 -94.05349,-47.70583c-3.9387,6.7569 -6.17968,14.60036 -6.17968,22.98708c0,15.82271 8.04717,29.77794 20.30468,37.96093c-7.5039,-0.23767 -14.53245,-2.27493 -20.67818,-5.70433c0,0.20373 0,0.3735 0,0.57723c0,22.10426 15.72086,40.54146 36.60276,44.7518c-3.83684,1.05259 -7.84344,1.59586 -12.01983,1.59586c-2.95403,0 -5.80619,-0.27163 -8.59044,-0.8149c5.80618,18.09765 22.64753,31.33985 42.61267,31.67938c-15.58503,12.25751 -35.27854,19.52374 -56.66977,19.52374c-3.70102,0 -7.30018,-0.20373 -10.86538,-0.61118c20.16887,12.93661 44.17458,20.47446 69.94591,20.47446c83.9351,0 129.84135,-69.53846 129.84135,-129.80739c0,-2.0033 -0.03395,-3.97265 -0.13582,-5.942c8.92999,-6.38341 16.67158,-14.4306 22.78336,-23.59826"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-              </li>
-              <li className="mr-2">
-                <a href="##" className="bg-light-gray rounded-circle p-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="16" height="16"
-                    viewBox="0 0 172 172"
-                    style={{ fill: "#000000" }}>
-                    <g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}>
-                      <path d="M0,172v-172h172v172z" fill="none"></path>
-                      <g className="svg" fill="#333333">
-                        <path d="M125.59583,64.5h-25.2625v-14.33333c0,-7.396 0.602,-12.05433 11.2015,-12.05433h13.38733v-22.79c-6.5145,-0.67367 -13.06483,-1.00333 -19.62233,-0.989c-19.44317,0 -33.63317,11.87517 -33.63317,33.67617v16.4905h-21.5v28.66667l21.5,-0.00717v64.50717h28.66667v-64.5215l21.973,-0.00717z"></path>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-              </li>
-              <li className="mr-2">
-                <a href="##" className="bg-light-gray rounded-circle p-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="16" height="16"
-                    viewBox="0 0 172 172"
-                    style={{ fill: "#000000" }}>
-                    <g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}>
-                      <path d="M0,172v-172h172v172z" fill="none"></path>
-                      <g className="svg" fill="#333333">
-                        <g id="surface1">
-                          <path d="M49.92548,0c-27.49519,0 -49.92548,22.43029 -49.92548,49.92548v72.14904c0,27.49519 22.43029,49.92548 49.92548,49.92548h72.14904c27.49519,0 49.92548,-22.43029 49.92548,-49.92548v-72.14904c0,-27.49519 -22.43029,-49.92548 -49.92548,-49.92548zM49.92548,13.23077h72.14904c20.33714,0 36.69471,16.33173 36.69471,36.69471v72.14904c0,20.33714 -16.33173,36.69471 -36.69471,36.69471h-72.14904c-20.33714,0 -36.69471,-16.33173 -36.69471,-36.69471v-72.14904c0,-20.33714 16.33173,-36.69471 36.69471,-36.69471zM135.61538,26.46154c-5.47837,0 -9.92308,4.44471 -9.92308,9.92308c0,5.47837 4.44471,9.92308 9.92308,9.92308c5.47837,0 9.92308,-4.44471 9.92308,-9.92308c0,-5.47837 -4.44471,-9.92308 -9.92308,-9.92308zM86,39.69231c-25.50541,0 -46.30769,20.80228 -46.30769,46.30769c0,25.50541 20.80228,46.30769 46.30769,46.30769c25.50541,0 46.30769,-20.80228 46.30769,-46.30769c0,-25.50541 -20.80228,-46.30769 -46.30769,-46.30769zM86,52.92308c18.34736,0 33.07692,14.72957 33.07692,33.07692c0,18.34736 -14.72956,33.07692 -33.07692,33.07692c-18.34735,0 -33.07692,-14.72956 -33.07692,-33.07692c0,-18.34735 14.72957,-33.07692 33.07692,-33.07692z"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <div className='row responsive-about hero-about d-flex pt-3 pb-3 px-md-0'>
+            <div className='col-6'>
+              <img src={HowToUseIllustration} alt="Step by step Illustrator" className='d-block mx-lg-auto img-fluid' width='524px' />
+            </div>
+            <div className='col-6 how-to-use-head'>
+              <h1>How To Use?</h1>
+              <p className='desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque maiores dolorem earum et! Voluptates. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates fuga, delectus magni, eos, illum nulla eveniet modi fugit necessitatibus nam iusto beatae aut quis sint eligendi placeat! Quaerat, nemo blanditiis!</p>
+            </div>
           </div>
-        </div>
 
-        <div className='card-member'>
-          <img src="" alt='s' />
-          <div className='container-about'>
-            <h5>Komang Sucita</h5>
-            <p clasName='card-desc'>Web Developer</p>
-            <ul className="social-media mb-3">
-              <li className="mr-2">
-                <a href="##" className="bg-light-gray rounded-circle p-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="16" height="16"
-                    viewBox="0 0 226 226"
-                    style={{ fill: "#000000" }}>
-                    <g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}>
-                      <path d="M0,226v-226h226v226z" fill="none"></path>
-                      <g className="svg" fill="#333333">
-                        <g id="surface1">
-                          <path d="M224.74369,48.45283c-8.18299,3.63312 -16.97716,6.07783 -26.21274,7.19832c9.40535,-5.67037 16.67158,-14.60036 20.06701,-25.26202c-8.82812,5.22896 -18.60697,9.03185 -28.997,11.06911c-8.31881,-8.86208 -20.16887,-14.39663 -33.30919,-14.39663c-25.19411,0 -45.63462,20.44051 -45.63462,45.63462c0,3.56521 0.40745,7.0625 1.1884,10.39003c-37.92699,-1.90144 -71.54177,-20.10096 -94.05349,-47.70583c-3.9387,6.7569 -6.17968,14.60036 -6.17968,22.98708c0,15.82271 8.04717,29.77794 20.30468,37.96093c-7.5039,-0.23767 -14.53245,-2.27493 -20.67818,-5.70433c0,0.20373 0,0.3735 0,0.57723c0,22.10426 15.72086,40.54146 36.60276,44.7518c-3.83684,1.05259 -7.84344,1.59586 -12.01983,1.59586c-2.95403,0 -5.80619,-0.27163 -8.59044,-0.8149c5.80618,18.09765 22.64753,31.33985 42.61267,31.67938c-15.58503,12.25751 -35.27854,19.52374 -56.66977,19.52374c-3.70102,0 -7.30018,-0.20373 -10.86538,-0.61118c20.16887,12.93661 44.17458,20.47446 69.94591,20.47446c83.9351,0 129.84135,-69.53846 129.84135,-129.80739c0,-2.0033 -0.03395,-3.97265 -0.13582,-5.942c8.92999,-6.38341 16.67158,-14.4306 22.78336,-23.59826"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-              </li>
-              <li className="mr-2">
-                <a href="##" className="bg-light-gray rounded-circle p-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="16" height="16"
-                    viewBox="0 0 172 172"
-                    style={{ fill: "#000000" }}>
-                    <g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}>
-                      <path d="M0,172v-172h172v172z" fill="none"></path>
-                      <g className="svg" fill="#333333">
-                        <path d="M125.59583,64.5h-25.2625v-14.33333c0,-7.396 0.602,-12.05433 11.2015,-12.05433h13.38733v-22.79c-6.5145,-0.67367 -13.06483,-1.00333 -19.62233,-0.989c-19.44317,0 -33.63317,11.87517 -33.63317,33.67617v16.4905h-21.5v28.66667l21.5,-0.00717v64.50717h28.66667v-64.5215l21.973,-0.00717z"></path>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-              </li>
-              <li className="mr-2">
-                <a href="##" className="bg-light-gray rounded-circle p-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    width="16" height="16"
-                    viewBox="0 0 172 172"
-                    style={{ fill: "#000000" }}>
-                    <g fill="none" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}>
-                      <path d="M0,172v-172h172v172z" fill="none"></path>
-                      <g className="svg" fill="#333333">
-                        <g id="surface1">
-                          <path d="M49.92548,0c-27.49519,0 -49.92548,22.43029 -49.92548,49.92548v72.14904c0,27.49519 22.43029,49.92548 49.92548,49.92548h72.14904c27.49519,0 49.92548,-22.43029 49.92548,-49.92548v-72.14904c0,-27.49519 -22.43029,-49.92548 -49.92548,-49.92548zM49.92548,13.23077h72.14904c20.33714,0 36.69471,16.33173 36.69471,36.69471v72.14904c0,20.33714 -16.33173,36.69471 -36.69471,36.69471h-72.14904c-20.33714,0 -36.69471,-16.33173 -36.69471,-36.69471v-72.14904c0,-20.33714 16.33173,-36.69471 36.69471,-36.69471zM135.61538,26.46154c-5.47837,0 -9.92308,4.44471 -9.92308,9.92308c0,5.47837 4.44471,9.92308 9.92308,9.92308c5.47837,0 9.92308,-4.44471 9.92308,-9.92308c0,-5.47837 -4.44471,-9.92308 -9.92308,-9.92308zM86,39.69231c-25.50541,0 -46.30769,20.80228 -46.30769,46.30769c0,25.50541 20.80228,46.30769 46.30769,46.30769c25.50541,0 46.30769,-20.80228 46.30769,-46.30769c0,-25.50541 -20.80228,-46.30769 -46.30769,-46.30769zM86,52.92308c18.34736,0 33.07692,14.72957 33.07692,33.07692c0,18.34736 -14.72956,33.07692 -33.07692,33.07692c-18.34735,0 -33.07692,-14.72956 -33.07692,-33.07692c0,-18.34735 14.72957,-33.07692 33.07692,-33.07692z"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <div className='row our-team-wrapper'>
+            <h1 className=''>Our Team</h1>
+          </div>
+          <p className='text-center desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit exercitationem veritatis eum vero quidem quos voluptates perspiciatis esse nisi, cupiditate odit beatae obcaecati. Impedit accusamus necessitatibus delectus culpa recusandae cumque. Lorem</p>
+
+          <div className='row our-team-section responsive-about d-flex row-cols-4'>
+            <div className='col px-0'>
+              <DeveloperCard
+                developerName='Lale Inaya'
+                git_url='https://github.com/laleinaya12'
+                linkedin_url='https://www.linkedin.com/in/lale-inaya-firasya-7552aa218/'
+                wa_url='+62 0859 6411 6702'
+                ig_url='https://www.instagram.com/yr.pov_/'
+                dev_image={Dev1}
+              />
+            </div>
+            <div className='col px-0'>
+              <DeveloperCard
+                developerName='Sucita Dharma'
+                git_url='https://github.com/DharmaSucita'
+                linkedin_url='https://www.linkedin.com/in/i-komang-sucita-darma-02bb48243'
+                wa_url='+62 '
+                ig_url='https://www.instagram.com/dhrmasucita/'
+                dev_image={Dev2}
+              />
+            </div>
+            <div className='col px-0'>
+              <DeveloperCard
+                developerName='Fachrul Dwi'
+                git_url='https://github.com/aprlfch'
+                linkedin_url='https://www.linkedin.com/in/fachrul-dwi-aprilian-97543b230'
+                wa_url='+62 0823 1121 3404'
+                ig_url='https://www.instagram.com/aprlfch/'
+                dev_image={Dev3}
+              />
+            </div>
+            <div className='col px-0'>
+              <DeveloperCard
+                developerName='Kadek Frama'
+                git_url='https://github.com/kadekframa'
+                linkedin_url='https://www.linkedin.com/in/kadek-frama-danamastyana-b534211b7/'
+                wa_url='+62 0882 3609 9236'
+                ig_url='https://www.instagram.com/kadek_frama'
+                dev_image={Dev4}
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

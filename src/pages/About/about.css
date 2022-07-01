@@ -1,81 +1,76 @@
-.about-wrapper {
-    display: flex;
-    border-radius: 20px;
-    width: 100%;
+@media screen and (min-width: 767px) {
+    /* Heading highlight css */
+    
+    .about-wrapper .about-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0px !important;
+    }
+    
+    .about-wrapper .about-content-wrapper .about-us-head {
+        /* margin: 0 auto; */
+    }
+    
+    .about-wrapper .about-content-wrapper .about-us-head h1 {
+        font-weight: bold;
+        color: rgb(58, 105, 144);
+        margin-top: 20px;
+    }
+    
+    .about-wrapper .about-content-wrapper .why-use-head h1 {
+        font-weight: bold;
+        color: rgb(58, 105, 144);
+        margin-top: 100px;
+    }
+    
+    .about-wrapper .about-content-wrapper .how-to-use-head h1 {
+        font-weight: bold;
+        color: rgb(58, 105, 144);
+        margin-top: 50px;
+    }
+    
+    .about-wrapper .desc-highlight {
+        font-size: 18px;
+        text-align: justify;
+    }
+    
+    
+    /* Our Team css */
+    .about-wrapper .our-team-wrapper {
+        margin: 0 auto;
+    }
+    
+    .about-wrapper .our-team-wrapper h1{
+        font-weight: bold;
+        color: rgb(58, 105, 144);
+        margin-top: 50px;
+    
+    }
+
+    .about-wrapper .our-team-section{
+        width: 100%;
+        margin: auto;
+    }
 }
 
-/* left flex */
 
-.about-wrapper .left {
-    display: block;
-    flex-basis: 70%;
-}
+@media screen and (max-width: 767px) {
+    .responsive-about {
+        flex-direction: column !important;
+    }
 
-.about-wrapper .left img {
-    flex-basis: 100%;
-    width: 100%;
-    height: 100vh;
-}
+    .about-wrapper .about-content-wrapper .col-6 {
+        margin: 0 auto;
+        width: 100% !important;
+        justify-content: center;
+    }
 
-
-/* right flex */
-
-.about-wrapper .right .member-wrapper {
-    margin-left: 50px;
-    margin-top: 30px;
-}
-
-
-/* card */
-
-.card-member {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 80%;
-    border-radius: 5px;
-    margin-left: 50px;
-    margin-top: 20px;
-    padding: 10px;
-}
-
-.card-desc {
-    text-align: center;
-}
-
-.card-member:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-  
-img {
-    border-radius: 5px 5px 0 0;
-}
-  
-.container-about {
-    padding: 2px 16px;
-    text-align: center;
-}
-
-.social-media {
-    margin: 0 0 10px;
-}
-  
-.bg-light-gray{
-    background-color: #cdcdcd;
-}
-  
-.social-media li {
-    display: inline-block;
-    padding: 0;
-    margin: 0 5px 10px 0;
-}
-  
-.social-media li a:hover{
-    background-color: #8c99df !important;
-    margin: 0 !important;
-    text-decoration: none;
-    fill: #fff;
-}
-  
-.social-media li a .svg:hover{
-    fill: #fff !important;
+    .about-wrapper .desc-highlight {
+        font-size: 18px;
+        text-align: justify;
+    }
+    
+    .about-wrapper .our-team-section .col {
+        width: 100% !important;
+    }
 }

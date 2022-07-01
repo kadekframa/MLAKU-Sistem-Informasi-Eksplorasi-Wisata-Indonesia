@@ -3,6 +3,7 @@ import Footer from './Footer';
 import ProvinceCard from './ProvinceCard';
 import CulinaryHighlightCard from './CulinaryHighlightCard';
 import AccommodationHighlightCard from './AccommodationHighlightCard';
+import DeveloperCard from './DeveloperCard';
 
 export {
     Navigation,
@@ -10,4 +11,5 @@ export {
     ProvinceCard,
     CulinaryHighlightCard,
     AccommodationHighlightCard,
+    DeveloperCard,
 };
