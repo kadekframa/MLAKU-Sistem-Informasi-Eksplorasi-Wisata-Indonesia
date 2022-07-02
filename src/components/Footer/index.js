@@ -8,9 +8,11 @@ const Footer = () => {
     <footer className='footer-wrapper'>
       <div className='container'>
         <div className='row responsive-mobile d-flex pt-5 pb-4 px-4 px-md-0'>
-          <div className='col'>
-            <img src={Logo} alt="Logo Mlaku" width='94px' />
-            <p>Semangat!</p>
+          <div className='col d-flex align-item-center justify-content-center'>
+            <div>
+              <img src={Logo} alt="Logo Mlaku" width='146px' />
+              <p className='text-center'>Semangat!</p>
+            </div>
           </div>
 
           <div className='col'>
@@ -85,7 +87,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__bottom d-flex text-center align-items-center justify-content-center">
-        &copy; 2022 <span className="mx-2"> Mlaku - Indonesia Tourism Exploration Information System</span>
+         <span className="mx-2">&copy; 2022 Mlaku - Indonesia Tourism Exploration Information System</span>
       </div>
     </footer>
   )
