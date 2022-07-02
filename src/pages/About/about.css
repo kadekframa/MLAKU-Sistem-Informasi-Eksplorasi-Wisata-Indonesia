@@ -1,14 +1,10 @@
-@media screen and (min-width: 767px) {
+
     /* Heading highlight css */
     
     .about-wrapper .about-content-wrapper {
         display: flex;
         flex-direction: column;
-        margin: 0 0px !important;
-    }
-    
-    .about-wrapper .about-content-wrapper .about-us-head {
-        /* margin: 0 auto; */
+        margin: 34px 0px;
     }
     
     .about-wrapper .about-content-wrapper .about-us-head h1 {
@@ -46,17 +42,29 @@
         margin-top: 50px;
     
     }
+    
+    .about-wrapper .about-content-wrapper .our-team-desc {
+        text-align: center !important;
+    }
 
     .about-wrapper .our-team-section{
         width: 100%;
         margin: auto;
+        padding: 40px 0;
     }
-}
 
 
 @media screen and (max-width: 767px) {
     .responsive-about {
         flex-direction: column !important;
+    }
+
+    .about-wrapper {
+        margin: 24px 0;
+    }
+
+    .about-wrapper .about-content-wrapper .about-us-head {
+        margin: 20px 0 0 !important;
     }
 
     .about-wrapper .about-content-wrapper .col-6 {
@@ -68,8 +76,30 @@
     .about-wrapper .desc-highlight {
         font-size: 18px;
         text-align: justify;
+        margin-bottom: 0 !important;
+    }
+
+    .about-wrapper .about-content-wrapper .why-use-head h1 {
+        margin-top: 0px;
+    }
+
+    
+    .about-wrapper .about-content-wrapper .how-to-use-wrapper {
+        padding-top: 50px !important;
+    }
+
+    .about-wrapper .about-content-wrapper .how-to-use-head h1 {
+        margin-top: 20px;
     }
     
+    .about-wrapper .our-team-wrapper h1 {
+        margin: 34px 0 10px !important;
+    }
+
+    .about-wrapper .about-content-wrapper .our-team-desc {
+        text-align: justify !important;
+    }
+
     .about-wrapper .our-team-section .col {
         width: 100% !important;
     }

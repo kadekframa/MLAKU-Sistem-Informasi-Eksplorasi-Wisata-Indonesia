@@ -31,9 +31,9 @@ const About = () => {
             </div>
           </div>
 
-          <div className='row responsive-about hero-about d-flex pt-3 pb-3 px-md-0'>
+          <div className='row responsive-about how-to-use-wrapper hero-about d-flex pt-3 pb-3 px-md-0'>
             <div className='col-6'>
-              <img src={HowToUseIllustration} alt="Step by step Illustrator" className='d-block mx-lg-auto img-fluid' width='524px' />
+              <img src={HowToUseIllustration} alt="Step by step Illustrator" className=' d-block mx-lg-auto img-fluid' width='524px' />
             </div>
             <div className='col-6 how-to-use-head'>
               <h1>How To Use?</h1>
@@ -44,7 +44,7 @@ const About = () => {
           <div className='row our-team-wrapper'>
             <h1 className=''>Our Team</h1>
           </div>
-          <p className='text-center desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit exercitationem veritatis eum vero quidem quos voluptates perspiciatis esse nisi, cupiditate odit beatae obcaecati. Impedit accusamus necessitatibus delectus culpa recusandae cumque. Lorem</p>
+          <p className='our-team-desc desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit exercitationem veritatis eum vero quidem quos voluptates perspiciatis esse nisi, cupiditate odit beatae obcaecati. Impedit accusamus necessitatibus delectus culpa recusandae cumque. Lorem</p>
 
           <div className='row our-team-section responsive-about d-flex row-cols-4'>
             <div className='col px-0'>
