@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Gap from '../../components/atoms/Gap';
 import Logo from '../../assets/images/mlaku-logo.png';
+import bg_login from '../../assets/images/img-slider1.jpg';
 import { loginUser } from '../../utils/AuthHandler';
 import { Button, Form, Input } from 'reactstrap'
 import './login.css';
@@ -33,13 +34,13 @@ const Login = (props) => {
           <h1>Mlaku</h1>
           <p>Indonesia Tourism Exploration Information System</p>
         </div>
-        <img src="https://placeimg.com/640/480/nature" alt="background log-in" />
+        <img src={bg_login} alt="background log-in" />
       </div>
       <div className='right'>
         <div className='form-login-wrapper'>
           <h1>Login</h1>
           <p className='login-desc'>Silahkan login terlebih dahulu!</p>
-          <Form>
+          <Form className='form-wrapper'>
             <Gap height={20} />
             <Input id="username" placeholder='Username' name="username" type="text" onChange={(e) => setUsername(e.target.value)} />
             <Gap height={20} />

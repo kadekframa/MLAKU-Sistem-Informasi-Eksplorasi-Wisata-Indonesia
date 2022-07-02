@@ -85,7 +85,7 @@
     padding: 12px;
     border-radius: 12px;
     border: 1px solid rgb(180, 180, 180);
-    width: 94%;
+    width: 100%;
     font-size: 14px;
 }
 
@@ -104,3 +104,46 @@
     background-color: rgb(96, 146, 223) ;
 }
 
+
+@media screen and (max-width: 767px) {
+    .register-wrapper {
+        flex-direction: column;
+    }
+
+    .register-wrapper .right {
+        margin-top: 24px;
+    }
+
+    .register-wrapper .left img {
+        height: 36vh;
+    }
+
+    
+    .register-wrapper .left .overlay {
+        width:100vw;
+        height: 36vh;
+        left: 0vw;
+        top: 0vh;
+    }
+
+    .register-wrapper .left .brand-name {
+        top: 4%;
+        right: 0%;
+    }
+
+    .register-wrapper .left .brand-name h1 {
+        font-size: 30px;
+        margin: 12px 0 0;
+    }
+
+    .register-wrapper .left .brand-name p {
+        text-align: center;
+        margin: 10px 30px;
+        font-size: 18px;
+    }
+
+    .register-wrapper .right .form-register-wrapper .register-desc {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+}
