@@ -23,6 +23,44 @@
     width: 95% !important;
     height: 100%;
 }
+
+.home-wrapper .swiper-wrapper .text-img-slider1 {
+    width: 100%;
+    position: absolute;
+    color: white;
+    text-shadow: 0px 0px 34px rgb(0, 0, 0);
+    margin: 64vh 17vh auto;
+}
+
+.home-wrapper .swiper-wrapper .text-img-slider2 {
+    width: 100%;
+    position: absolute;
+    color: white;
+    text-shadow: 0px 0px 34px rgb(0, 0, 0);
+    margin: 12vh 10vh auto;
+}
+
+.home-wrapper .swiper-wrapper .text-img-slider3 {
+    width: 100%;
+    position: absolute;
+    color: white;
+    text-shadow: 0px 0px 34px rgb(0, 0, 0);
+    margin: 28vh 56vh auto;
+}
+
+.visit-indonesia {
+    font-size: 64px;
+}
+
+.visit-desc {
+    font-size: 32px;
+    margin: 0 0.4vh;
+}
+
+.icon-off {
+    display: none;
+}
+
 .swiper-pagination-bullet {
     width: 16px;
     height: 16px;
@@ -97,6 +135,18 @@
 @media screen and (max-width: 767px) {
     .home-wrapper .image-slider {
         --bs-gutter-x: 1.1rem;
+    }
+
+    .home-wrapper .swiper-wrapper .text-img-slider1 {
+        display: none;
+    }
+    
+    .home-wrapper .swiper-wrapper .text-img-slider2 {
+        display: none;
+    }
+    
+    .home-wrapper .swiper-wrapper .text-img-slider3 {
+        display: none;
     }
 
     .home-wrapper .highlight-wrapper {

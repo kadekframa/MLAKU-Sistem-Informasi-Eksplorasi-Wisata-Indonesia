@@ -15,13 +15,29 @@ import TouristIllustration from '../../assets/images/home.png';
 import './home.css';
 import {ProvinceCard, CulinaryHighlightCard, AccommodationHighlightCard} from '../../components/';
 
-const Homey = (image) => {
+const text1 = "Wonders of The World in Indonesia";
+const text2 = "Balinese Natural Charm";
+const text3 = "Come Visit To Indonesia!";
+
+const textdesc1 = "Candi Borobudur, Jawa Tengah";
+const textdesc2 = "Pura Ulun Danu Beratan, Bali";
+const textdesc3 = '"You will get what you have never had before"';
+
+const positionText1 = '1'
+const positionText2 = '2'
+const positionText3 = '3'
+const headText3 = 'visit-indonesia';
+const descText3 = 'visit-desc';
+const offIcon = 'icon-off';
+
+const Homey = (image, textHead, textLocation, positionText, headText, descText, offIcon) => {
   return (
     <SwiperSlide>
-      <div>
-
+      <div className={`text-img-slider${positionText}`}>
+        <h2 className={headText}>{textHead}</h2>
+        <h5 className={descText}><i className={`${offIcon} fa fa-map-marker`}></i>&nbsp; {textLocation}</h5>
       </div>
-      <img className="img" src={image} alt="" />
+      <img className="img" src={image} alt="Image_Sliders"/>
     </SwiperSlide>
   );
 }
@@ -35,13 +51,13 @@ const Home = () => {
             modules={[Navigation, Pagination, Autoplay]}
             slidesPerView={1}
             navigation
-            autoplay={{ delay: 5000 }}
+            autoplay={false}
             pagination={{ clickable: true }}
           >
 
-            {Homey(Image1)}
-            {Homey(Image2)}
-            {Homey(Image3)}
+            {Homey(Image1, text1, textdesc1, positionText1)}
+            {Homey(Image2, text2, textdesc2, positionText2)}
+            {Homey(Image3, text3, textdesc3, positionText3, headText3, descText3, offIcon)}
           </Swiper>
         </div>
       </div>
