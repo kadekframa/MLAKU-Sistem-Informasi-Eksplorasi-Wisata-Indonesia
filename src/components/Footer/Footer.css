@@ -20,10 +20,14 @@ ul {
 .footer-wrapper p {
   font-size: 18px;
 }
+.footer-wrapper .mlaku-desc-footer {
+  text-align: center;
+}
 .footer__bottom {
   min-height: 50px;
   background-color: #2a4865;
   color: rgb(226, 226, 226);
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {

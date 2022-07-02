@@ -1,9 +1,11 @@
-/* .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(245, 245, 245, 0.192);
-} */
+.navbar {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.navbar .logo-text {
+    color: rgb(24, 60, 88);
+    font-weight: 564;
+}
 
 .nav-link {
     font-size: 17px;

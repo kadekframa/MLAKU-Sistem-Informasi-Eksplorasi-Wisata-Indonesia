@@ -13,7 +13,7 @@ const Footer = () => {
               <div className='d-flex justify-content-center'>
                 <img src={Logo} alt="Logo Mlaku" width='146px' />
               </div>
-              <p className='text-center mt-2 px-5'>Indonesia Tourism Exploration Information System</p>
+              <p className='mlaku-desc-footer mt-2 px-5'>Indonesia Tourism Exploration Information System</p>
             </div>
           </div>
 
