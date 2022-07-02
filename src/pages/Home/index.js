@@ -29,7 +29,7 @@ const Homey = (image) => {
 const Home = () => {
   return (
     <main className='home-wrapper'>
-      <div className='row responsive-wrapper d-flex pb-3 px-md-0'>
+      <div className='row image-slider responsive-wrapper d-flex pb-3 px-md-0'>
         <div className='col swiper-wrapper'>
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
@@ -194,7 +194,7 @@ const Home = () => {
             <h2 className='col'>Acommodation Highlight</h2>
           </div>
           <p className='text-center desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam.</p>
-          <div className='row section-culinary-wrapper responsive-wrapper d-flex row-cols-3'>
+          <div className='row section-acommodation-wrapper responsive-wrapper d-flex row-cols-3'>
             <div className='col px-0'>
               <AccommodationHighlightCard
                 accommodationName='Villa Karma Kandara'

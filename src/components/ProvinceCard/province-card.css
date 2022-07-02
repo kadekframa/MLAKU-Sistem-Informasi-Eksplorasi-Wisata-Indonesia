@@ -85,3 +85,15 @@
     transform: scale(1.5);
     transition: all 3s;
   }
+
+
+  
+@media screen and (max-width: 767px) {
+  .card-wrapper {
+    width: 372px;
+  }
+
+  .card-wrapper .box-overlay {
+    width: 354px;
+  }
+}

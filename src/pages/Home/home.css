@@ -34,6 +34,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 0px;
+    margin-bottom: 100px;
 }
 
 .home-wrapper .home-content-wrapper .mlaku-hero {
@@ -44,7 +45,6 @@
     font-weight: bold;
     color: rgb(58, 105, 144);
     margin-top: 80px;
-
 }
 
 .home-wrapper .home-content-wrapper .heading-description-mlaku {
@@ -87,10 +87,50 @@
 }
 
 
+/* Section Acommodation */
+.home-wrapper .section-culinary-wrapper {
+    margin: 0 0px;
+}
+
+
 
 @media screen and (max-width: 767px) {
+    .home-wrapper .image-slider {
+        --bs-gutter-x: 1.1rem;
+    }
+
+    .home-wrapper .highlight-wrapper {
+        margin: 0;
+    }
+
+    .home-wrapper .home-content-wrapper .mlaku-hero h1 {
+        margin-top: 24px;
+    }
+
+    .home-wrapper .highlight-wrapper h2 {
+        margin-top: 56px;
+    }
+    
+    .home-wrapper .desc-highlight {
+        text-align: justify !important;
+        margin: 10px 0 20px;
+    }
+    
     .responsive-wrapper {
       flex-direction: column;
+    }
+
+    .home-wrapper .section-province-wrapper .col {
+        width: 100% !important;
+    }
+
+    
+    .home-wrapper .section-culinary-wrapper .col {
+        width: 100% !important;
+    }
+    
+    .home-wrapper .section-acommodation-wrapper .col {
+        width: 100% !important;
     }
 }
 

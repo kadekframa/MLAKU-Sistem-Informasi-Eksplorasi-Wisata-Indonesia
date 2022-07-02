@@ -5,7 +5,7 @@ import './accommodation-highlight-card.css';
 const AccommodationHighlightCard = (props) => {
     const {accommodationName, url, bg_image} = props;
     return (
-        <div className='acommodation-card-wrapper'>
+        <div className='acommodation-card-wrapper m-auto'>
             <Link className='link-url' to={url}>
                 <div className={bg_image}>
                     <div className='text-overlay'>

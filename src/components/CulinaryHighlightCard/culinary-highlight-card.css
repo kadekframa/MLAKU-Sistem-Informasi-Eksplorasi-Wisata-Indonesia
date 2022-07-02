@@ -83,3 +83,16 @@
     transform: scale(1.5);
     transition: all 3s;
   }
+
+
+
+
+  @media screen and (max-width: 767px) {
+    .culinary-card-wrapper {
+      width: 372px;
+    }
+  
+    .culinary-card-wrapper .box-overlay {
+      width: 354px;
+    }
+  }

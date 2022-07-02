@@ -1,4 +1,4 @@
-import Logo from './images/mlaku-logo-sm.png';
+import Logo from './images/mlaku-logo.png';
 import objecttourismIllustration from "./images/object-tourism.png";
 import culinaryIllustration from "./images/culinary.png";
 import accomodationIllustration from "./images/accommodation.png";
