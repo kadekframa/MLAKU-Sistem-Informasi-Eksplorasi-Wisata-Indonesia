@@ -57,7 +57,7 @@ const Register = (props) => {
               <Button color="primary" onClick={onSubmit}>Daftar</Button>
             </div>
             <p className='m-0'>Sudah punya akun? &nbsp;
-              <a href="/register">Login</a> &nbsp;&nbsp;
+              <a href="/login">Login</a> &nbsp;&nbsp;
               <a href="/">Back to Home</a>
             </p>
 
