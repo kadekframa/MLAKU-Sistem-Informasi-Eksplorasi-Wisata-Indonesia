@@ -115,13 +115,13 @@
     }
 
     .register-wrapper .left img {
-        height: 36vh;
+        height: 34vh;
     }
 
     
     .register-wrapper .left .overlay {
         width:100vw;
-        height: 36vh;
+        height: 34vh;
         left: 0vw;
         top: 0vh;
     }

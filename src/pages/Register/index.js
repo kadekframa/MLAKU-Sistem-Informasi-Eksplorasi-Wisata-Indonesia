@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Button, Form, Input } from 'reactstrap'
 import Gap from '../../components/atoms/Gap';
+import bg_register from '../../assets/images/img-slider2.jpg';
 import Logo from '../../assets/images/mlaku-logo.png';
 
 import { registerUser } from '../../utils/AuthHandler'
@@ -37,7 +38,7 @@ const Register = (props) => {
           <h1>Mlaku</h1>
           <p>Indonesia Tourism Exploration Information System</p>
         </div>
-        <img src="https://placeimg.com/640/480/nature" alt="background log-in" />
+        <img src={bg_register} alt="background log-in" />
       </div>
       <div className='right'>
         <div className='form-register-wrapper'>

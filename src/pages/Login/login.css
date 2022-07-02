@@ -125,13 +125,13 @@
     }
 
     .login-wrapper .left img {
-        height: 36vh;
+        height: 34vh;
     }
 
     
     .login-wrapper .left .overlay {
         width:100vw;
-        height: 36vh;
+        height: 34vh;
         left: 0vw;
         top: 0vh;
     }
