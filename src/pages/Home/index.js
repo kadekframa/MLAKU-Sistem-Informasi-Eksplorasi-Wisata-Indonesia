@@ -51,7 +51,7 @@ const Home = () => {
             modules={[Navigation, Pagination, Autoplay]}
             slidesPerView={1}
             navigation
-            autoplay={false}
+            autoplay={{delay: 4000}}
             pagination={{ clickable: true }}
           >
 
