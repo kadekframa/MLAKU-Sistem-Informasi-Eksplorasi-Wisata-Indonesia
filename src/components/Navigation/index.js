@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {logoutUser} from '../../utils/AuthHandler';
+import React, { useState } from 'react';
+import { logoutUser } from '../../utils/AuthHandler';
 import {
   Collapse,
   Nav,
@@ -20,14 +20,14 @@ const Navigation = (props) => {
   const [isNavbarOpen, setNavbarOpen] = useState(false);
 
   let userProfile;
-  if(!props.user){
+  if (!props.user) {
     userProfile = (
       <>
-      <NavItem>
-        <NavLink href="/register" className='auth-item'>
-          Register
-        </NavLink>
-      </NavItem>
+        <NavItem>
+          <NavLink href="/register" className='auth-item'>
+            Register
+          </NavLink>
+        </NavItem>
         <NavItem>
           <NavLink href="/login" className='auth-item login-item'>
             Login
@@ -52,12 +52,12 @@ const Navigation = (props) => {
 
   return (
     <Navbar color="light" expand="md" light className='shadow-sm px-0 px-lg-4'>
-      <NavbarBrand href="/"  className='d-flex align-items-center navigation-mlaku'>
-        <img className="img-fluid" src={Logo} alt="Logo Mlaku"/>
+      <NavbarBrand href="/" className='d-flex align-items-center navigation-mlaku'>
+        <img className="img-fluid" src={Logo} alt="Logo Mlaku" />
         <span className="navbar logo-text ms-lg-3">Mlaku</span>
       </NavbarBrand>
 
-      <NavbarToggler onClick={() => {setNavbarOpen(!isNavbarOpen)}} />
+      <NavbarToggler onClick={() => { setNavbarOpen(!isNavbarOpen) }} />
 
       <Collapse isOpen={isNavbarOpen} className='item-navigation-wrapper' navbar>
         <Nav className="mas-auto" navbar>
@@ -68,7 +68,7 @@ const Navigation = (props) => {
           </NavItem>
 
           <UncontrolledDropdown inNavbar nav className='ms-lg-4'>
-            <DropdownToggle caret nav>Options</DropdownToggle>
+            <DropdownToggle caret nav>Category</DropdownToggle>
 
             <DropdownMenu light end>
               <DropdownItem className='dropdon-click'>
@@ -82,9 +82,9 @@ const Navigation = (props) => {
                   Culinary
                 </NavLink>
               </DropdownItem>
-              
+
               <DropdownItem className='dropdon-click'>
-                <NavLink href="/accommodation">
+                <NavLink href="/accomodation">
                   Accommodation
                 </NavLink>
               </DropdownItem>
@@ -100,7 +100,7 @@ const Navigation = (props) => {
 
         </Nav>
         <Nav className="ms-auto user-profile-setting" navbar>
-          { userProfile }
+          {userProfile}
         </Nav>
       </Collapse>
 
