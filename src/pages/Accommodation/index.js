@@ -28,7 +28,7 @@ const Accomodation = () => {
               <img className='img-fluid accomodation-hero-img' src={accomodationIllustration} alt="Accomodation Ilustrasi" />
             </div>
             <div className="col-md-7 pe-3 d-flex flex-column justify-content-center">
-              <h1 className='fw-bold'>Temukan Accomoation Favoritmu Hanya Disini </h1>
+              <h1 className='fw-bold'>Temukan Accomodation Favoritmu Hanya Disini </h1>
               <p className='text-secondary'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint harum laboriosam ipsa sit quia placeat molestiae autem doloremque incidunt reprehenderit optio neque at culpa, qui illum hic distinctio aliquid! Enim!</p>
             </div>
           </div>
