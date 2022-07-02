@@ -3,6 +3,7 @@ import { getDetailAccomodation, deleteObjectTourism } from '../../utils/Accomoda
 import { Breadcrumb, BreadcrumbItem, Button } from 'reactstrap';
 import { useParams } from 'react-router-dom';
 import { actionAccomodationButtonCreator } from '../../utils/templates/DetailsAccomodationHelper';
+import Gap from '../../components/atoms/Gap';
 import './detailAccomodation.css'
 
 
@@ -38,7 +39,7 @@ const DetailAccomodation = (props) => {
             <main className="container detail-wrapper-accomodation">
 
                 <div className="row justify-content-center">
-
+                    <Gap height={40} />
                     <div className="col-md-6 image-wrapper-accomodation">
                         <img src={`http://localhost:4000/${Accomodation.image}`} alt="Image_Accomodation" className="image-accomodation mb-3" />
                     </div>
@@ -73,7 +74,7 @@ const DetailAccomodation = (props) => {
                 <div col m-1>
                     {actionMenu}
                 </div>
-
+                <Gap height={20} />
             </main>
         )
     } else {

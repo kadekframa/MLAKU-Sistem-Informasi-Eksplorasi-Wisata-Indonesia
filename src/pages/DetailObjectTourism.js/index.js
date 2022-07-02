@@ -3,6 +3,7 @@ import { getDetailObjectTourism, deleteObjectTourism } from '../../utils/ObjectT
 import { Breadcrumb, BreadcrumbItem, Button } from 'reactstrap';
 import { useParams } from 'react-router-dom';
 import { actionButtonCreator } from '../../utils/templates/DetailsObjectTourismHelper';
+import Gap from '../../components/atoms/Gap';
 import './detailObjectTourism.css'
 
 
@@ -38,7 +39,7 @@ const DetailObjectTourism = (props) => {
       <main className="container detail-wrapper">
 
         <div className="row justify-content-center">
-
+          <Gap height={40} />
           <div className="col-md-6 image-wrapper">
             <img src={`http://localhost:4000/${ObjectTourism.image}`} alt="Image_Tourism" className="image-object-tourism mb-3" />
           </div>
@@ -73,7 +74,7 @@ const DetailObjectTourism = (props) => {
         <div col m-1>
           {actionMenu}
         </div>
-
+        <Gap height={20} />
       </main>
     )
   } else {
