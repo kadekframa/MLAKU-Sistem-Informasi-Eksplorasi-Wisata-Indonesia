@@ -1,0 +1,14 @@
+@media screen and (max-width: 576px) {
+    .accomodation-hero-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .accomodation-hero-wrapper .accomodation-hero-img {
+        max-width: 80%;
+        height: 400px;
+        object-fit: cover;
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+}

@@ -23,11 +23,11 @@ const Culinary = () => {
     <main className='container culinary-wrapper'>
       <section id="culnaryHero">
         <div className="container">
-          <div className="row hero-wrapper mt-4 justify-content-between">
-            <div className="col-sm-5">
-              <img className='img-fluid hero-img' src={culinaryIllustration} alt="Kuliner Ilustrasi" />
+          <div className="row culinary-hero-wrapper mt-4 justify-content-between">
+            <div className="col-md-5">
+              <img className='img-fluid culinary-hero-img' src={culinaryIllustration} alt="Kuliner Ilustrasi" />
             </div>
-            <div className="col-sm-7 pe-3 d-flex flex-column justify-content-center">
+            <div className="col-md-7 pe-3 d-flex flex-column justify-content-center">
               <h1 className='fw-bold'>Temukan Kuliner Favoritmu Hanya Disini </h1>
               <p className='text-secondary'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint harum laboriosam ipsa sit quia placeat molestiae autem doloremque incidunt reprehenderit optio neque at culpa, qui illum hic distinctio aliquid! Enim!</p>
             </div>

@@ -23,13 +23,13 @@ const ObjectTourism = () => {
     <main className='container object-tourism-wrapper'>
       <section id="objectTourismHero">
         <div className="container">
-          <div className="row hero-wrapper mt-4 justify-content-between">
-            <div className="col-sm-7 pe-3 d-flex flex-column justify-content-center">
+          <div className="row objectTourism-hero-wrapper mt-4 justify-content-between">
+            <div className="col-md-7 pe-3 d-flex flex-column justify-content-center">
               <h1 className='fw-bold title'>Temukan Wisata Favoritmu Hanya Disini </h1>
               <p className='text-secondary'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint harum laboriosam ipsa sit quia placeat molestiae autem doloremque incidunt reprehenderit optio neque at culpa, qui illum hic distinctio aliquid! Enim!</p>
             </div>
-            <div className="col-sm-5">
-              <img className='img-fluid hero-img' src={objecttourismIllustration} alt="Object Tourism Ilustrasi" />
+            <div className="col-md-5">
+              <img className='img-fluid objectTourism-hero-img' src={objecttourismIllustration} alt="Object Tourism Ilustrasi" />
             </div>
           </div>
         </div>

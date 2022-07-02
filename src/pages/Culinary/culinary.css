@@ -1,8 +1,14 @@
-.culinary-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 1134px !important;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 40px;
+@media screen and (max-width: 576px) {
+    .culinary-hero-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .culinary-hero-wrapper .culinary-hero-img {
+        max-width: 80%;
+        height: 400px;
+        object-fit: cover;
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
 }

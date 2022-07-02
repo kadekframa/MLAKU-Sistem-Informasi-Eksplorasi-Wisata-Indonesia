@@ -23,11 +23,11 @@ const Accomodation = () => {
     <main className='container accomodation-wrapper'>
       <section id="accomodationHero">
         <div className="container">
-          <div className="row hero-wrapper mt-4 justify-content-between">
-            <div className="col-sm-5">
-              <img className='img-fluid hero-img' src={accomodationIllustration} alt="Accomodation Ilustrasi" />
+          <div className="row accomodation-hero-wrapper mt-4 justify-content-between">
+            <div className="col-md-5">
+              <img className='img-fluid accomodation-hero-img' src={accomodationIllustration} alt="Accomodation Ilustrasi" />
             </div>
-            <div className="col-sm-7 pe-3 d-flex flex-column justify-content-center">
+            <div className="col-md-7 pe-3 d-flex flex-column justify-content-center">
               <h1 className='fw-bold'>Temukan Accomoation Favoritmu Hanya Disini </h1>
               <p className='text-secondary'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint harum laboriosam ipsa sit quia placeat molestiae autem doloremque incidunt reprehenderit optio neque at culpa, qui illum hic distinctio aliquid! Enim!</p>
             </div>
