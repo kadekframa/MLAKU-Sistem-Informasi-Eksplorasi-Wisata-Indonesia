@@ -8,10 +8,12 @@ const Footer = () => {
     <footer className='footer-wrapper'>
       <div className='container'>
         <div className='row responsive-mobile d-flex pt-5 pb-4 px-4 px-md-0'>
-          <div className='col d-flex align-item-center justify-content-center'>
+          <div className='col d-flex justify-content-center'>
             <div>
-              <img src={Logo} alt="Logo Mlaku" width='146px' />
-              <p className='text-center'>Semangat!</p>
+              <div className='d-flex justify-content-center'>
+                <img src={Logo} alt="Logo Mlaku" width='146px' />
+              </div>
+              <p className='text-center mt-2 px-5'>Indonesia Tourism Exploration Information System</p>
             </div>
           </div>
 
