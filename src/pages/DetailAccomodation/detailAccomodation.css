@@ -1,0 +1,20 @@
+.detail-wrapper-accomodation {
+    max-width: 1180px !important;
+    align-items: left;
+    justify-content: left;
+}
+
+.detail-wrapper-accomodation .image-wrapper-accomodation {
+    display: flex;
+}
+
+.detail-wrapper-accomodation .image-wrapper-accomodation img {
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0px 2px 12px 6px rgb(210, 210, 210);
+}
+
+.detail-wrapper-accomodation .information-accomodation-desc {
+    text-align: justify;
+}

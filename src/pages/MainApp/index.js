@@ -11,6 +11,7 @@ import {
   DetailCulinary,
   Accommodation,
   AddAccomodation,
+  DetailAccomodation,
   About
 } from '../';
 import './mainApp.css';
@@ -36,6 +37,7 @@ const MainApp = (props) => {
           <Route path='/accomodation' element={<Accommodation />} />
           <Route path='/add-accomodation/' element={<AddAccomodation user={props.user} />} />
           <Route path='/add-accomodation/:id' element={<AddAccomodation user={props.user} />} />
+          <Route path='/detail-accomodation/:id' element={<DetailAccomodation user={props.user} />} />
 
           <Route path='/about' element={<About />} />
         </Swicth>

@@ -10,6 +10,7 @@ import AddCulinary from './AddCulinary';
 import DetailCulinary from "./DetailCulinary";
 import Accommodation from './Accommodation';
 import AddAccomodation from './AddAccomodation';
+import DetailAccomodation from "./DetailAccomodation";
 import About from "./About";
 
 export {
@@ -25,5 +26,6 @@ export {
     DetailCulinary,
     Accommodation,
     AddAccomodation,
+    DetailAccomodation,
     About,
 };

@@ -46,7 +46,7 @@ const DetailObjectTourism = (props) => {
           <div className="col-6 me-auto">
             <Breadcrumb>
               <BreadcrumbItem>
-                Yogyakarta
+                Object Tourism
               </BreadcrumbItem>
               <BreadcrumbItem className='object_tourism_breadcrumb' active>
                 {ObjectTourism.dest_name}
