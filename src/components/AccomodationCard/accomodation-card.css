@@ -69,4 +69,5 @@
 .component-wrapper-accomodation .accomodation-addres {
     font-size: 16px;
     margin: 0;
+    align-items: center;
 }

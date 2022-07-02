@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getDetailCulinary, deleteCulinary } from '../../utils/CulinaryHandler';
 import { Breadcrumb, BreadcrumbItem, Button } from 'reactstrap';
 import { useParams } from 'react-router-dom';
-import { actionCulinaryButtonCreator } from '../../utils/templates/DetailsCulinaryHelper';
+import { actionButtonCreator } from '../../utils/templates/DetailsCulinaryHelper';
 import Gap from '../../components/atoms/Gap';
 import './detailCulinary.css'
 
@@ -31,7 +31,7 @@ const DetailCulinary = (props) => {
     if (Culinary) {
         if (user) {
             if (user._id === Culinary.author.user_id) {
-                actionMenu = actionCulinaryButtonCreator(Culinary);
+                actionMenu = actionButtonCreator(Culinary);
             }
         }
 

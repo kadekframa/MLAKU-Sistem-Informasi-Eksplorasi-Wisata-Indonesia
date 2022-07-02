@@ -6,11 +6,11 @@ const actionButtonCreator = (data) => {
     return (
         <>
             <a href={`/add-object-tourism/${data._id}`}>
-                <Button>Edit</Button>
+                <button type="button" class="btn btn-warning me-md-4" >Edit</button>
             </a>
-            <Button onClick={() => deleteObjectTourism(data._id)}>Delete</Button>
+            <button type="button" class="btn btn-danger" onClick={() => deleteObjectTourism(data._id)}>Delete</button>
         </>
     )
 }
 
-export {actionButtonCreator};
+export { actionButtonCreator };

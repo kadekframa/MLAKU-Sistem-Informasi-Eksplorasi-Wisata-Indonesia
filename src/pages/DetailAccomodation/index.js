@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getDetailAccomodation, deleteObjectTourism } from '../../utils/AccomodationHandler';
 import { Breadcrumb, BreadcrumbItem, Button } from 'reactstrap';
 import { useParams } from 'react-router-dom';
-import { actionAccomodationButtonCreator } from '../../utils/templates/DetailsAccomodationHelper';
+import { actionButtonCreator } from '../../utils/templates/DetailsAccomodationHelper';
 import Gap from '../../components/atoms/Gap';
 import './detailAccomodation.css'
 
@@ -31,7 +31,7 @@ const DetailAccomodation = (props) => {
     if (Accomodation) {
         if (user) {
             if (user._id === Accomodation.author.user_id) {
-                actionMenu = actionAccomodationButtonCreator(Accomodation);
+                actionMenu = actionButtonCreator(Accomodation);
             }
         }
 
