@@ -51,7 +51,7 @@ const Login = (props) => {
             </div>
             <p className='m-0'>Belum punya akun? &nbsp;
               <a href="/register">Register</a> &nbsp;&nbsp;
-              <a href="/">Back to Home</a>
+              <a href="/">Back Home</a>
             </p>
 
           </Form>

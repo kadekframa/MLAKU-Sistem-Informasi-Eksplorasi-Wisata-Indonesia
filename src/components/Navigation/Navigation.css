@@ -87,4 +87,8 @@
     .user-profile-setting {
         margin-right: 0px;
     }
+
+    .item-navigation-wrapper .nav-link {
+        padding: .8rem 1rem;
+    }
   }
