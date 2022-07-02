@@ -14,16 +14,16 @@ const createCulinaryList = (dataCulinary) => {
             </div>
         )
     })
-} 
+}
 
 const addCulinaryButtonCreator = () => {
-    return(
+    return (
         <a href="/add-culinary" className="btn btn-primary">
-        Add Culinary
+            Add Culinary
         </a>
     )
 }
 
 
 
-export {createCulinaryList, addCulinaryButtonCreator};
+export { createCulinaryList, addCulinaryButtonCreator };

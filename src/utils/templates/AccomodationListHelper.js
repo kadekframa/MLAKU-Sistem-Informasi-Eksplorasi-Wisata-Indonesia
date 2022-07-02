@@ -17,7 +17,7 @@ const createAccomodationList = (dataAccomodation) => {
 }
 
 const addAccomodationButtonCreator = () => {
-    return(
+    return (
         <a href="/add-accomodation" className="btn btn-primary">
             Add Accomodation
         </a>
@@ -26,4 +26,4 @@ const addAccomodationButtonCreator = () => {
 
 
 
-export {createAccomodationList, addAccomodationButtonCreator};
+export { createAccomodationList, addAccomodationButtonCreator };

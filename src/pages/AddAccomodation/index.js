@@ -121,7 +121,7 @@ const AddAccomodation = (props) => {
                     </FormGroup>
 
                     <div className="d-flex justify-content-end">
-                        <Button color="success" className="mt-4 px-4 py-2" onClick={onSubmit}>{isEdit ? 'Update' : 'Add'} Accomodation Tourism</Button>
+                        <Button color="success" className="mt-4 px-4 py-2" onClick={onSubmit}>{isEdit ? 'Update' : 'Add'} Accomodation </Button>
                     </div>
                 </Form>
             </div>

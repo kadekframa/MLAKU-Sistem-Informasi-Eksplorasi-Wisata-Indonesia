@@ -31,11 +31,11 @@ const Accomodation = () => {
               <h1 className='fw-bold'>Temukan Accomoation Favoritmu Hanya Disini </h1>
               <p className='text-secondary'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint harum laboriosam ipsa sit quia placeat molestiae autem doloremque incidunt reprehenderit optio neque at culpa, qui illum hic distinctio aliquid! Enim!</p>
             </div>
-
           </div>
         </div>
       </section>
       <Gap height={40} />
+
       <section id='accomodationWrapper'>
         <div className='text-center mb-4'>
           <h1 className='fw-bold'>Accomodation</h1>
