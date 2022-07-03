@@ -2,7 +2,7 @@
   "name": "frontend_mlaku",
   "version": "0.1.0",
   "engines": {
-    "node": "14.x"
+    "node": "14.16.0"
   },
   "private": true,
   "dependencies": {
