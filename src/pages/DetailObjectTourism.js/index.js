@@ -54,9 +54,13 @@ const DetailObjectTourism = (props) => {
               </BreadcrumbItem>
             </Breadcrumb>
             <h1 className="mb-3">{ObjectTourism.dest_name}</h1>
+            <h5 className="">Location:</h5>
             <p className=""><i>{ObjectTourism.address}</i></p>
+            <h5 className="">Time Open:</h5>
             <p className=""><i>{ObjectTourism.open_day}</i></p>
+            <h5 className="">Day Open:</h5>
             <p className=""><i>{ObjectTourism.open_time}</i></p>
+            <h5 className="">Contact Number:</h5>
             <p className=""><i>{ObjectTourism.contact_number}</i></p>
 
 
