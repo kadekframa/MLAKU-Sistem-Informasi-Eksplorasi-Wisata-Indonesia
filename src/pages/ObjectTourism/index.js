@@ -5,7 +5,7 @@ import { createObjectTourismList, addObjectTourismButtonCreator } from '../../ut
 import { objecttourismIllustration } from '../../assets'
 import Gap from '../../components/atoms/Gap';
 
-const ObjectTourism = () => {
+const ObjectTourism = (props) => {
   const [dataObjectTourism, setDataObjectTourism] = useState([]);
 
   useEffect(() => {
@@ -15,8 +15,12 @@ const ObjectTourism = () => {
       })
   })
 
+  let addObjectTourismButton;
+  if(props.user){
+    addObjectTourismButton = addObjectTourismButtonCreator();
+  }
+
   const objectTourismList = createObjectTourismList(dataObjectTourism);
-  const addObjectTourismButton = addObjectTourismButtonCreator();
 
 
   return (

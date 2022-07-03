@@ -48,6 +48,15 @@
   .card-wrapper .bg-sulawesi {
     background-image: url('../../assets/images/bg-sulawesi.jpg');
   }
+  .card-wrapper .bg-sumatra {
+    background-image: url('../../assets/images/bg-sumatra.jpg');
+  }
+  .card-wrapper .bg-ntt {
+    background-image: url('../../assets/images/bg-ntt.jpg');
+  }
+  .card-wrapper .bg-maluku {
+    background-image: url('../../assets/images/bg-maluku.jpg');
+  }
   /* Background Province End*/
 
 
@@ -74,6 +83,7 @@
   .card-wrapper .box-overlay  .text-overlay .text{
     color: white;
     font-size: 30px;
+    text-shadow: 0px 0px 34px rgb(255, 255, 255);
   }
 
   .card-wrapper .link-url {

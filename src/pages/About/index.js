@@ -17,7 +17,13 @@ const About = () => {
             </div>
             <div className='col-6 about-us-head'>
               <h1 >About Mlaku</h1>
-              <p className='desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit exercitationem veritatis eum vero quidem quos voluptates perspiciatis esse nisi, cupiditate odit beatae obcaecati. Impedit accusamus necessitatibus delectus culpa recusandae cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit exercitationem veritatis eum vero quidem quos voluptates perspiciatis esse nisi, cupiditate odit beatae obcaecati. Impedit accusamus necessitatibus delectus culpa recusandae cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque maiores dolorem earum et! Voluptates.</p>
+              <p className='desc-highlight'>Mlaku is a system that is able to provide information to local and
+                foreign tourists to find information related to tourism in Indonesia such as tourist attractions, 
+                culinary tourism, accommodation (villas, hotels, inns). With The construction of this website-based 
+                system is expected to make it easier for local tourists or abroad for recreation, vacation or travel 
+                in Indonesia. This system too it is hoped that it can help UMKM, especially culinary ones in Indonesia, 
+                to be able to introduce their products. This website has several features, including object tourist features, 
+                culinary features, accommodation features</p>
             </div>
           </div>
 
@@ -27,7 +33,13 @@ const About = () => {
             </div>
             <div className='col-6 why-use-head'>
               <h1>Why Use Mlaku?</h1>
-              <p className='desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit exercitationem veritatis eum vero quidem quos voluptates perspiciatis esse nisi, cupiditate odit beatae obcaecati. Impedit accusamus necessitatibus delectus culpa recusandae cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit exercitationem veritatis eum vero quidem quos voluptates perspiciatis esse nisi, cupiditate odit beatae obcaecati. Impedit accusamus necessitatibus delectus culpa recusandae cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque maiores dolorem earum et! Voluptates.</p>
+              <p className='desc-highlight'>
+                This application can provide access to users to be able to insert new tourist data 
+                which later each inputted data can become tourist information that will be displayed for tourists. 
+                This feature was created with the aim that this application can develop through the support of the Indonesian people. 
+                By using this application, it is hoped that it can help increase the interest of tourists to come on vacation to Indonesia. 
+                And it is also hoped that this application can increase the productivity of MSMEs, especially culinary ones, 
+                so that they can introduce their products.</p>
             </div>
           </div>
 
@@ -37,14 +49,18 @@ const About = () => {
             </div>
             <div className='col-6 how-to-use-head'>
               <h1>How To Use?</h1>
-              <p className='desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus itaque maiores dolorem earum et! Voluptates. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates fuga, delectus magni, eos, illum nulla eveniet modi fugit necessitatibus nam iusto beatae aut quis sint eligendi placeat! Quaerat, nemo blanditiis!</p>
+              <p className='desc-highlight'>
+                The first time you open the application, the user will be directed to the application's home page which contains several highlights.
+                This system provides 3 main features, namely Object Tourist, Culinary and Accommodation. Users can use all available features. 
+                If the user also wants to add data to the system, the user must first register and create an account. If you already have an account, 
+                the user can use that account to login. After logging in using a registered account, the user can insert data in various available features.</p>
             </div>
           </div>
 
           <div className='row our-team-wrapper'>
             <h1 className=''>Our Team</h1>
           </div>
-          <p className='our-team-desc desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit exercitationem veritatis eum vero quidem quos voluptates perspiciatis esse nisi, cupiditate odit beatae obcaecati. Impedit accusamus necessitatibus delectus culpa recusandae cumque. Lorem</p>
+          <p className='our-team-desc desc-highlight'>Mlaku Development Team will continue to strive to develop this system on an ongoing basis so that it can be used for the better</p>
 
           <div className='row our-team-section responsive-about d-flex row-cols-4'>
             <div className='col px-0'>

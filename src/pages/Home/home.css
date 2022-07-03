@@ -29,7 +29,7 @@
     position: absolute;
     color: white;
     text-shadow: 0px 0px 34px rgb(0, 0, 0);
-    margin: 64vh 17vh auto;
+    margin: 56vh 17vh auto;
 }
 
 .home-wrapper .swiper-wrapper .text-img-slider2 {
@@ -54,7 +54,7 @@
 
 .visit-desc {
     font-size: 32px;
-    margin: 0 0.4vh;
+    margin: 0 1vh;
 }
 
 .icon-off {
@@ -82,7 +82,7 @@
 .home-wrapper .home-content-wrapper .mlaku-hero h1 {
     font-weight: bold;
     color: rgb(58, 105, 144);
-    margin-top: 80px;
+    margin-top: 160px;
 }
 
 .home-wrapper .home-content-wrapper .heading-description-mlaku {
@@ -151,6 +151,10 @@
 
     .home-wrapper .highlight-wrapper {
         margin: 0;
+    }
+
+    .home-wrapper .highlight-wrapper h2 {
+        padding: 0;
     }
 
     .home-wrapper .home-content-wrapper .mlaku-hero h1 {

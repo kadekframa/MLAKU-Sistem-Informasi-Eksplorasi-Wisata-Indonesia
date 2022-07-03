@@ -5,7 +5,7 @@ import { createCulinaryList, addCulinaryButtonCreator } from '../../utils/templa
 import { culinaryIllustration } from '../../assets'
 import Gap from '../../components/atoms/Gap';
 
-const Culinary = () => {
+const Culinary = (props) => {
   const [dataCulinary, setDataCulinary] = useState([]);
 
   useEffect(() => {
@@ -15,8 +15,11 @@ const Culinary = () => {
       })
   })
 
+  let addCulinaryButton;
+  if(props.user){
+    addCulinaryButton = addCulinaryButtonCreator();
+  }
   const culinaryList = createCulinaryList(dataCulinary);
-  const addCulinaryButton = addCulinaryButtonCreator();
 
 
   return (

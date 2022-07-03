@@ -16,7 +16,7 @@
     .about-wrapper .about-content-wrapper .why-use-head h1 {
         font-weight: bold;
         color: rgb(58, 105, 144);
-        margin-top: 100px;
+        margin-top: 180px;
     }
     
     .about-wrapper .about-content-wrapper .how-to-use-head h1 {
@@ -45,6 +45,7 @@
     
     .about-wrapper .about-content-wrapper .our-team-desc {
         text-align: center !important;
+        margin: 0 256px;
     }
 
     .about-wrapper .our-team-section{
@@ -91,13 +92,19 @@
     .about-wrapper .about-content-wrapper .how-to-use-head h1 {
         margin-top: 46px;
     }
+
+    .about-wrapper .our-team-wrapper {
+        margin: 0;
+    }
     
     .about-wrapper .our-team-wrapper h1 {
         margin: 34px 0 10px !important;
+        padding: 0;
     }
 
     .about-wrapper .about-content-wrapper .our-team-desc {
         text-align: justify !important;
+        margin: 0 0;
     }
 
     .about-wrapper .our-team-section .col {

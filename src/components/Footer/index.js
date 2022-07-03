@@ -19,7 +19,7 @@ const Footer = () => {
 
           <div className='col'>
             <div className='row mt-4 mt-md-0'>
-              <h5 className="mx-1">Our Service</h5>
+              <h5 className="mx-1 fw-bold">Our Service</h5>
               <ul>
                 <li className="nav-item mb-2 mx-3">
                   <Link className='nav-link p-0 text-muted' to="/object-tourism">Object Tourism</Link>
@@ -36,7 +36,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className='row mt-4 mt-md-0'>
-              <h5 className="mx-1">Sosial Media</h5>
+              <h5 className="mx-1 fw-bold">Sosial Media</h5>
               <ul>
                 <li className="nav-item mb-2 mx-3">
                   <a href="https://www.instagram.com/mlakutravel_id/" className='nav-link p-0 text-muted' target='blank' rel='noreferrer'><i class="fa fa-instagram text-danger"></i> Instagram</a>
@@ -54,7 +54,7 @@ const Footer = () => {
           <div className='col'>
             
             <div className='row mt-4 mt-md-0'>
-              <h5 className="mx-1">Help Center</h5>
+              <h5 className="mx-1 fw-bold">Help Center</h5>
               <ul>
                 <li className="nav-item mb-2 mx-3">
                   <p className='m-0 text-muted'><i className='fa fa-phone'></i> +62 0859 6411 6702 (Inaya)</p>
@@ -72,7 +72,7 @@ const Footer = () => {
             </div>
             
             <div className='row mt-4 mt-md-0'>
-              <h5 className="mx-1">Address</h5>
+              <h5 className="mx-1 fw-bold">Address</h5>
               <ul>
                 <li className="nav-item mb-2 mx-3">
                   <p className='m-0 text-muted'>

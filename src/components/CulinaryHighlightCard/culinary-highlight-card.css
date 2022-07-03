@@ -28,23 +28,23 @@
 
   /* Background Culinary Highlight */
 
-  .culinary-card-wrapper .bg-bali {
-    background-image: url('../../assets/images/bg-bali.jpg');
+  .culinary-card-wrapper .bg-nasipadang {
+    background-image: url('../../assets/images/bg-nasipadang.jpeg');
   }
-  .culinary-card-wrapper .bg-jawabarat {
-    background-image: url('../../assets/images/bg-jawabarat.jpg');
+  .culinary-card-wrapper .bg-sate {
+    background-image: url('../../assets/images/bg-sate.jpg');
   }
-  .culinary-card-wrapper .bg-jawatimur {
-    background-image: url('../../assets/images/bg-jawatimur.jpg');
+  .culinary-card-wrapper .bg-gudeg {
+    background-image: url('../../assets/images/bg-gudeg.jpg');
   }
-  .culinary-card-wrapper .bg-bg-jawatengah {
-    background-image: url('../../assets/images/bg-jawatengah.jpg');
+  .culinary-card-wrapper .bg-bakso {
+    background-image: url('../../assets/images/bg-bakso.jpg');
   }
-  .culinary-card-wrapper .bg-lombok {
-    background-image: url('../../assets/images/bg-lombok.jpg');
+  .culinary-card-wrapper .bg-pempek {
+    background-image: url('../../assets/images/bg-pempek.jpg');
   }
-  .culinary-card-wrapper .bg-kaltim {
-    background-image: url('../../assets/images/bg-kaltim.jpg');
+  .culinary-card-wrapper .bg-betutu {
+    background-image: url('../../assets/images/bg-betutu.jpg');
   }
   /* Background Culinary Highlight*/
 
@@ -71,7 +71,8 @@
 
   .culinary-card-wrapper .box-overlay  .text-overlay .text{
     color: white;
-    font-size: 30px;
+    font-size: 34px;
+    text-shadow: 0px 0px 34px rgb(255, 255, 255);
   }
 
   .culinary-card-wrapper .link-url {

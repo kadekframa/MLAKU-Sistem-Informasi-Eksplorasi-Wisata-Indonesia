@@ -34,7 +34,7 @@ const Homey = (image, textHead, textLocation, positionText, headText, descText, 
   return (
     <SwiperSlide>
       <div className={`text-img-slider${positionText}`}>
-        <h2 className={headText}>{textHead}</h2>
+        <h2 className={`${headText} fw-bold`}>{textHead}</h2>
         <h5 className={descText}><i className={`${offIcon} fa fa-map-marker`}></i>&nbsp; {textLocation}</h5>
       </div>
       <img className="img" src={image} alt="Image_Sliders"/>
@@ -69,12 +69,14 @@ const Home = () => {
               <img src={TouristIllustration} alt="Tourist with her bag Illustration" className='d-block mx-lg-auto img-fluid' width='500px' />
             </div>
             <div className='col-lg-7'>
-              <h1>Explore Trough Survival</h1>
-              <p className='description-mlaku mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quae ad saepe omnis eos officiis, assumenda, iure quam odio aut incidunt pariatur, amet laboriosam delectus facilis.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quae ad saepe omnis eos officiis, assumenda, iure quam odio aut incidunt pariatur, amet laboriosam delectus facilis.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quae ad saepe omnis eos officiis, assumenda, iure quam odio aut incidunt pariatur, amet laboriosam delectus facilis.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quae ad saepe omnis eos officiis, assumenda, iure quam odio aut incidunt pariatur, amet laboriosam delectus facilis.
-                Officia perferendis esse quidem!</p>
+              <h1>Want to take a vacation?</h1>
+              <p className='description-mlaku mt-3'>
+                Have you ever been confused looking for information related to travel for a vacation? Need tourist 
+                information that is famous or that is still rarely known for a vacation? Mlaku will help you to get what you need.
+                Mlaku is a system that is able to provide information to local and foreign tourists to find 
+                information related to tourism in Indonesia such as tourist attractions, culinary tourism, accommodation (villas, hotels, inns).
+                We will help you to find what you need.
+              </p>
             </div>
           </div>
           
@@ -82,9 +84,37 @@ const Home = () => {
           <div className='row highlight-wrapper'>
             <h2 className='col'>Destination Highlight</h2>
           </div>
-          <p className='text-center desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam.</p>
+          <p className='text-center desc-highlight'>Free yourself, explore and enjoy Indonesian nature tourism</p>
 
           <div className='row section-province-wrapper responsive-wrapper row-cols-5 d-flex'>
+            <div className='col px-0 mb-0'>
+              <ProvinceCard
+                province='Sumatra'
+                url='/object-tourism'
+                bg_image='box-overlay bg-sumatra'
+              />
+            </div>
+            <div className='col px-0 mb-0'>
+              <ProvinceCard
+                province='Jawa Barat'
+                url='/object-tourism'
+                bg_image='box-overlay bg-jawabarat'
+              />
+            </div>
+            <div className='col px-0 mb-0'>
+              <ProvinceCard
+                province='Jawa Tengah'
+                url='/object-tourism'
+                bg_image='box-overlay bg-bg-jawatengah'
+              />
+            </div>
+            <div className='col px-0 mb-0'>
+              <ProvinceCard
+                province='Jawa Timur'
+                url='/object-tourism'
+                bg_image='box-overlay bg-jawatimur'
+              />
+            </div>
             <div className='col px-0 mb-0'>
               <ProvinceCard
                 province='Bali'
@@ -113,46 +143,18 @@ const Home = () => {
                 bg_image='box-overlay bg-sulawesi'
               />
             </div>
-            <div className='col px-0 mb-0'>
-              <ProvinceCard
-                province='Jawa Timur'
-                url='/object-tourism'
-                bg_image='box-overlay bg-jawatimur'
-              />
-            </div>
-            <div className='col px-0 mb-0'>
-              <ProvinceCard
-                province='Jawa Tengah'
-                url='/object-tourism'
-                bg_image='box-overlay bg-bg-jawatengah'
-              />
-            </div>
-            <div className='col px-0 mb-0'>
-              <ProvinceCard
-                province='Jawa Barat'
-                url='/object-tourism'
-                bg_image='box-overlay bg-jawabarat'
-              />
-            </div>
-            <div className='col px-0 mb-0'>
-              <ProvinceCard
-                province='Bali'
-                url='/object-tourism'
-                bg_image='box-overlay bg-bali'
-              />
-            </div>
-            <div className='col px-0 mb-0'>
-              <ProvinceCard
-                province='Bali'
-                url='/object-tourism'
-                bg_image='box-overlay bg-bali'
-              />
-            </div>
             <div className='col px-0'>
               <ProvinceCard
-                province='Bali'
+                province='Nusa Tenggara Timur'
                 url='/object-tourism'
-                bg_image='box-overlay bg-bali'
+                bg_image='box-overlay bg-ntt'
+              />
+            </div>
+            <div className='col px-0 mb-0'>
+              <ProvinceCard
+                province='Maluku'
+                url='/object-tourism'
+                bg_image='box-overlay bg-maluku'
               />
             </div>
           </div>
@@ -160,48 +162,48 @@ const Home = () => {
           <div className='row highlight-wrapper'>
             <h2 className='col'>Culinary Highlight</h2>
           </div>
-          <p className='text-center desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam.</p>
+          <p className='text-center desc-highlight'>Lots of interesting culinary that will be an unforgettable experience.</p>
           <div className='row section-culinary-wrapper responsive-wrapper d-flex row-cols-3'>
             <div className='col px-0'>
               <CulinaryHighlightCard
                 culinaryName='Nasi Padang'
                 url='/object-tourism'
-                bg_image='box-overlay bg-bali'
+                bg_image='box-overlay bg-nasipadang'
               />
             </div>
             <div className='col px-0'>
               <CulinaryHighlightCard
                 culinaryName='Sate'
                 url='/object-tourism'
-                bg_image='box-overlay bg-bali'
+                bg_image='box-overlay bg-sate'
               />
             </div>
             <div className='col px-0'>
               <CulinaryHighlightCard
                 culinaryName='Gudeg'
                 url='/object-tourism'
-                bg_image='box-overlay bg-bali'
+                bg_image='box-overlay bg-gudeg'
               />
             </div>
             <div className='col px-0'>
               <CulinaryHighlightCard
-                culinaryName='Lawar'
+                culinaryName='Bakso'
                 url='/object-tourism'
-                bg_image='box-overlay bg-bali'
+                bg_image='box-overlay bg-bakso'
               />
             </div>
             <div className='col px-0'>
               <CulinaryHighlightCard
-                culinaryName='Dodol'
+                culinaryName='Pempek'
                 url='/object-tourism'
-                bg_image='box-overlay bg-bali'
+                bg_image='box-overlay bg-pempek'
               />
             </div>
             <div className='col px-0'>
               <CulinaryHighlightCard
-                culinaryName='Bubur'
+                culinaryName='Ayam Betutu'
                 url='/object-tourism'
-                bg_image='box-overlay bg-bali'
+                bg_image='box-overlay bg-betutu'
               />
             </div>
           </div>
@@ -209,7 +211,7 @@ const Home = () => {
           <div className='row highlight-wrapper'>
             <h2 className='col'>Acommodation Highlight</h2>
           </div>
-          <p className='text-center desc-highlight'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur eius eaque eos neque id quaerat vel fugiat magnam.</p>
+          <p className='text-center desc-highlight'>Some accommodation places that will help to rest for a while</p>
           <div className='row section-acommodation-wrapper responsive-wrapper d-flex row-cols-3'>
             <div className='col px-0'>
               <AccommodationHighlightCard

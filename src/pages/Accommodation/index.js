@@ -5,7 +5,7 @@ import { createAccomodationList, addAccomodationButtonCreator } from '../../util
 import { accomodationIllustration } from '../../assets'
 import Gap from '../../components/atoms/Gap';
 
-const Accomodation = () => {
+const Accomodation = (props) => {
   const [dataAccomodation, setDataAccomodation] = useState([]);
 
   useEffect(() => {
@@ -15,9 +15,12 @@ const Accomodation = () => {
       })
   })
 
+  let addAccomodationButton;
+  if(props.user){
+    addAccomodationButton = addAccomodationButtonCreator();
+  
+  }
   const accomodationList = createAccomodationList(dataAccomodation);
-  const addAccomodationButton = addAccomodationButtonCreator();
-
 
   return (
     <main className='container accomodation-wrapper'>

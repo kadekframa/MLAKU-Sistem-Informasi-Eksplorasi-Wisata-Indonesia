@@ -63,6 +63,7 @@
   .acommodation-card-wrapper .box-overlay  .text-overlay .text{
     color: white;
     font-size: 30px;
+    text-shadow: 0px 0px 34px rgb(255, 255, 255);
   }
 
   .acommodation-card-wrapper .link-url {
