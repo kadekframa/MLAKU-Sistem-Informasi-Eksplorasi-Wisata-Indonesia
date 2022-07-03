@@ -90,13 +90,13 @@ const updateAccomodation = (dataAccomodation, id) => {
     .then(response => {
       if (response.status === 200) {
         swal({
-          title: "Update Culinary Information Success",
+          title: "Update Accomodation Information Success",
           text: `${response.data.message}`,
           icon: 'success',
           button: "Ok",
         })
           .then(result => {
-            window.location.href = '/culinary';
+            window.location.href = '/accomodation';
           });
       }
     })
@@ -112,8 +112,8 @@ const updateAccomodation = (dataAccomodation, id) => {
 
 const deleteAccomodation = (id) => {
   swal({
-    title: "Delete Culinary?",
-    text: "Culinary Information will permanent delete?",
+    title: "Delete Accomodation?",
+    text: "Accomodation Information will permanent delete?",
     icon: "warning",
     buttons: ["Cancel", "Ok"],
     dangerMode: true,

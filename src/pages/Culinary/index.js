@@ -16,7 +16,7 @@ const Culinary = (props) => {
   })
 
   let addCulinaryButton;
-  if(props.user){
+  if (props.user) {
     addCulinaryButton = addCulinaryButtonCreator();
   }
   const culinaryList = createCulinaryList(dataCulinary);
@@ -32,7 +32,7 @@ const Culinary = (props) => {
             </div>
             <div className="col-md-7 pe-3 d-flex flex-column justify-content-center">
               <h1 className='fw-bold'>Temukan Kuliner Favoritmu Hanya Disini </h1>
-              <p className='text-secondary'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint harum laboriosam ipsa sit quia placeat molestiae autem doloremque incidunt reprehenderit optio neque at culpa, qui illum hic distinctio aliquid! Enim!</p>
+              <p className='text-secondary'>"Makanan adalah segalanya bagi kita. Ini merupakan perpanjangan dari perasaan nasionalis, perasaan etnis, sejarah pribadimu, provinsimu, daerahmu, sukumu, nenekmu. Itu tidak dapat dipisahkan sejak awal." <strong> Anthony Bourdain </strong> </p>
             </div>
 
           </div>

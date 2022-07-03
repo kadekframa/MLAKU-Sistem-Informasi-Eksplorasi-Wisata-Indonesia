@@ -55,7 +55,7 @@ const AddAccomodation = (props) => {
         console.info('image:', image);
         console.info('Props: ', props.user.fullname);
 
-        const accommodation = {
+        const accomodation = {
             accomodationName,
             address,
             image,
@@ -71,9 +71,9 @@ const AddAccomodation = (props) => {
 
 
         if (isEdit) {
-            updateAccomodation(accommodation, id);
+            updateAccomodation(accomodation, id);
         } else {
-            createAccomodation(accommodation)
+            createAccomodation(accomodation)
         }
     }
 
@@ -93,16 +93,16 @@ const AddAccomodation = (props) => {
                     </FormGroup>
 
                     <FormGroup>
-                        <Label for="image">Image Accommodation</Label>
+                        <Label for="image">Image Accomodation</Label>
                         {image && <img className="preview d-block mb-3" src={imagePreview} alt="preview" />}
                         <Input id="image" name="image" type="file" onChange={e => onImageUpload(e)} required />
-                        <FormText>&#8505; Tampilkan foto terbaik dari Accommodation yang ingin datambahkan.</FormText>
+                        <FormText>&#8505; Tampilkan foto terbaik dari Accomodation yang ingin datambahkan.</FormText>
                     </FormGroup>
 
                     <FormGroup>
                         <Label for="description">Deskripsi</Label>
                         <textarea className="form-control" name="description" id="description" rows="10" value={isEdit ? description : undefined} onChange={e => setDescription(e.target.value)} required></textarea>
-                        <FormText>&#8505; Berikan deskripsi informasi dari accommodation yang ditambahkan agar orang lain tertarik untuk mengunjunginya.</FormText>
+                        <FormText>&#8505; Berikan deskripsi informasi dari accomodation yang ditambahkan agar orang lain tertarik untuk mengunjunginya.</FormText>
                     </FormGroup>
 
                     <FormGroup>

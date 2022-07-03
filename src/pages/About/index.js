@@ -18,11 +18,11 @@ const About = () => {
             <div className='col-6 about-us-head'>
               <h1 >About Mlaku</h1>
               <p className='desc-highlight'>Mlaku is a system that is able to provide information to local and
-                foreign tourists to find information related to tourism in Indonesia such as tourist attractions, 
-                culinary tourism, accommodation (villas, hotels, inns). With The construction of this website-based 
-                system is expected to make it easier for local tourists or abroad for recreation, vacation or travel 
-                in Indonesia. This system too it is hoped that it can help UMKM, especially culinary ones in Indonesia, 
-                to be able to introduce their products. This website has several features, including object tourist features, 
+                foreign tourists to find information related to tourism in Indonesia such as tourist attractions,
+                culinary tourism, accommodation (villas, hotels, inns). With The construction of this website-based
+                system is expected to make it easier for local tourists or abroad for recreation, vacation or travel
+                in Indonesia. This system too it is hoped that it can help UMKM, especially culinary ones in Indonesia,
+                to be able to introduce their products. This website has several features, including object tourist features,
                 culinary features, accommodation features</p>
             </div>
           </div>
@@ -34,11 +34,11 @@ const About = () => {
             <div className='col-6 why-use-head'>
               <h1>Why Use Mlaku?</h1>
               <p className='desc-highlight'>
-                This application can provide access to users to be able to insert new tourist data 
-                which later each inputted data can become tourist information that will be displayed for tourists. 
-                This feature was created with the aim that this application can develop through the support of the Indonesian people. 
-                By using this application, it is hoped that it can help increase the interest of tourists to come on vacation to Indonesia. 
-                And it is also hoped that this application can increase the productivity of MSMEs, especially culinary ones, 
+                This application can provide access to users to be able to insert new tourist data
+                which later each inputted data can become tourist information that will be displayed for tourists.
+                This feature was created with the aim that this application can develop through the support of the Indonesian people.
+                By using this application, it is hoped that it can help increase the interest of tourists to come on vacation to Indonesia.
+                And it is also hoped that this application can increase the productivity of MSMEs, especially culinary ones,
                 so that they can introduce their products.</p>
             </div>
           </div>
@@ -51,8 +51,8 @@ const About = () => {
               <h1>How To Use?</h1>
               <p className='desc-highlight'>
                 The first time you open the application, the user will be directed to the application's home page which contains several highlights.
-                This system provides 3 main features, namely Object Tourist, Culinary and Accommodation. Users can use all available features. 
-                If the user also wants to add data to the system, the user must first register and create an account. If you already have an account, 
+                This system provides 3 main features, namely Object Tourist, Culinary and Accommodation. Users can use all available features.
+                If the user also wants to add data to the system, the user must first register and create an account. If you already have an account,
                 the user can use that account to login. After logging in using a registered account, the user can insert data in various available features.</p>
             </div>
           </div>
@@ -85,7 +85,7 @@ const About = () => {
             </div>
             <div className='col px-0'>
               <DeveloperCard
-                developerName='Fachrul Dwi'
+                developerName='Fachrul Dwi Aprilian'
                 git_url='https://github.com/aprlfch'
                 linkedin_url='https://www.linkedin.com/in/fachrul-dwi-aprilian-97543b230'
                 wa_url='+62 0823 1121 3404'

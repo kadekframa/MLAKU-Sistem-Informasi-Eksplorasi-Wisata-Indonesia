@@ -16,7 +16,7 @@ const ObjectTourism = (props) => {
   })
 
   let addObjectTourismButton;
-  if(props.user){
+  if (props.user) {
     addObjectTourismButton = addObjectTourismButtonCreator();
   }
 
@@ -30,7 +30,7 @@ const ObjectTourism = (props) => {
           <div className="row objectTourism-hero-wrapper mt-4 justify-content-between">
             <div className="col-md-7 pe-3 d-flex flex-column justify-content-center">
               <h1 className='fw-bold title'>Temukan Wisata Favoritmu Hanya Disini </h1>
-              <p className='text-secondary'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint harum laboriosam ipsa sit quia placeat molestiae autem doloremque incidunt reprehenderit optio neque at culpa, qui illum hic distinctio aliquid! Enim!</p>
+              <p className='text-secondary'>"Traveling itu seperti universitas tanpa akhir. Anda tidak pernah berhenti belajar." <strong> Harvey Lloyd </strong> </p>
             </div>
             <div className="col-md-5">
               <img className='img-fluid objectTourism-hero-img' src={objecttourismIllustration} alt="Object Tourism Ilustrasi" />
