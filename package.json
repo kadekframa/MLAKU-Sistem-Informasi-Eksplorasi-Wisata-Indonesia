@@ -1,9 +1,6 @@
 {
   "name": "frontend_mlaku",
   "version": "0.1.0",
-  "engines": {
-    "node": "16.15.1"
-  },
   "private": true,
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
