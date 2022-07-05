@@ -1,5 +1,5 @@
-![mlaku-logo](https://user-images.githubusercontent.com/78308555/177280230-257eebe5-6304-4047-823a-82543afc240c.png)
-# Mlaku - Indonesia Tourism Exploration Information System
+![readme-logo](https://user-images.githubusercontent.com/78308555/177283825-4e3aa6d5-e4ef-41e3-a0fd-b23f99a045bc.png)
+# Mlaku
 
 Tentang Mlaku
 --
@@ -52,29 +52,29 @@ Deploy:
 
 Cara Penggunaan:
 --
-## Frontend Mlaku
-### Project setup
+### Frontend Mlaku
+#### Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+#### Compiles and hot-reloads for development
 ```
 npm run start
 ```
 
-### Compiles and minifies for production
+#### Compiles and minifies for production
 ```
 npm run build
 ```
 
-## Backend Mlaku (Rest API)
-### Project setup
+### Backend Mlaku (Rest API)
+#### Project setup
 ```
 npm install
 ```
 
-### Compiles to run server
+#### Compiles to run server
 ```
 npm run start
 ```
