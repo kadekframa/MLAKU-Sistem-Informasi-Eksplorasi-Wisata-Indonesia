@@ -1,4 +1,4 @@
-![readme-logo](https://user-images.githubusercontent.com/78308555/177283825-4e3aa6d5-e4ef-41e3-a0fd-b23f99a045bc.png)
+![readme-logo](https://user-images.githubusercontent.com/78308555/177289001-5b9ef9ae-0101-4d5d-a930-2484335bac32.png)
 # Mlaku
 
 Tentang Mlaku
