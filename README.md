@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+![mlaku-logo](https://user-images.githubusercontent.com/78308555/177274567-12e264d5-3269-4523-86ad-bf4f40f778bc.png)
+# Mlaku - Indonesia Tourism Exploration Information System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tentang Mlaku
+--
 
-## Available Scripts
+Pernahkah Anda bingung mencari informasi terkait perjalanan untuk berlibur? Butuh informasi wisata yang terkenal atau yang masih jarang dikenal untuk liburan? Mlaku akan membantu Anda untuk mendapatkan apa yang Anda butuhkan. Mlaku merupakan sistem yang mampu memberikan informasi kepada wisatawan lokal maupun mancanegara untuk mencari informasi terkait pariwisata di Indonesia seperti tempat wisata, wisata kuliner, akomodasi (villa, hotel, penginapan). Mlaku akan membantu Anda menemukan apa yang Anda butuhkan.
+Mlaku merupakan sistem yang mampu memberikan informasi kepada wisatawan lokal maupun mancanegara untuk mencari informasi terkait pariwisata di Indonesia seperti tempat wisata, wisata kuliner, akomodasi (villa, hotel, losmen). Dengan dibangunnya sistem berbasis website ini diharapkan dapat memudahkan wisatawan lokal maupun mancanegara untuk berekreasi, berlibur atau berwisata di Indonesia. Sistem ini juga diharapkan dapat membantu UMKM khususnya kuliner di Indonesia untuk dapat memperkenalkan produknya. Website ini memiliki beberapa fitur, antara lain fitur objek wisata, fitur kuliner dan fitur akomodasi.
 
-In the project directory, you can run:
 
-### `npm start`
+Manfaat dan Kelebihan WeSata
+--
+- Aplikasi web ini dapat membantu para wisatawan lokal maupun mancanegara yang ingin berlibur di Indonesia
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Capstone Project SIB Kampus merdeka Dicoding Batch 2 - Team CPNG-90
+--
+1. F2014E068 - Kadek Frama Danamastyana
+2. F2133D103 - Fachrul Dwi Aprilian
+3. F7253D215 - Lale Inaya Firasya
+4. F2206D166 - I Komang Sucita Darma
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Project Resources
+--
+Teknologi yang kami gunakan:
+- MongoDB
+- ExpressJS
+- ReactJS
+- NodeJS
 
-### `npm run build`
+Bahasa Pemrograman yang digunakan:
+- HTML
+- CSS
+- JavaScript
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Framework CSS yang digunakan:
+- Boostrap
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Assets yang digunakan:
+- Freepik.com
+- Unsplash.com
+- Storyset.com
+- Google Image
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Deploy:
+- Vercel.com
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Cara Penggunaan:
+--
+## Project setup
+```
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Compiles and hot-reloads for development
+```
+npm run start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Compiles and minifies for production
+```
+npm run build
+```
