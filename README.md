@@ -1,16 +1,19 @@
-![mlaku-logo](https://user-images.githubusercontent.com/78308555/177274567-12e264d5-3269-4523-86ad-bf4f40f778bc.png)
+![mlaku-logo](https://user-images.githubusercontent.com/78308555/177280230-257eebe5-6304-4047-823a-82543afc240c.png)
 # Mlaku - Indonesia Tourism Exploration Information System
 
 Tentang Mlaku
 --
 
-Pernahkah Anda bingung mencari informasi terkait perjalanan untuk berlibur? Butuh informasi wisata yang terkenal atau yang masih jarang dikenal untuk liburan? Mlaku akan membantu Anda untuk mendapatkan apa yang Anda butuhkan. Mlaku merupakan sistem yang mampu memberikan informasi kepada wisatawan lokal maupun mancanegara untuk mencari informasi terkait pariwisata di Indonesia seperti tempat wisata, wisata kuliner, akomodasi (villa, hotel, penginapan). Mlaku akan membantu Anda menemukan apa yang Anda butuhkan.
-Mlaku merupakan sistem yang mampu memberikan informasi kepada wisatawan lokal maupun mancanegara untuk mencari informasi terkait pariwisata di Indonesia seperti tempat wisata, wisata kuliner, akomodasi (villa, hotel, losmen). Dengan dibangunnya sistem berbasis website ini diharapkan dapat memudahkan wisatawan lokal maupun mancanegara untuk berekreasi, berlibur atau berwisata di Indonesia. Sistem ini juga diharapkan dapat membantu UMKM khususnya kuliner di Indonesia untuk dapat memperkenalkan produknya. Website ini memiliki beberapa fitur, antara lain fitur objek wisata, fitur kuliner dan fitur akomodasi.
+Pernahkah Anda bingung mencari informasi terkait perjalanan untuk berlibur? Butuh informasi wisata yang terkenal atau yang masih jarang dikenal untuk liburan? Mlaku akan membantu Anda untuk mendapatkan apa yang Anda butuhkan. Mlaku merupakan sistem yang mampu memberikan informasi kepada wisatawan lokal maupun mancanegara untuk mencari informasi terkait pariwisata di Indonesia seperti tempat wisata, wisata kuliner, akomodasi (villa, hotel, penginapan). Dengan dibangunnya sistem berbasis website ini diharapkan dapat memudahkan wisatawan lokal maupun mancanegara untuk berekreasi, berlibur atau berwisata di Indonesia. Sistem ini juga diharapkan dapat membantu UMKM khususnya kuliner di Indonesia untuk dapat memperkenalkan produknya. Website ini memiliki beberapa fitur utama, antara lain fitur objek wisata, fitur kuliner dan fitur akomodasi.
 
 
-Manfaat dan Kelebihan WeSata
+Manfaat dan Kelebihan Mlaku:
 --
-- Aplikasi web ini dapat membantu para wisatawan lokal maupun mancanegara yang ingin berlibur di Indonesia
+- Aplikasi Mlaku berbasis web ini dapat membantu para wisatawan lokal maupun mancanegara yang ingin berlibur di Indonesia.
+- Pada penerapannya aplikasi aplikasi ini menggunakna custom API yang dibangun menggunakan Express JS, sehingga pengguna dapat secara langsung menambahkan data informasi pariwisata.
+- Aplikasi ini juga dapat digunakan untuk para pelaku UMKM khususnya kuliner untuk mendaftarkan usaha yang dimiliki. Sehingga aplikasi mlaku ini disamping membantu para wisatawan untuk mendapatkan informasi wisata juga dapat membantu para pelaku UMKM khususnya kuliner untuk memasarkan product yang dimilikinya.
+- Aplikasi ini telah dilengkapi dengan fitur authentication dan authorization untuk mengenali identitas dan membatasi akses dari pengguna yang ingin menggunakan fitur insert data ke dalam sistem ini.
+- Aplikasi ini dapat digunakan pada device mobile maupun desktop.
 
 
 Capstone Project SIB Kampus merdeka Dicoding Batch 2 - Team CPNG-90
@@ -49,7 +52,8 @@ Deploy:
 
 Cara Penggunaan:
 --
-## Project setup
+## Frontend Mlaku
+### Project setup
 ```
 npm install
 ```
@@ -62,4 +66,15 @@ npm run start
 ### Compiles and minifies for production
 ```
 npm run build
+```
+
+## Backend Mlaku (Rest API)
+### Project setup
+```
+npm install
+```
+
+### Compiles to run server
+```
+npm run start
 ```
