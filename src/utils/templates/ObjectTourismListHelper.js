@@ -18,7 +18,7 @@ const createObjectTourismList = (dataObjectTourism) => {
 
 const addObjectTourismButtonCreator = () => {
     return(
-        <a href="/add-object-tourism" className="btn btn-primary">
+        <a href="/add-object-tourism" className="btn btn-success py-2">
             Add Object Tourism
         </a>
     )

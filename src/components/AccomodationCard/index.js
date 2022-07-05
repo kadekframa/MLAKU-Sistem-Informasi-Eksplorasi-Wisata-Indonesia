@@ -9,13 +9,11 @@ const AccomodationCard = (props) => {
                 <a href={`/detail-accomodation/${_id}`}>
                     <img src={image} alt={accomodation_name} title={`Gambar Suasana Objek Wisata ${accomodation_name}`} />
                 </a>
-                <div className='text-wrapper-accomodation'>
-                    <a href={`/detail-accomodation/${_id}`}>
-                        <p className='accomodation-name'>{accomodation_name}</p>
-                    </a>
-                    <p className='culinary-addres'>{address}</p>
-                </div>
             </div>
+            <a href={`/detail-accomodation/${_id}`}>
+                <p className='accomodation-name'>{accomodation_name}</p>
+            </a>
+            <p className='culinary-addres'>{address}</p>
         </div>
     )
 }

@@ -7,25 +7,6 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    transition: all .5s;
-}
-
-.component-wrapper-culinary:hover .text-wrapper-culinary {
-    opacity: 1;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.component-wrapper-culinary:hover {
-    transition: all .5s;
-    transform: translateY(20px);
-}
-
-.img-wrapper-culinary {
-    width: 100%;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 2px 4px 10px 2px rgb(174, 174, 174);
 }
 
 .img-wrapper-culinary img {
@@ -38,32 +19,18 @@
 
 .component-wrapper-culinary a {
     text-decoration: none;
+    color: rgb(42, 42, 42);
 }
 
-.text-wrapper-culinary {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 0;
-    background-color: rgba(0, 0, 0, .6);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-    opacity: 0;
-    transition: 0.5s ease;
-    color: white;
-    text-transform: capitalize;
+.component-wrapper-culinary a:hover {
+    color: rgb(68, 102, 136);
 }
+
 
 .component-wrapper-culinary .culinary-name {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0 0;
-    color: white;
-
 }
 
 .component-wrapper-culianry .culinary-addres {

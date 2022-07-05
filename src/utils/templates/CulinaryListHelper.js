@@ -18,7 +18,7 @@ const createCulinaryList = (dataCulinary) => {
 
 const addCulinaryButtonCreator = () => {
     return (
-        <a href="/add-culinary" className="btn btn-primary">
+        <a href="/add-culinary" className="btn btn-success py-2">
             Add Culinary
         </a>
     )

@@ -1,3 +1,11 @@
+.object-tourism-wrapper {
+    margin: 80px 0;
+}
+
+.object-tourism-wrapper h1 {
+    color: rgb(51, 83, 108);
+}
+
 @media screen and (max-width: 576px) {
     .objectTourism-hero-wrapper {
         flex-direction: column-reverse;

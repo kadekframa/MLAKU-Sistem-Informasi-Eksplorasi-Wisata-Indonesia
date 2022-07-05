@@ -9,15 +9,11 @@ const ObjectTourismCard = (props) => {
         <a href={`detail-object-tourism/${_id}`}>
           <img src={image} alt={dest_name} title={`Gambar Suasana Objek Wisata ${dest_name}`} />
         </a>
-        <div className='text-wrapper-object-tourism'>
-          <a href={`detail-object-tourism/${_id}`}>
-            <p className='object-name'>{dest_name}</p>
-          </a>
-          <a href={`detail-object-tourism/${_id}`}>
-            <p className='object-addres'>{address}</p>
-          </a>
-        </div>
       </div>
+      <a href={`detail-object-tourism/${_id}`}>
+        <p className='object-name'>{dest_name}</p>
+      </a>
+      <p className='object-addres'>{address}</p>
     </div>
   )
 }

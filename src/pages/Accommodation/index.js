@@ -37,18 +37,17 @@ const Accomodation = (props) => {
           </div>
         </div>
       </section>
-      <Gap height={40} />
+      <Gap height={70} />
 
       <section id='accomodationWrapper'>
         <div className='text-center mb-4'>
-          <h1 className='fw-bold'>Accomodation</h1>
-        </div>
-
-        <div className='d-flex justify-content-end mb-4'>
-          {addAccomodationButton}
+          <h1 className='fw-bold'>Accomodations</h1>
         </div>
 
         <div className='row'>
+          <div className='d-flex justify-content-center my-4 mb-5'>
+            {addAccomodationButton}
+          </div>
           {accomodationList}
         </div>
       </section>

@@ -5,27 +5,8 @@
     box-sizing: border-box;
     margin: 16px 16px 24px;
     position: relative;
-    overflow: hidden;
+    overflow: hidden ;
     cursor: pointer;
-    transition: all .5s;
-}
-
-.component-wrapper-object-tourism:hover .text-wrapper-object-tourism {
-    opacity: 1;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.component-wrapper-object-tourism:hover {
-    transition: all .5s;
-    transform: translateY(20px);
-}
-
-.img-wrapper-object-tourism {
-    width: 100%;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 2px 4px 10px 2px rgb(174, 174, 174);
 }
 
 .img-wrapper-object-tourism img {
@@ -38,37 +19,21 @@
 
 .component-wrapper-object-tourism a {
     text-decoration: none;
-    color: white;
+    color: rgb(42, 42, 42);
 }
 
-.text-wrapper-object-tourism {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 0;
-    background-color: rgba(0, 0, 0, .6);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-    opacity: 0;
-    transition: 0.5s ease;
-    color: white;
-    text-transform: capitalize;
+.component-wrapper-object-tourism a:hover {
+    color: rgb(68, 102, 136);
 }
 
 .component-wrapper-object-tourism .object-name {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0 0;
-    color: white;
 
 }
 
 .component-wrapper-object-tourism .object-addres {
     font-size: 16px;
     margin: 0;
-    color: white;
 }

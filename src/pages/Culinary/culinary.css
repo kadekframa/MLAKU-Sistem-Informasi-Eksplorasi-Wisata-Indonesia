@@ -1,3 +1,11 @@
+.culinary-wrapper {
+    margin: 80px 0;
+}
+
+.culinary-wrapper h1 {
+    color: rgb(51, 83, 108);
+}
+
 @media screen and (max-width: 576px) {
     .culinary-hero-wrapper {
         flex-direction: column-reverse;

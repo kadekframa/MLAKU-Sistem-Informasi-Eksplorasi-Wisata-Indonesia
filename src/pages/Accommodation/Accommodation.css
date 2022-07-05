@@ -1,3 +1,11 @@
+.accomodation-wrapper {
+    margin: 80px 0;
+}
+
+.accomodation-wrapper h1 {
+    color: rgb(51, 83, 108);
+}
+
 @media screen and (max-width: 576px) {
     .accomodation-hero-wrapper {
         flex-direction: column-reverse;

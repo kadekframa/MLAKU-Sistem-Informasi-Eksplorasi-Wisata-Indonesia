@@ -38,18 +38,19 @@ const ObjectTourism = (props) => {
           </div>
         </div>
       </section>
-      <Gap height={40} />
+      <Gap height={70} />
 
       <section id='objectTourismWrapper'>
-        <div className='text-center mb-4 '>
-          <h1 className='fw-bold title'>Object Tourism</h1>
+        <div className='text-center mb-4'>
+          <h1 className='fw-bold title'>Objects Tourism</h1>
         </div>
 
-        <div className='d-flex justify-content-end mb-4'>
-          {addObjectTourismButton}
-        </div>
+        
 
         <div className='row'>
+          <div className='d-flex justify-content-center my-4 mb-5'>
+            {addObjectTourismButton}
+          </div>
           {objectTourismList}
         </div>
       </section>

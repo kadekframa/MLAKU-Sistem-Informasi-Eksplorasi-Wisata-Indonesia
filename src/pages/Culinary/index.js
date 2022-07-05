@@ -38,17 +38,16 @@ const Culinary = (props) => {
           </div>
         </div>
       </section>
-      <Gap height={40} />
+      <Gap height={70} />
       <section id='culinaryWrapper'>
         <div className='text-center mb-4'>
-          <h1 className='fw-bold'>Culinary</h1>
-        </div>
-
-        <div className='d-flex justify-content-end mb-4'>
-          {addCulinaryButton}
+          <h1 className='fw-bold'>Culinaries</h1>
         </div>
 
         <div className='row'>
+          <div className='d-flex justify-content-center my-4 mb-5'>
+            {addCulinaryButton}
+          </div>
           {culinaryList}
         </div>
       </section>

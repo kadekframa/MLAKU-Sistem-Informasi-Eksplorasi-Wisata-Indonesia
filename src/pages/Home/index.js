@@ -167,42 +167,42 @@ const Home = () => {
             <div className='col px-0'>
               <CulinaryHighlightCard
                 culinaryName='Nasi Padang'
-                url='/object-tourism'
+                url='/culinary'
                 bg_image='box-overlay bg-nasipadang'
               />
             </div>
             <div className='col px-0'>
               <CulinaryHighlightCard
                 culinaryName='Sate'
-                url='/object-tourism'
+                url='/culinary'
                 bg_image='box-overlay bg-sate'
               />
             </div>
             <div className='col px-0'>
               <CulinaryHighlightCard
                 culinaryName='Gudeg'
-                url='/object-tourism'
+                url='/culinary'
                 bg_image='box-overlay bg-gudeg'
               />
             </div>
             <div className='col px-0'>
               <CulinaryHighlightCard
                 culinaryName='Bakso'
-                url='/object-tourism'
+                url='/culinary'
                 bg_image='box-overlay bg-bakso'
               />
             </div>
             <div className='col px-0'>
               <CulinaryHighlightCard
                 culinaryName='Pempek'
-                url='/object-tourism'
+                url='/culinary'
                 bg_image='box-overlay bg-pempek'
               />
             </div>
             <div className='col px-0'>
               <CulinaryHighlightCard
                 culinaryName='Ayam Betutu'
-                url='/object-tourism'
+                url='/culinary'
                 bg_image='box-overlay bg-betutu'
               />
             </div>
@@ -216,21 +216,21 @@ const Home = () => {
             <div className='col px-0'>
               <AccommodationHighlightCard
                 accommodationName='Villa Karma Kandara'
-                url='/object-tourism'
+                url='/accomodation'
                 bg_image='box-overlay bg-ac1'
               />
             </div>
             <div className='col px-0'>
               <AccommodationHighlightCard
                 accommodationName='Kuta Guest House'
-                url='/object-tourism'
+                url='/accomodation'
                 bg_image='box-overlay bg-ac2'
               />
             </div>
             <div className='col px-0'>
               <AccommodationHighlightCard
                 accommodationName='Green Kubu Villa'
-                url='/object-tourism'
+                url='/accomodation'
                 bg_image='box-overlay bg-ac3'
               />
             </div>

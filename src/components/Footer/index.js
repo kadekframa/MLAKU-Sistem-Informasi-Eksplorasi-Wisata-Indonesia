@@ -28,7 +28,7 @@ const Footer = () => {
                   <Link className='nav-link p-0 text-muted' to="/culinary">Culinary</Link>
                 </li>
                 <li className="nav-item mb-2 mx-3">
-                  <Link className='nav-link p-0 text-muted' to="/accommodation">Accommodation</Link>
+                  <Link className='nav-link p-0 text-muted' to="/accomodation">Accommodation</Link>
                 </li>
                 <li className="nav-item mb-2 mx-3">
                   <Link className='nav-link p-0 text-muted' to="/about">About Us</Link>

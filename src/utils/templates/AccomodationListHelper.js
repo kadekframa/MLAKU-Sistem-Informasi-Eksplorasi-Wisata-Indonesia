@@ -18,7 +18,7 @@ const createAccomodationList = (dataAccomodation) => {
 
 const addAccomodationButtonCreator = () => {
     return (
-        <a href="/add-accomodation" className="btn btn-primary">
+        <a href="/add-accomodation" className="btn btn-success py-2">
             Add Accomodation
         </a>
     )
