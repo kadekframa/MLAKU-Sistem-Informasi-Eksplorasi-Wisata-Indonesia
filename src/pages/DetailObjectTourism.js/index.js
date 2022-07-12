@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { getDetailObjectTourism, deleteObjectTourism } from '../../utils/ObjectTourismHandler';
-import { Breadcrumb, BreadcrumbItem, Button } from 'reactstrap';
+import { getDetailObjectTourism } from '../../utils/ObjectTourismHandler';
+import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { useParams } from 'react-router-dom';
 import { actionButtonCreator } from '../../utils/templates/DetailsObjectTourismHelper';
 import Gap from '../../components/atoms/Gap';
@@ -41,7 +41,7 @@ const DetailObjectTourism = (props) => {
         <div className="row justify-content-center">
           <Gap height={40} />
           <div className="col-md-6 image-wrapper">
-            <img src={`http://localhost:4000/${ObjectTourism.image}`} alt="Image_Tourism" className="image-object-tourism mb-3" />
+            <img src={`https://mlaku-api.herokuapp.com/${ObjectTourism.image}`} alt="Image_Tourism" className="image-object-tourism mb-3" />
           </div>
 
           <div className="col-6 me-auto">

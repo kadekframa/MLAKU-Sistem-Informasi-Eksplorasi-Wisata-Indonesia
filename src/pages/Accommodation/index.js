@@ -2,15 +2,18 @@ import React, { useState, useEffect } from 'react';
 import './Accommodation.css';
 import { getAllAccomodation } from '../../utils/AccomodationHandler';
 import { createAccomodationList, addAccomodationButtonCreator } from '../../utils/templates/AccomodationListHelper';
+import {Spinner} from 'reactstrap';
 import { accomodationIllustration } from '../../assets'
 import Gap from '../../components/atoms/Gap';
 
 const Accomodation = (props) => {
   const [dataAccomodation, setDataAccomodation] = useState([]);
+  const [isBerhasil, setIsBerhasil] = useState('');
 
   useEffect(() => {
     getAllAccomodation()
       .then(response => {
+        setIsBerhasil(response.message);
         setDataAccomodation(response.data);
       })
   })
@@ -44,12 +47,21 @@ const Accomodation = (props) => {
           <h1 className='fw-bold'>Accomodations</h1>
         </div>
 
-        <div className='row'>
-          <div className='d-flex justify-content-center my-4 mb-5'>
-            {addAccomodationButton}
+        
+        {isBerhasil === 'Data Accomodation Dipanggil' ? (
+          <div className='row'>
+            <div className='d-flex justify-content-center my-4 mb-5'>
+              {addAccomodationButton}
+            </div>
+            {accomodationList}
           </div>
-          {accomodationList}
-        </div>
+        ) : (
+          <div className='d-flex row justify-content-center mt-5'>
+            <Spinner>
+                Loading...
+            </Spinner>
+          </div>
+        )}
       </section>
     </main>
   )

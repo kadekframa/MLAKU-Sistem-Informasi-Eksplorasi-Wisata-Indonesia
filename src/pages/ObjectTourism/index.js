@@ -2,15 +2,18 @@ import React, { useState, useEffect } from 'react';
 import './object-tourism.css';
 import { getAllObjectTourism } from '../../utils/ObjectTourismHandler';
 import { createObjectTourismList, addObjectTourismButtonCreator } from '../../utils/templates/ObjectTourismListHelper';
+import {Spinner} from 'reactstrap';
 import { objecttourismIllustration } from '../../assets'
 import Gap from '../../components/atoms/Gap';
 
 const ObjectTourism = (props) => {
   const [dataObjectTourism, setDataObjectTourism] = useState([]);
+  const [isBerhasil, setIsBerhasil] = useState('');
 
   useEffect(() => {
     getAllObjectTourism()
       .then(response => {
+        setIsBerhasil(response.message);
         setDataObjectTourism(response.data);
       })
   })
@@ -46,13 +49,20 @@ const ObjectTourism = (props) => {
         </div>
 
         
-
-        <div className='row'>
-          <div className='d-flex justify-content-center my-4 mb-5'>
-            {addObjectTourismButton}
+        {isBerhasil === 'Data Object Tourism Berhasil Dipanggil' ? (
+          <div className='row'>
+            <div className='d-flex justify-content-center my-4 mb-5'>
+              {addObjectTourismButton}
+            </div>
+            {objectTourismList}
           </div>
-          {objectTourismList}
-        </div>
+        ) : (
+          <div className='d-flex row justify-content-center mt-5'>
+            <Spinner>
+                Loading...
+            </Spinner>
+          </div>
+        )}
       </section>
     </main>
   )

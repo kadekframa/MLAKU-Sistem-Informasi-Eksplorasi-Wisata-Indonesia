@@ -41,7 +41,7 @@ const DetailCulinary = (props) => {
                 <div className="row justify-content-center">
                     <Gap height={40} />
                     <div className="col-md-6 image-wrapper-culinary">
-                        <img src={`http://localhost:4000/${Culinary.image}`} alt="Culinary" className="image-culinary mb-3" />
+                        <img src={`https://mlaku-api.herokuapp.com/${Culinary.image}`} alt="Culinary" className="image-culinary mb-3" />
                     </div>
 
                     <div className="col-6 me-auto">

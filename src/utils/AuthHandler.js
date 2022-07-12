@@ -14,7 +14,7 @@ const registerUser = (user) => {
     formData.append('email', email);
     formData.append('password', password);
 
-    axios.post('http://localhost:4000/v1/auth/register', formData)
+    axios.post('https://mlaku-api.herokuapp.com/v1/auth/register', formData)
         .then((response) => {
             if (response.status === 201) {
                 swal({
@@ -47,11 +47,21 @@ const loginUser = (user) => {
     formData.append('username', username);
     formData.append('password', password);
 
-    axios.post('http://localhost:4000/v1/auth/login', formData, {
+    axios.post('https://mlaku-api.herokuapp.com/v1/auth/login', formData, {
             withCredentials: true,
         })
         .then((response) => {
-            return window.location.href = '/';
+            if (response.status === 200) {
+                swal({
+                        title: "Selamat!",
+                        text: `${response.data.message}`,
+                        icon: "success",
+                        button: "Ok",
+                    })
+                    .then((result) => {
+                        window.location.href = `/`;
+                    });
+            }
         })
         .catch((error) => {
             swal({
@@ -73,16 +83,22 @@ const logoutUser = () => {
         })
         .then((willLogout) => {
             if (willLogout) {
-                axios.post('http://localhost:4000/v1/auth/logout', '', {
+                axios.post('https://mlaku-api.herokuapp.com/v1/auth/logout', '', {
                         withCredentials: true,
                     })
                     .then((res) => {
-                        swal("Berhasil keluar!", {
+                        swal("Berhasil Logout!", {
+                            text: "Logout Success!",
                             icon: "success",
                         }).then((res) => window.location.href = '/login');
                     })
                     .catch((err) => {
-                        swal("Gagal Logout!");
+                        swal({
+                            title: "Gagal Logut!",
+                            text: "Logout Failed!",
+                            icon: "error",
+                            button: "Ok",
+                        });
                     });
             }
         });

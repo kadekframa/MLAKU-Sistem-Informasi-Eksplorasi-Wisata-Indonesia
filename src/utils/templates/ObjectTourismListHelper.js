@@ -9,7 +9,7 @@ const createObjectTourismList = (dataObjectTourism) => {
                     _id={object._id}
                     dest_name={object.dest_name}
                     address={object.address}
-                    image={`http://localhost:4000/${object.image}`}
+                    image={`https://mlaku-api.herokuapp.com/${object.image}`}
                 />
             </div>
         )

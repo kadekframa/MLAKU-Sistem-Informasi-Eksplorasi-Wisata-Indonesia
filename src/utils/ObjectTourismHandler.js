@@ -27,7 +27,7 @@ const createObjectTourism = (dataObjectTourism) => {
     data.append('user_name', user_name);
     data.append('user_id', user_id);
 
-    Axios.post('http://localhost:4000/v1/object-tourism/', data, {
+    Axios.post('https://mlaku-api.herokuapp.com/v1/object-tourism/', data, {
       withCredentials: true,
       headers: {
         'content-type': 'multipart/form-data'
@@ -58,11 +58,12 @@ const createObjectTourism = (dataObjectTourism) => {
 }
 
 const getAllObjectTourism = async () => {
-    const response = await Axios.get('http://localhost:4000/v1/object-tourism/');
+    const response = await Axios.get('https://mlaku-api.herokuapp.com/v1/object-tourism');
+    // console.info('datanya : ', response.data)
     return response.data;
 }
 const getDetailObjectTourism = async (id) => {
-    const response = await Axios.get(`http://localhost:4000/v1/object-tourism/${id}`);
+    const response = await Axios.get(`https://mlaku-api.herokuapp.com/v1/object-tourism/${id}`);
     return response.data;
 }
 
@@ -81,7 +82,7 @@ const updateObjectTourism = (dataObjectTourism, id) => {
 
   checkObjectTourismForm(dataObjectTourism);
 
-  Axios.put(`http://localhost:4000/v1/object-tourism/${id}`, data, {
+  Axios.put(`https://mlaku-api.herokuapp.com/v1/object-tourism/${id}`, data, {
     withCredentials: true,
     headers: {
       'content-type': 'multipart/form-data'
@@ -120,7 +121,7 @@ const deleteObjectTourism = (id) => {
   })
   .then(willDelete => {
     if(willDelete) {
-      Axios.delete(`http://localhost:4000/v1/object-tourism/${id}`, {
+      Axios.delete(`https://mlaku-api.herokuapp.com/v1/object-tourism/${id}`, {
         withCredentials: true,
       })
       .then(response => {

@@ -9,7 +9,7 @@ const createCulinaryList = (dataCulinary) => {
                     id={culinary._id}
                     culinary_name={culinary.culinary_name}
                     address={culinary.address}
-                    image={`http://localhost:4000/${culinary.image}`}
+                    image={`https://mlaku-api.herokuapp.com/${culinary.image}`}
                 />
             </div>
         )

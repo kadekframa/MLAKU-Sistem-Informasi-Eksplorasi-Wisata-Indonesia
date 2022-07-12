@@ -27,7 +27,7 @@ const createAccomodation = (dataAccomodation) => {
   data.append('user_name', user_name);
   data.append('user_id', user_id);
 
-  Axios.post('http://localhost:4000/v1/accomodation/', data, {
+  Axios.post('https://mlaku-api.herokuapp.com/v1/accomodation/', data, {
     withCredentials: true,
     headers: {
       'content-type': 'multipart/form-data'
@@ -58,11 +58,11 @@ const createAccomodation = (dataAccomodation) => {
 }
 
 const getAllAccomodation = async () => {
-  const response = await Axios.get('http://localhost:4000/v1/accomodation/');
+  const response = await Axios.get('https://mlaku-api.herokuapp.com/v1/accomodation/');
   return response.data;
 }
 const getDetailAccomodation = async (id) => {
-  const response = await Axios.get(`http://localhost:4000/v1/accomodation/${id}`);
+  const response = await Axios.get(`https://mlaku-api.herokuapp.com/v1/accomodation/${id}`);
   return response.data;
 }
 
@@ -81,7 +81,7 @@ const updateAccomodation = (dataAccomodation, id) => {
 
   checkAccomodationForm(dataAccomodation);
 
-  Axios.put(`http://localhost:4000/v1/accomodation/${id}`, data, {
+  Axios.put(`https://mlaku-api.herokuapp.com/v1/accomodation/${id}`, data, {
     withCredentials: true,
     headers: {
       'content-type': 'multipart/form-data'
@@ -120,7 +120,7 @@ const deleteAccomodation = (id) => {
   })
     .then(willDelete => {
       if (willDelete) {
-        Axios.delete(`http://localhost:4000/v1/accomodation/${id}`, {
+        Axios.delete(`https://mlaku-api.herokuapp.com/v1/accomodation/${id}`, {
           withCredentials: true,
         })
           .then(response => {

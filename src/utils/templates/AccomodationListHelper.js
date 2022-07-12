@@ -9,7 +9,7 @@ const createAccomodationList = (dataAccomodation) => {
                     _id={accomodation._id}
                     accomodation_name={accomodation.accomodation_name}
                     address={accomodation.address}
-                    image={`http://localhost:4000/${accomodation.image}`}
+                    image={`https://mlaku-api.herokuapp.com/${accomodation.image}`}
                 />
             </div>
         )

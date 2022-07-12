@@ -8,7 +8,7 @@ const Routes = () => {
 
   useEffect(() => {
     const getUserAuth = async () => {
-      const response = await Axios.get('http://localhost:4000/v1/auth/user', {
+      const response = await Axios.get('https://mlaku-api.herokuapp.com/v1/auth/user', {
         withCredentials: true,
       })
 

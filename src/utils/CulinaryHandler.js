@@ -27,7 +27,7 @@ const createCulinary = (dataCulinary) => {
     data.append('user_name', user_name);
     data.append('user_id', user_id);
 
-    Axios.post('http://localhost:4000/v1/culinary/', data, {
+    Axios.post('https://mlaku-api.herokuapp.com/v1/culinary/', data, {
       withCredentials: true, 
       headers: {
         'content-type': 'multipart/form-data'
@@ -58,11 +58,11 @@ const createCulinary = (dataCulinary) => {
 }
 
 const getAllCulinary = async () => {
-    const response = await Axios.get('http://localhost:4000/v1/culinary/');
+    const response = await Axios.get('https://mlaku-api.herokuapp.com/v1/culinary/');
     return response.data;
 }
 const getDetailCulinary = async (id) => {
-  const response = await Axios.get(`http://localhost:4000/v1/culinary/${id}`);
+  const response = await Axios.get(`https://mlaku-api.herokuapp.com/v1/culinary/${id}`);
   return response.data;
 }
 
@@ -81,7 +81,7 @@ const updateCulinary = (dataCulinary, id) => {
 
   checkCulinaryForm(dataCulinary);
 
-  Axios.put(`http://localhost:4000/v1/culinary/${id}`, data, {
+  Axios.put(`https://mlaku-api.herokuapp.com/v1/culinary/${id}`, data, {
     withCredentials: true,
     headers: {
       'content-type': 'multipart/form-data'
@@ -120,7 +120,7 @@ const deleteCulinary = (id) => {
   })
   .then(willDelete => {
     if(willDelete) {
-      Axios.delete(`http://localhost:4000/v1/culinary/${id}`, {
+      Axios.delete(`https://mlaku-api.herokuapp.com/v1/culinary/${id}`, {
         withCredentials: true,
       })
       .then(response => {

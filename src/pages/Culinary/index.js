@@ -2,15 +2,18 @@ import React, { useState, useEffect } from 'react';
 import './culinary.css';
 import { getAllCulinary } from '../../utils/CulinaryHandler';
 import { createCulinaryList, addCulinaryButtonCreator } from '../../utils/templates/CulinaryListHelper';
+import {Spinner} from 'reactstrap';
 import { culinaryIllustration } from '../../assets'
 import Gap from '../../components/atoms/Gap';
 
 const Culinary = (props) => {
   const [dataCulinary, setDataCulinary] = useState([]);
+  const [isBerhasil, setIsBerhasil] = useState('');
 
   useEffect(() => {
     getAllCulinary()
       .then(response => {
+        setIsBerhasil(response.message);
         setDataCulinary(response.data);
       })
   })
@@ -44,12 +47,21 @@ const Culinary = (props) => {
           <h1 className='fw-bold'>Culinaries</h1>
         </div>
 
-        <div className='row'>
-          <div className='d-flex justify-content-center my-4 mb-5'>
-            {addCulinaryButton}
+        
+        {isBerhasil === 'Data Culinary Berhasil Dipanggil' ? (
+          <div className='row'>
+            <div className='d-flex justify-content-center my-4 mb-5'>
+              {addCulinaryButton}
+            </div>
+            {culinaryList}
           </div>
-          {culinaryList}
-        </div>
+        ) : (
+          <div className='d-flex row justify-content-center mt-5'>
+            <Spinner>
+                Loading...
+            </Spinner>
+          </div>
+        )}
       </section>
     </main>
   )
